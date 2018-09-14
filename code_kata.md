@@ -1,7 +1,7 @@
 # Code Kata
 
 ### 1.1
-Use an equation like: `y = ax**2 + bx + c` (Grade 12)or `y = mx + b` (Grade 10)
+Create a program that acts as a calculator to help you do your math homework. Use an equation like: `y = ax**2 + bx + c` (Grade 12) or `y = mx + b` (Grade 10).
 1. Hard code the whole print statement with literal numbers.
 2. Factor out each variable, one at a time, running and testing along the way.
 3. Once all variables have been factored out, you may add user input for the variables
