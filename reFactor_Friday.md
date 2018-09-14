@@ -26,7 +26,7 @@ number = int(input())
 right_digit = str(number % 10)
 left_digit = str(number // 10)
 
-swapped_digit = right_digit + left_digit
+swapped_digits = right_digit + left_digit
 
-print(swapped_digit)
+print(swapped_digits)
 ```
