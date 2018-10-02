@@ -13,9 +13,9 @@ Create a program that acts as a calculator to help you do your math homework. Us
 2. Output a message in the format:
    "Hello, {name}, next year you will be {age} years old"
 3. Convert to function. Call it "greet".
+   - call the function below.
    - turn variables 'name' and 'age' into parameters.
    - instead of printing the result, return the result.
-   - call the function below.
 
 Start with:
 ```python
