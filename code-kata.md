@@ -17,6 +17,14 @@ Create a program that acts as a calculator to help you do your math homework. Us
    - instead of printing the result, return the result.
    - call the function below.
 
+Start with:
+```python
+name = "Frank"
+age = 13
+message = f"Hello, {name}, next year you will be {age + 1} years old"
+print(message)
+```
+
 ## End results
 End results are not the point of a code kata. It is the *process* you go through to arrive at the end that matters. Memorize that *process*, not the end result. 
 
