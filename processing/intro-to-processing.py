@@ -1,13 +1,19 @@
-size(640, 480)
-background(255, 255, 255)  # colors are in RGB
+# Tip: Get color scheme from coolors.co or google "pink rgb" or "pink hex".
+# Download processing from processing.org. Install it, then add Python mode.
 
+size(800, 600)             # set size of window
+background("#DDC9B4")      # Colors are in HEX
+# background(255, 0, 128)  # but can also be in RGB
+
+noStroke()  # remove border on shapes
 # ellipse(x, y, width, height)
-noStroke()
-fill(255, 0, 120)
+fill("#2A3D45")  # change shape fill color
 ellipse(width/2, height/2, 100, 100)
 
+stroke("#7A6C5D")  # Set border color
+strokeWeight(15)   # set border thickness
+
 # rect(x, y, width, height)
-stroke(0)
-strokeWeight(10)
-fill(0, 180, 0)
+fill("#C17C74")
 rect(width/2, height/2, 200, 200)
+
