@@ -15,3 +15,28 @@ if user_choice == 'rock':
 else:
     result = "lose"
 ```
+
+## Keep asking!
+#### Inspired by Chapter 4
+Use a loop to continuously ask for user input while the input is invalid. Valid input is 'rock', 'scissors' or 'paper. There can be a couple ways to do this.
+
+```python
+user_choice = ""
+while user_choice != 'rock' and user_choice != 'scissors' and user_choice != 'paper':
+    user_choice = input("Please choose: 'rock', 'scissors', or 'paper':")
+```
+
+Using **`in`** with a list.
+```python
+user_choice = ""
+while user_choice not in ['rock', 'scissors', 'paper']:
+    user_choice = input("Please choose: 'rock', 'scissors', or 'paper':")
+```
+
+With infinite loop and `break`.
+```python
+while True:
+    user_choice = input("Please choose: 'rock', 'scissors', or 'paper':")
+    if user_choice == 'rock' or user_choice == 'scissors' or user_choice == 'paper':
+        break
+```
