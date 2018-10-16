@@ -20,6 +20,8 @@ else:
 #### Inspired by Chapter 4
 Use a loop to continuously ask for user input while the input is invalid. Valid input is 'rock', 'scissors' or 'paper'. There can be a couple ways to do this.
 
+Something to consider: how can these solutions accomodate responses with mixed case? E.g., `rOCk` would be considered invalid.
+
 ```python
 user_choice = ""
 while user_choice != 'rock' and user_choice != 'scissors' and user_choice != 'paper':
