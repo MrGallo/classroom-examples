@@ -18,7 +18,7 @@ else:
 
 ## Keep asking!
 #### Inspired by Chapter 4
-Use a loop to continuously ask for user input while the input is invalid. Valid input is 'rock', 'scissors' or 'paper. There can be a couple ways to do this.
+Use a loop to continuously ask for user input while the input is invalid. Valid input is 'rock', 'scissors' or 'paper'. There can be a couple ways to do this.
 
 ```python
 user_choice = ""
