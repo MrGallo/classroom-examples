@@ -1,5 +1,6 @@
 # Tip: Get color scheme from coolors.co or google "pink rgb" or "pink hex".
 # Download processing from processing.org. Install it, then add Python mode.
+# Check out the reference http://py.processing.org/reference
 
 size(800, 600)             # set size of window
 background("#DDC9B4")      # Colors are in HEX
