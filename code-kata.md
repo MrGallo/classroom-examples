@@ -77,6 +77,13 @@ print(y)
 ```
 
 ### 2.1
+```python
+my_string = "hello world"
+
+for index in range(len(my_string)):
+    if my_string[index] == 'e':
+        print("Found e at", index)
+```
 
 ### 2.2
 ```python
