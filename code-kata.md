@@ -7,6 +7,35 @@ Create a program that acts as a calculator to help you do your math homework. Us
 2. Factor out each variable, one at a time, running and testing along the way.
 3. Once all variables have been factored out, you may add user input for the variables
 
+## Loops
+### 2.1
+Create a program that will iterate (loop) over a string to find all occurances of the letter 'e'. When one is found, print "Found 'e' at index #". Start from the code below and convert to a for loop.
+```python
+my_string = "hello world"
+
+if my_string[0] == 'e':
+    print("Found e at 0")
+
+if my_string[1] == 'e':
+    print("Found e at 1")
+
+if my_string[2] == 'e':
+    print("Found e at 2")
+```
+
+### 2.2
+Create a processing sketch that will draw multiple ellipses spread across the x axis. Start from the code below and convert to a for (or while) loop:
+```python
+size(640, 480)
+background(255)
+
+fill(0)
+ellipse(50, height/2, 50, 50)
+ellipse(200, height/2, 50, 50)
+ellipse(350, height/2, 50, 50)
+ellipse(500, height/2, 50, 50)
+```
+
 ## Functions
 ### 3.1
 1. Create a program that will take a name and and age.
@@ -45,6 +74,19 @@ b = 7
 c = 9
 y = a*x**2 + b*x + c
 print(y)
+```
+
+### 2.1
+
+### 2.2
+```python
+size(640, 480)
+background(255)
+
+fill(0)
+
+for x in range(50, 501, 150):
+    ellipse(x, height/2, 50, 50)
 ```
 
 ### 3.1
