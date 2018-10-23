@@ -54,7 +54,7 @@ message = f"Hello, {name}, next year you will be {age + 1} years old"
 print(message)
 ```
 
-## End results
+# End results
 End results are not the point of a code kata. It is the *process* you go through to arrive at the end that matters. Memorize that *process*, not the end result. 
 
 ### 1.1
