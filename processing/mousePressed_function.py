@@ -10,8 +10,10 @@ def draw():
         ellipse(100, 100, 40, 40)
     elif page == 1:
         background(255, 255, 0)
+        ellipse(100, 100, 40, 40)
     elif page == 2:
         background(255, 100, 3)
+        ellipse(100, 100, 40, 40)
 
 
 def mousePressed():  # Triggers once per mouse-press
