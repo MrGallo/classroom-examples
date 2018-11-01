@@ -127,3 +127,64 @@ else:
     print(f"You are {total - budget} calories over budget.")
     print("Time to go for a run.")
 ```
+
+### Version 3
+#### Problem 1
+Write a program that takes in a year future_year (assume it is in the future) and outputs a table from the current year (2018) to future_year,  listing the year and distance from the park border to the desert edge.
+
+Sample Run
+```
+Enter the future year: 2026
+Year: 2018, Desert Edge Distance: 3000
+Year: 2019, Desert Edge Distance: 2952
+Year: 2020, Desert Edge Distance: 2904
+Year: 2021, Desert Edge Distance: 2856
+Year: 2022, Desert Edge Distance: 2808
+Year: 2023, Desert Edge Distance: 2760
+Year: 2024, Desert Edge Distance: 2712
+Year: 2025, Desert Edge Distance: 2664
+Year: 2026, Desert Edge Distance: 2616
+```
+
+```python
+# with a for-loop
+distance = 3000
+
+future_year = int(input("Enter the future year:"))
+
+for year in range(2018, future_year+1):
+    print(f"Year: {year}, Desert Edge Distance: {distance}")
+    distance -= 48
+```
+```python
+distance = 3000
+year = 2018
+
+future_year = int(input("Enter the future year:"))
+
+while year <= future_year:
+    print(f"Year: {year}, Desert Edge Distance: {distance}")
+    distance -= 48
+    year += 1
+```
+
+#### Problem 2
+It is expected that the park will need to close when the desert edge is within 500m from the park border.  Write a separate program that uses a while loop to compute the year the lodge will need to close.
+
+Sample Run
+```
+The park will need to close in xxxx. 
+```
+
+Where xxxx is the computed year.
+
+```python
+distance = 3000
+year = 2018
+
+while distance > 500:
+    distance -= 48
+    year += 1
+
+print(year)
+```
