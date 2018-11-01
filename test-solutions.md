@@ -157,6 +157,7 @@ for year in range(2018, future_year+1):
     distance -= 48
 ```
 ```python
+# with a while loop
 distance = 3000
 year = 2018
 
