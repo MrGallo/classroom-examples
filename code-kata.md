@@ -36,6 +36,10 @@ ellipse(350, height/2, 50, 50)
 ellipse(500, height/2, 50, 50)
 ```
 
+### 2.3 Add Evens
+Create a program that will add only the even numbers from 10 to 10000.
+Use a for loop and the range() function.
+
 ## Functions
 ### 3.1
 1. Create a program that will take a name and and age.
@@ -94,6 +98,15 @@ fill(0)
 
 for x in range(50, 501, 150):
     ellipse(x, height/2, 50, 50)
+```
+
+### 2.3 Add Evens
+```python
+total = 0
+for num in range(10, 10001, 2):
+    total += num
+
+print(total)
 ```
 
 ### 3.1
