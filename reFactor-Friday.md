@@ -31,6 +31,28 @@ def get_guess():
             return letter 
 ```
 
+### 3
+Translate the following Java Processing sketch into Python.
+```java
+// Click on the image to give it focus,
+// and then press any key.
+
+int value = 0;
+
+void draw() {
+  fill(value);
+  rect(25, 25, 50, 50);
+}
+
+void keyPressed() {
+  if (value == 0) {
+    value = 255;
+  } else {
+    value = 0;
+  }
+}
+```
+
 ## Solutions
 
 ### 1
@@ -55,4 +77,23 @@ def get_guess():
             return letter
         
         print('Character is invalid. ', end='') 
+```
+### 3
+```python 
+# Click on the image to give it focus,
+# and then press any key.
+
+value = 0
+
+def draw():
+    fill(value)
+    rect(25, 25, 50, 50)
+
+
+def keyPressed():
+    global value
+    if value == 0:
+        value = 255
+    else:
+        value = 0
 ```
