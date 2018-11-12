@@ -3,16 +3,16 @@
 ### 1
 
 Create a function:
-1. called 'say_hello' that takes no arguments,
-   prints 'hello', and returns nothing.
-2. called 'say_hello_to' that takes a name, 
-   prints 'Hello {name}', and returns nothing.
-3. called 'double' that takes an integer as an argument,
+1. called `say_hello` that takes no arguments,
+   prints `hello`, and returns nothing.
+2. called `say_hello_to` that takes a name, 
+   prints `Hello {name}`, and returns nothing.
+3. called `double` that takes an integer as an argument,
    and returns double its value.
-4. called 'last_first' that takes a first name and
+4. called `last_first` that takes a first name and
    a last name. It will return the name in the format
-   '{last_name}, {first_name}'.
-5. called 'is_dead', that takes the number of incorrect
+   `{last_name}, {first_name}`.
+5. called `is_dead`, that takes the number of incorrect
    guesses as an argument. Return true if incorrect guesses
    is greater than or equal to 6. False otherwise.
 
