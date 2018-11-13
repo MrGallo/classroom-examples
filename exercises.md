@@ -35,8 +35,8 @@ assert last_first("John", "Smith") == "Smith, John"
 assert last_first("a", "b") == "b, a"
 
 # 5
-assert is_dead(4) == False, "Should not be dead"
-assert is_dead(5) == True, "Should be dead"
+assert is_dead(5) == False, "Should not be dead"
+assert is_dead(6) == True, "Should be dead"
 assert is_dead(1001) == True, "Should be very dead"
 ```
 
@@ -77,5 +77,5 @@ def is_dead(incorrect_guesses):
     guesses as an argument. Return true if incorrect guesses
     is greater than or equal to 6. False otherwise.
     """
-    return incorrect_guesses >= 5
+    return incorrect_guesses >= 6
 ```
