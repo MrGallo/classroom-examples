@@ -1,6 +1,5 @@
 # Exercises
-## Functions
-### 1
+## Functions 1
 
 Create a function:
 1. called `say_hello` that takes no arguments,
@@ -39,13 +38,12 @@ assert is_dead(5) == False, "Should not be dead"
 assert is_dead(6) == True, "Should be dead"
 assert is_dead(1001) == True, "Should be very dead"
 ```
-### 2
+## Functions 2
 1. Define a function called draw_player that simply prints the statement "Drawing player...". Call the function (so it would execute).
 2. Define a function called draw_sun. It will take an x and y location. It will print a message "Drawing sun at ({x}, {y}).". (Insert the argument values into the string). Call this function too.
 
 # Solutions
-## Functions
-### 1
+## Functions 1
 ```python
 def say_hello():
     """1. called 'say_hello' that takes no arguments,
@@ -83,7 +81,7 @@ def is_dead(incorrect_guesses):
     """
     return incorrect_guesses >= 6
 ```
-### 2
+## Functions 2
 ```python
 def draw_player():
     """Define a function called draw_player that simply 
