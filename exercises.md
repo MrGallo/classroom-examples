@@ -39,6 +39,9 @@ assert is_dead(5) == False, "Should not be dead"
 assert is_dead(6) == True, "Should be dead"
 assert is_dead(1001) == True, "Should be very dead"
 ```
+### 2
+1. Define a function called draw_player that simply prints the statement "Drawing player...". Call the function (so it would execute).
+2. Define a function called draw_sun. It will take an x and y location. It will print a message "Drawing sun at ({x}, {y}).". (Insert the argument values into the string). Call this function too.
 
 # Solutions
 ## Functions
@@ -79,4 +82,26 @@ def is_dead(incorrect_guesses):
     is greater than or equal to 6. False otherwise.
     """
     return incorrect_guesses >= 6
+```
+### 2
+```python
+def draw_player():
+    """Define a function called draw_player that simply 
+    prints the statement "Drawing player...". 
+    Call the function (so it would execute).
+    """
+    print("Drawing player...")
+
+
+def draw_sun(x, y):
+    """Define a function called draw_sun. It will take an x and y location. 
+    It will print a message "Drawing sun at ({x}, {y}).". 
+    (Insert the argument values into the string). 
+    Call this function too.
+    """
+    print(f"Drawing sun at ({x}, {y}).")
+
+
+draw_player()
+draw_sun(50, 150)
 ```
