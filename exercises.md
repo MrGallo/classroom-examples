@@ -43,7 +43,7 @@ assert is_dead(1001) == True, "Should be very dead"
 2. Define a function called draw_sun. It will take an x and y location. It will print a message "Drawing sun at ({x}, {y}).". (Insert the argument values into the string). Call this function too.
 
 # Solutions
-## Functions 1
+## Functions 1 Solution
 ```python
 def say_hello():
     """1. called 'say_hello' that takes no arguments,
@@ -81,7 +81,7 @@ def is_dead(incorrect_guesses):
     """
     return incorrect_guesses >= 6
 ```
-## Functions 2
+## Functions 2 Solution
 ```python
 def draw_player():
     """Define a function called draw_player that simply 
