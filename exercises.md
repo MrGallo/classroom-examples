@@ -42,6 +42,31 @@ assert is_dead(1001) == True, "Should be very dead"
 1. Define a function called draw_player that simply prints the statement "Drawing player...". Call the function (so it would execute).
 2. Define a function called draw_sun. It will take an x and y location. It will print a message "Drawing sun at ({x}, {y}).". (Insert the argument values into the string). Call this function too.
 
+## Functions 3
+Complete the `draw_sun` function according to the PyDoc.
+```python
+SKY_BLUE = color(0, 191, 255)
+YELLOW = color(255, 255, 0)
+
+def setup():
+    size(640, 480)
+
+
+def draw():
+    background(SKY_BLUE)
+    draw_sun(50, 100)
+
+
+def draw_sun():
+    """Draws a sun (yellow ellipse) at a given x,y coordinate.
+    
+    Args:
+        x (int): x co-ordinate
+        y (int): y co-ordinate
+    """
+    pass
+```
+
 # Solutions
 ## Functions 1 Solution
 ```python
@@ -102,4 +127,9 @@ def draw_sun(x, y):
 
 draw_player()
 draw_sun(50, 150)
+```
+
+## Functions 3 Solution
+```python
+
 ```
