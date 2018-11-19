@@ -131,5 +131,14 @@ draw_sun(50, 150)
 
 ## Functions 3 Solution
 ```python
-
+def draw_sun(x, y):
+    """Draws a sun (yellow ellipse) at a given x,y coordinate.
+    
+    Args:
+        x (int): x co-ordinate
+        y (int): y co-ordinate
+    """
+    noStroke()
+    fill(YELLOW)
+    ellipse(x, y, 100, 100)
 ```
