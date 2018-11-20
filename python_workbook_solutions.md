@@ -44,7 +44,7 @@ BASE_FARE = 4.00
 RATE_PER_140_METERS = 0.25
 
 
-def calc_fare(distance):  # add distance parameter
+def calc_fare(distance):
     """Calculates taxi fare based on distance traveled (km)
     Args:
         distance (float): Distance traveled in Kilometers.
@@ -66,7 +66,7 @@ def main():
     print("Welcome to the fare calculator.")
     distance = float(input("Enter the number of meteres traveled:"))
     distance_in_km = distance / 1000
-    fare = calc_fare(distance_in_km)  # pass the distance to the function
+    fare = calc_fare(distance_in_km)
     print("The total fare is ${}.".format(fare))
 
 tests()
