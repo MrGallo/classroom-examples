@@ -98,6 +98,6 @@ while i >= 0:
     i -= 1
 
 # for loop over slice
-for number in number[::-1]:
+for number in numbers[::-1]:
     print(number)
 ```
