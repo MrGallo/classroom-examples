@@ -72,3 +72,27 @@ def main():
 tests()
 main()
 ```
+## Lists
+### Exercise 105: Reverse Order
+Also available to you is:
+1. Reading in the list backwards to begin with, using `list.insert(i, element)`.
+2. For loop index values over a range()
+3. Using the `list.reverse()` method.
+4. Using slices `list[::-1]`.
+```python 
+numbers = []
+
+while True:
+    num = int(input("Enter an integer, 0 to stop:"))
+    if num == 0:
+        break
+    numbers.append(num)
+
+new_list = []
+i = len(numbers) - 1
+while i >= 0:
+    new_list.append(numbers[i])
+    i -= 1
+
+print(new_list)
+```
