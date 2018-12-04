@@ -73,6 +73,7 @@ From [Error Handling](https://colab.research.google.com/drive/1I9ss_cFN7tHDXkKWQ
 1. Create a list of marks. Read in the list of marks (user input) with a while loop. The user should enter `-1` to stop asking for marks. Don't add this to the list.
 2. Validate the input using `try-catch-else` to handle the possiblity of the user inputting an invalid integer.
 3. Using a `for-loop`, add up all the marks. Print out the average mark. 
+4. What happens when the first input from the user is `-1`? Fix this problem.
 
 # Solutions
 ## Functions 1 Solution
