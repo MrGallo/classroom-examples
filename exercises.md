@@ -67,6 +67,13 @@ def draw_sun():
     pass
 ```
 
+# Error Handling
+## Error Handling 1
+From [Error Handling](https://colab.research.google.com/drive/1I9ss_cFN7tHDXkKWQgR6HI4FKGlqejz3#scrollTo=xvZPiVfPeef7&line=2&uniqifier=1) Colab.
+1. Create a list of marks. Read in the list of marks (user input) with a while loop. The user should enter `-1` to stop asking for marks. Don't add this to the list.
+2. Validate the input using `try-catch-else` to handle the possiblity of the user inputting an invalid integer.
+3. Using a `for-loop`, add up all the marks. Print out the average mark. 
+
 # Solutions
 ## Functions 1 Solution
 ```python
@@ -141,4 +148,26 @@ def draw_sun(x, y):
     noStroke()
     fill(YELLOW)
     ellipse(x, y, 100, 100)
+```
+
+# Error Handling
+## Error Handling 1 Solution
+```python
+marks = []
+while True:
+    try:
+        mark = int(input("Enter a mark, -1 to stop: "))
+    except:
+        print("Invalid input")
+    else:
+        if mark == -1:
+            break
+        marks.append(mark)
+
+total = 0
+for mark in marks:
+    total += mark
+    
+avg = total/len(marks)
+print(f"The average is {avg}%")
 ```
