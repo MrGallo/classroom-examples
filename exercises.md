@@ -154,7 +154,6 @@ def draw_sun(x, y):
     ellipse(x, y, 100, 100)
 ```
 
-# Error Handling
 ## Error Handling 1 Solution
 ```python
 marks = []
