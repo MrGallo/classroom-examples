@@ -74,6 +74,9 @@ From [Error Handling](https://colab.research.google.com/drive/1I9ss_cFN7tHDXkKWQ
 2. Validate the input using `try-catch-else` to handle the possiblity of the user inputting an invalid integer.
 3. Using a `for-loop`, add up all the marks. Print out the average mark. 
 4. What happens when the first input from the user is `-1`? Fix this problem.
+5. **ADVANCED**: 
+    - Create a custom exception called `MarkRangeError`. If the mark is negative or beyond 100, `raise` this exception.
+    - Catch this error differntly from the `ValueError` caused by the `int()` function when trying to convert invalid values to integers.
 
 # Solutions
 ## Functions 1 Solution
