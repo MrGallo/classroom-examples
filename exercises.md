@@ -67,6 +67,26 @@ def draw_sun():
     pass
 ```
 
+# Lists
+## Lists 1
+Create a program the will read in daily tempuratures for one week.
+Create a list to store the names of the days of the week. Also create a list
+to store the daily tempuratures for one week. Read this in from user input.
+
+1. Create a test function that will test each of the following functions:
+2. Create a function that will take a list of tempuratures and return the average.
+3. Create a function that will take a list of tempuratures and return the highest temp.
+4. Create a function that will take a list of tempuratures and return the lowest temp.
+    - *Do not* use the `max` and `min` functions. You want to be able to code these yourself.
+5. Create a main function that will read in the week's tempuratures and call each of the 
+above functions with user-friendly prompts and messages.
+6. Identify code that needs to be guarded with try-except.
+
+Example output:
+```
+
+```
+
 # Error Handling
 ## Error Handling 1
 From [Error Handling](https://colab.research.google.com/drive/1I9ss_cFN7tHDXkKWQgR6HI4FKGlqejz3#scrollTo=xvZPiVfPeef7&line=2&uniqifier=1) Colab.
@@ -152,6 +172,114 @@ def draw_sun(x, y):
     noStroke()
     fill(YELLOW)
     ellipse(x, y, 100, 100)
+```
+
+## Lists 1 Solution
+Check out a solution with [more exception handling](https://gist.github.com/MrGallo/4db54eda84eb05d8bfd1fe715bf12d5f).
+```python
+DAYS = "Sunday Monday Tuesday Wednesday Thursday Friday Saturday".split()
+
+def get_average(tempuratures):
+    """Returns average tempurature from a list.
+    Args: 
+        tempuratures (:obj:`list` of :obj:`float`): List of tempuratures
+    Returns:
+        float: Average tempurature
+    """
+    if len(tempuratures) == 0:
+        return None
+
+    total = 0.0
+    for temp in tempuratures:
+        total += temp
+
+    average = total / len(tempuratures)
+    return average
+
+def get_maximum(tempuratures):
+    """Finds highest tempurature from a list.
+    Args: 
+        tempuratures (:obj:`list` of :obj:`float`): List of tempuratures
+    Returns:
+        float: Highest tempurature
+    """
+    if len(tempuratures) == 0:
+        return None
+    
+    highest = tempuratures[0]
+    for temp in tempuratures[1:]:
+        if temp > highest:
+            highest = temp
+    
+    return highest
+
+def get_minimum(tempuratures):
+    """Finds lowest tempurature from a list.
+    Args: 
+        tempuratures (:obj:`list` of :obj:`float`): List of tempuratures
+    Returns:
+        float: Lowest tempurature
+    """
+    if len(tempuratures) == 0:
+        return None
+    
+    lowest = tempuratures[0]
+    for temp in tempuratures:
+        if temp < lowest:
+            lowest = temp
+    
+    return lowest
+
+
+def tests():
+    # test average function
+    assert get_average([]) == None, "Should return None from empty list."
+    assert get_average([1, 2, 3]) == 2, "Should calc average."
+
+    # test maximum function
+    assert get_maximum([]) == None, "Should return None as max of empty list"
+    assert get_maximum([5, 2, 7, 4]) == 7, "Should find max value from middle of list"
+    assert get_maximum([1, 5, 3, 7]) == 7, "Should find max at end of list"
+
+    # Test minimum function
+    assert get_minimum([]) == None, "Should return None for empty list"
+    assert get_minimum([5, 2, 7, -500]) == -500, "Should find min value from middle of list"
+    assert get_minimum([4, 5, 3, 2]) == 2, "Should find min at end of list"
+
+    print("Passed all tests!")
+
+
+def main():
+    print("The greatest weekly-tempurature program, ever!")
+    print()
+    print("Please enter the tempuratures for the following days:")
+
+    weekly_tempuratures = []
+    i = 0
+    while i < len(DAYS):
+        day = DAYS[i]
+        try:
+            temp = float(input(f"{day}: "))
+        except:
+            print("Please enter a number.")
+        else:
+            weekly_tempuratures.append(temp)
+            i += 1
+    
+    print()
+
+    average = get_average(weekly_tempuratures)
+    print(f"The average for the week is {average} degrees.")
+
+    highest = get_maximum(weekly_tempuratures)
+    print(f"The weelky high is {highest} degrees.")
+
+    lowest = get_minimum(weekly_tempuratures)
+    print(f"The weekly low is {lowest} degrees.")
+
+
+tests()
+main()
 ```
 
 ## Error Handling 1 Solution
