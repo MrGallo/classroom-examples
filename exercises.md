@@ -84,7 +84,22 @@ above functions with user-friendly prompts and messages.
 
 Example output:
 ```
+The greatest weekly-tempurature program, ever!
 
+Please enter the tempuratures for the following days:
+Sunday: h
+Please enter a number.
+Sunday: 1
+Monday: 2
+Tuesday: 3
+Wednesday: 4
+Thursday: 5
+Friday: 6
+Saturday: 7
+
+The average for the week is 4.0 degrees.
+The weelky high is 7.0 degrees.
+The weekly low is 1.0 degrees.
 ```
 
 # Error Handling
