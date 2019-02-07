@@ -2,21 +2,23 @@
 
 ## Input
 ```python
+
 TAX_RATE = 0.13
 
-item_cost = float(input("Please enter the item cost: "))
-# input returns a STRING!!
-# Must convert strings to either float or int to be able to do mathematical operations on it.
 
-quantity = int(input("Quantity: "))
+print("Enter item cost:")
+item_cost = float(input())
+
+print("Enter quantity:")
+quantity = int(input())
+
 subtotal = item_cost * quantity
 tax = subtotal * TAX_RATE
 total_cost = subtotal + tax
 
-print()
-print(f"Subtotal: ${subtotal}")
-print(f"Tax: ${tax}")
-print(f"Total: ${total_cost}")
+print("Subtotal: $", subtotal)
+print("Tax: $", tax)
+print("Total: $", total_cost)
 
 # some message with the total cost
 # different ways you can format text
@@ -24,10 +26,6 @@ print()
 print("Your total cost is:", total_cost)
 print(f"Your total cost is: {total_cost}")
 print("Your total cost is: {}".format(total_cost))
-
-# Next Step
-# Create a variable to store the tax rate. Is this user inputted, or something the programmer codes in manually?
-# Calculate the tax, output it and include it in total cost.
 
 ```
 
