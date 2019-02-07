@@ -1,4 +1,56 @@
 # Exercises
+
+## Modulus
+Complete the following problems which make use of the modulus `%` operator.
+
+1. In the shell, try to use integer division and modulus to convert minutes -> hours and minutes.
+E.g., 63 minutes is 1 hour, 3 minutes.
+    ```python
+    >>> 63 // ?  # should give you hours
+    >>> 63 % ?  # should give you minutes
+    ```
+2. Write a program that stores the number of minutes in a variable called `total_minutes`.
+The program will calculate the number of whole hours in a variable called `hours` and leftover minutes
+in a variable called `minutes`. Use the `print()` function to output the result. If this is
+ too easy, try to output it in the format of `HH:MM` with leading zeros. 
+ With [.format](http://lmgtfy.com/?q=python+.format+leading+zeros).
+ or [f-strings](https://stackoverflow.com/a/42562236/9754461)
+3. Lets say you have a game that keeps track of the number of frames in a variable called `frame_count`. 
+Assume games run at 60 frames per second. If you want to have an enemy shoot a lazer every second, 
+how many frames need to pass before the enemy shoots? List out three or four `frame_count`s that will allow
+a lazer to be shot. What is the relationship with those numbers and division, remainder division, and the 
+frames per second? Can you think of a way, mathematically, that will calculate when the enemy can fire?
+4. Write a program to store the total number of cents. Call the variable `total_cents` and give it a value.
+Compute from the total cents, the number of whole dollars and cents using integer division and modulus.
+5. Modify the program above to tell the user how many pennies, nickles, dimes, quarters, loonies and toonies
+that will be. The output should look something like:
+    ```
+    245 cents is:
+    1 - toonie
+    0 - loonie
+    1 - quarter
+    2 - dime
+    0 - nickle
+    0 - penny
+    ```
+6. There are `n` students in the class, and they are all given an id `0 to n-1`. Create a variable to 
+store one student's id. E.g., `student_id = 35`. Assign them a group number
+by using modulus. There will be 5 groups. The group numbers will be 0-4. The output should look like:
+    **Example 1:**
+    ```
+    Student id: 9
+    You are in group #4.
+    ```
+    **Example 2:**
+    ```
+    Student id: 6
+    You are in group #1.
+    ```
+7. In the shell, experiment with any number, `n % 2`. What is the relationship between the result 
+and whether the number is even or odd?
+8. Having understood #7, how would you check if a number is a multiple of 3? 4? Test your hypotheses in 
+the shell.
+
 ## Functions 1
 
 Create a function:
@@ -114,6 +166,59 @@ From [Error Handling](https://colab.research.google.com/drive/1I9ss_cFN7tHDXkKWQ
     - Catch this error differntly from the `ValueError` caused by the `int()` function when trying to convert invalid values to integers.
 
 # Solutions
+## Modulus Solutions
+**1.**
+```python
+>>> 63 // 60
+1
+>>> 63 % 60   
+3
+```
+ 
+**2.**
+
+```python
+hours = total_minutes // 60
+minutes = total_minutes % 60
+
+print(f"Hours: {hours}, Minutes: {minutes}")
+
+# with formatting
+print(f"{hours:02d}:{minutes:02d}")  
+print("{:02d}:{:02d}".format(hours, minutes))
+```
+**3.**
+The enemy should shoot if `frame_count` is `60, 120, 180, 240...`.
+They are all multiples of `60`.
+When you divide those numbers by `60` you should get a whole number. This means, there is no remainder.
+When you use modulus on those numbers, the result is `0`. E.g., `120 % 60 == 0`. Any `frame_count` value 
+that returns a result of `0` when you modulus 60, is a multiple of 60 and the game should therefore fire the lazer that frame.
+
+```python
+>>> 35 % 60 
+35  # do NOT fire this frame
+>>> 120 % 60
+0  # FIRE!
+>>> 121 % 60
+1  # do NOT fire
+>>> 3872220 % 60
+0  # FIRE!
+```
+
+// TODO: finish answers for modulus
+4. Write a program to store the total number of cents. Call the variable `total_cents` and give it a value.
+Compute from the total cents, the number of whole dollars and cents using integer division and modulus.
+5. Modify the program above to tell the user how many pennies, nickles, dimes, quarters, loonies and toonies
+that will be. The output should look something like:
+6. There are `n` students in the class, and they are all given an id `0 to n-1`. Create a variable to 
+store one student's id. E.g., `student_id = 35`. Assign them a group number
+by using modulus. There will be 5 groups. The group numbers will be 0-4. The output should look like:
+7. In the shell, experiment with any number, `n % 2`. What is the relationship between the result 
+and whether the number is even or odd?
+8. Having understood #7, how would you check if a number is a multiple of 3? 4? Test your hypotheses in 
+the shell.
+
+
 ## Functions 1 Solution
 ```python
 def say_hello():
