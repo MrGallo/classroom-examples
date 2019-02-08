@@ -1,6 +1,38 @@
 # The Python Workbook
-The Missing Solutions
+Missing solutions and Mr. Gallo solutions
 
+## Introduction to Programming
+### Exercise 1: Mailing Address
+I suggest first printing the information of the school (not your personal information). Then, refactoring those strings into variables. Do not store formatting characters (spaces and commas) in your variables!
+
+**Part 1 Solution:**
+```python
+print("St. Robert Catholic High School")
+print("8101 Leslie St.")
+print("Thornhill, ON")
+print("L3T 7P4")
+print("905-889-4982")
+```
+**Part 2 Solution:**
+```python
+name = "St. Robert Catholic High School"
+address = "8101 Leslie St."
+city = "Thornhill"
+province = "ON"
+postal_code = "L3T 7P4"
+telephone = "905-889-4982"
+
+print(name)
+print(address)
+
+print(f"{city}, {province}")
+print("{}, {}".format(city, province))
+# which formatting method do you prefer?
+
+print(postal_code)
+print(telephone)
+
+```
 ## Functions
 ### Exercise 81: Compute the Hypotenuse
 ```python
