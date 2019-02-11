@@ -33,6 +33,26 @@ print(postal_code)
 print(telephone)
 
 ```
+### Exercise 2: Hello
+```python
+name = input("Please enter your name: ")
+print(f"Hello, {name}. Nice to meet you!")
+
+# ---- Extra ----
+mood = input("How are you feeling? ")
+
+# ----- ADVANCED----
+if mood == "good":
+    print("Blessed.")
+elif mood == "bad":
+    print("Aww. It will get better!")
+elif mood == "criminal":
+    print("Calling police...")
+else:
+    print("Ok. Bye.")
+
+```
+
 ## Functions
 ### Exercise 81: Compute the Hypotenuse
 ```python
