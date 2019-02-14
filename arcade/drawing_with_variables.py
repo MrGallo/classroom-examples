@@ -6,8 +6,8 @@ HEIGHT = 480
 
 # Get user input for x, y and radius.
 x = int(input("Enter x location: "))
-y = 350
-radius = 100
+y = int(input("Enter y location: "))
+radius = int(input("Enter radius: "))
 
 arcade.open_window(WIDTH, HEIGHT, "My Drawing")
 arcade.set_background_color(arcade.color.WHITE)
