@@ -1,4 +1,13 @@
 # Instruction
+## Output
+```python
+name = "Frank"
+age = 50
+
+print("Hello, my name is " + name + ". I am " + str(age) + " years old.")  # concatenation (messy)
+print(f"Hello, my name is {name}. I am {age} years old.")                  # f-strings     (clear)
+print("Hello, my name is {}. I am {} years old.".format(name, age))        # "dot" format  (clear)
+```
 
 ## Input
 ```python
