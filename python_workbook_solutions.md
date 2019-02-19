@@ -53,6 +53,20 @@ else:
 
 ```
 
+### Exercise 4: Area of a Field
+```python
+print("Calculate the acreage of a field.")
+print("Enter dimensions in feet.")
+
+length = int(input("Length: "))
+width = int(input("Width: "))
+
+sq_feet = length * width
+acres = sq_feet / 43560
+
+print(f"The field is {acres} acres.")
+```
+
 ## Functions
 ### Exercise 81: Compute the Hypotenuse
 ```python
