@@ -67,6 +67,23 @@ acres = sq_feet / 43560
 print(f"The field is {acres} acres.")
 ```
 
+### Exercise 5: Bottle Deposits
+```python
+print("Bottle Refund Calculator")
+print("=" * 24)
+print()
+
+num_small = int(input("Enter number of small bottles: "))
+num_large = int(input("Enter number of large bottles: "))
+
+refund_small = num_small * 0.10
+refund_large = num_large * 0.25
+refund_total = refund_small + refund_large
+
+print()
+print("Refund: ${}".format(refund_total))
+```
+
 ## Functions
 ### Exercise 81: Compute the Hypotenuse
 ```python
