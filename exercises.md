@@ -22,7 +22,8 @@ a lazer to be shot. What is the relationship with those numbers and division, re
 frames per second? Can you think of a way, mathematically, that will calculate when the enemy can fire?
 4. Write a program to store the total number of cents. Call the variable `total_cents` and give it a value.
 Compute from the total cents, the number of whole dollars and cents using integer division and modulus.
-5. Modify the program above to tell the user how many pennies, nickles, dimes, quarters, loonies and toonies
+5. Play around in the shell and try to isolate the last 2 digits from a 3-digit number. The last one digit from any number. Now try to isolate a digit in the hundreds column. The tens column.
+6. Modify the program above to tell the user how many pennies, nickles, dimes, quarters, loonies and toonies
 that will be. The output should look something like:
     ```
     245 cents is:
@@ -33,7 +34,7 @@ that will be. The output should look something like:
     0 - nickle
     0 - penny
     ```
-6. There are `n` students in the class, and they are all given an id `0 to n-1`. Create a variable to 
+7. There are `n` students in the class, and they are all given an id `0 to n-1`. Create a variable to 
 store one student's id. E.g., `student_id = 35`. Assign them a group number
 by using modulus. There will be 5 groups. The group numbers will be 0-4. The output should look like:
     **Example 1:**
@@ -46,9 +47,9 @@ by using modulus. There will be 5 groups. The group numbers will be 0-4. The out
     Student id: 6
     You are in group #1.
     ```
-7. In the shell, experiment with any number, `n % 2`. What is the relationship between the result 
+8. In the shell, experiment with any number, `n % 2`. What is the relationship between the result 
 and whether the number is even or odd?
-8. Having understood #7, how would you check if a number is a multiple of 3? 4? Test your hypotheses in 
+9. Having understood #7, how would you check if a number is a multiple of 3? 4? Test your hypotheses in 
 the shell.
 
 ## Functions 1
@@ -208,15 +209,12 @@ that returns a result of `0` when you modulus 60, is a multiple of 60 and the ga
 // TODO: finish answers for modulus
 4. Write a program to store the total number of cents. Call the variable `total_cents` and give it a value.
 Compute from the total cents, the number of whole dollars and cents using integer division and modulus.
-5. Modify the program above to tell the user how many pennies, nickles, dimes, quarters, loonies and toonies
+5. Play around in the shell and try to isolate the last 2 digits from a 3-digit number. The last one digit from any number. Now try to isolate a digit in the hundreds column. The tens column.
+6. Modify the program above to tell the user how many pennies, nickles, dimes, quarters, loonies and toonies
 that will be. The output should look something like:
-6. There are `n` students in the class, and they are all given an id `0 to n-1`. Create a variable to 
+7. There are `n` students in the class, and they are all given an id `0 to n-1`. Create a variable to 
 store one student's id. E.g., `student_id = 35`. Assign them a group number
 by using modulus. There will be 5 groups. The group numbers will be 0-4. The output should look like:
-7. In the shell, experiment with any number, `n % 2`. What is the relationship between the result 
-and whether the number is even or odd?
-8. Having understood #7, how would you check if a number is a multiple of 3? 4? Test your hypotheses in 
-the shell.
 
 
 ## Functions 1 Solution
