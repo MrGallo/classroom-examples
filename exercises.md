@@ -23,7 +23,7 @@ frames per second? Can you think of a way, mathematically, that will calculate w
 4. Write a program to store the total number of cents. Call the variable `total_cents` and give it a value.
 Compute from the total cents, the number of whole dollars and cents using integer division and modulus.
 5. Play around in the shell and try to isolate the last 2 digits from a 3-digit number. The last one digit from any number. Now try to isolate a digit in the hundreds column. The tens column.
-6. Modify the program above to tell the user how many pennies, nickles, dimes, quarters, loonies and toonies
+6. Modify program #4 above to tell the user how many pennies, nickles, dimes, quarters, loonies and toonies
 that will be. The output should look something like:
     ```
     245 cents is:
@@ -206,12 +206,45 @@ that returns a result of `0` when you modulus 60, is a multiple of 60 and the ga
 0  # FIRE!
 ```
 
+**4.**
+``python
+total_cents = int(input("Enter number of cents: "))
+
+dollars = total_cents // 100
+cents = total_cents % 100
+
+print(f"{dollars} dollars and {cents} cents.")
+```
+
+**6.**
+```python
+cents = int(input("Enter the amount of cents: "))
+
+toonies = cents // 200
+cents = cents % 200  # calculate remaining cents after toonies
+
+loonies = cents // 100
+cents = cents % 100
+
+quarters = cents // 25
+cents = cents % 25
+
+dimes = cents // 10
+cents = cents % 10
+
+nickles = cents // 5
+cents = cents % 5
+
+pennies = cents
+
+print(f"Toonies: {toonies}")
+print(f"Loonies: {loonies}")
+print(f"Quarters: {quarters}")
+print(f"Dimes: {dimes}")
+print(f"Nickles: {nickles}")
+print(f"Pennies: {pennies}")
+```
 // TODO: finish answers for modulus
-4. Write a program to store the total number of cents. Call the variable `total_cents` and give it a value.
-Compute from the total cents, the number of whole dollars and cents using integer division and modulus.
-5. Play around in the shell and try to isolate the last 2 digits from a 3-digit number. The last one digit from any number. Now try to isolate a digit in the hundreds column. The tens column.
-6. Modify the program above to tell the user how many pennies, nickles, dimes, quarters, loonies and toonies
-that will be. The output should look something like:
 7. There are `n` students in the class, and they are all given an id `0 to n-1`. Create a variable to 
 store one student's id. E.g., `student_id = 35`. Assign them a group number
 by using modulus. There will be 5 groups. The group numbers will be 0-4. The output should look like:
