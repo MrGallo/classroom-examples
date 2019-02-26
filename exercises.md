@@ -207,7 +207,7 @@ that returns a result of `0` when you modulus 60, is a multiple of 60 and the ga
 ```
 
 **4.**
-``python
+```python
 total_cents = int(input("Enter number of cents: "))
 
 dollars = total_cents // 100
