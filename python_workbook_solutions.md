@@ -84,6 +84,52 @@ print()
 print("Refund: ${}".format(refund_total))
 ```
 
+## If Statements
+### Exercise 34: Even or odd?
+```python
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+```
+
+### Exercise 35: Dog Years
+```python
+years = int(input("Number of years: "))
+
+if years <= 2:
+    dog_years = years * 10.5
+else:
+    first_two = 2 * 10.5
+    years_left = years - 2
+    remaining_years = years_left * 4
+    dog_years = first_two + remaining_years
+
+print(dog_years)
+```
+
+### Exercise 36: Vowel or Consonant
+```python
+letter = input("Enter a letter: ")
+
+if letter == "a":
+    print("Vowel")
+elif letter == "e":
+    print("Vowel")
+elif letter == "i":
+    print("Vowel")
+elif letter == "o":
+    print("Vowel")
+elif letter == "u":
+    print("Vowel")
+elif letter == "y":
+    print("Y is sometimes a vowel")
+else:
+    print("Consonant")
+```
+
 ## Functions
 ### Exercise 81: Compute the Hypotenuse
 ```python
