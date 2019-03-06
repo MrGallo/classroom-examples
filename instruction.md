@@ -38,6 +38,46 @@ print("Your total cost is: {}".format(total_cost))
 
 ```
 
+## Looping through iterables
+```python
+"""
+- Iterables
+    - Things through which you are ABLE TO ITERATE
+    - Loop or go through them
+
+- Strings
+    - Iterate through a string and say each character.
+    - "hello"
+- Lists
+- Tuples
+- Ranges
+"""
+
+my_str = "hello"
+for char in my_str:
+    """For every character in the string my_str, print the character"""
+    print(char)
+
+
+numbers = [7, 7, 2, 7, 11]
+for num in numbers:
+    """For every number in the list of numbers, print the number."""
+    print(num)
+
+
+marks = [84, 89, 90, 45, 67]
+for mark in marks:
+    """For every mark in the list of marks, print the mark"""
+    print(mark)
+
+
+for num in range(10):
+    """For every number in the range, print the number"""
+    print(num)
+
+
+```
+
 ## Functions
 ```python
 def print_sum(a, b):
