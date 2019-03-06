@@ -52,6 +52,12 @@ and whether the number is even or odd?
 9. Having understood #7, how would you check if a number is a multiple of 3? 4? Test your hypotheses in 
 the shell.
 
+## Loops 1
+1. Create a program that will ask the user for a word. The program will iterate through the string and print out each character except for the vowels.
+2. Create a list of numbers. Create a program that will iterate through the list and print only the numbers greater than 10.
+3. Create a list of numbers. Create a program that will iterate through the list and save the highest (maximum) value. Print out this value. Assume all numbers in the list are greater than 0.
+4. Ask the user for their name. Create a program that will loop OVER A RANGE and print each character of their name on seperate lines. You will access each character by using the character's index value. E.g., char = name[0]
+
 ## Functions 1
 
 Create a function:
@@ -248,6 +254,14 @@ print(f"Pennies: {pennies}")
 7. There are `n` students in the class, and they are all given an id `0 to n-1`. Create a variable to 
 store one student's id. E.g., `student_id = 35`. Assign them a group number
 by using modulus. There will be 5 groups. The group numbers will be 0-4. The output should look like:
+
+## Loops 1 Solutions
+
+// TODO: do answers
+1. Create a program that will ask the user for a word. The program will iterate through the string and print out each character except for the vowels.
+2. Create a list of numbers. Create a program that will iterate through the list and print only the numbers greater than 10.
+3. Create a list of numbers. Create a program that will iterate through the list and save the highest (maximum) value. Print out this value. Assume all numbers in the list are greater than 0.
+4. Ask the user for their name. Create a program that will loop OVER A RANGE and print each character of their name on seperate lines. You will access each character by using the character's index value. E.g., char = name[0]
 
 
 ## Functions 1 Solution
