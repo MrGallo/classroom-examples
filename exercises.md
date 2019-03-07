@@ -263,11 +263,36 @@ by using modulus. There will be 5 groups. The group numbers will be 0-4. The out
 
 ## Loops 1 Solutions
 
-// TODO: do answers
-1. Create a program that will ask the user for a word. The program will iterate through the string and print out each character except for the vowels.
-2. Create a list of numbers. Create a program that will iterate through the list and print only the numbers greater than 10.
-3. Create a list of numbers. Create a program that will iterate through the list and save the highest (maximum) value. Print out this value. Assume all numbers in the list are greater than 0.
-4. Ask the user for their name. Create a program that will loop OVER A RANGE and print each character of their name on seperate lines. You will access each character by using the character's index value. E.g., char = name[0]
+```python
+# 1
+word = "hello"
+for char in word:
+    if (char != "a" and char != "e" and char != "i" and
+            char != "o" and char != "u"):
+        print(char)
+
+# 2
+numbers = [5, 7, 2, 85, 1234, 32, 23]
+for num in numbers:
+    if num > 10:
+        print(num)
+
+# 3
+numbers = [5, 7, 2, 85, 1234, 32, 23]
+maximum = 0
+# maximum = numbers[0]  # Better to get the first element of the list
+for num in numbers:
+    if num > maximum:
+        maximum = num
+
+print(maximum)
+
+
+# 4
+name = "Frank"
+for i in range(len(name)):
+    print(f"index: {i}, char: {name[i]}")
+```
 
 ## Loops 2 Solutions
 ```python
