@@ -58,6 +58,12 @@ the shell.
 3. Create a list of numbers. Create a program that will iterate through the list and save the highest (maximum) value. Print out this value. Assume all numbers in the list are greater than 0.
 4. Ask the user for their name. Create a program that will loop OVER A RANGE and print each character of their name on seperate lines. You will access each character by using the character's index value. E.g., char = name[0]
 
+## Loops 2
+1. Create a loop that will print "hello" 10 times.
+2. Create a loop that will print out the multiples of 3 from 0 to 100.
+   Hint: use Modulus
+3. Create a loop that will add the numbers from 1-10. 1+2+3...+10
+
 ## Functions 1
 
 Create a function:
@@ -262,6 +268,29 @@ by using modulus. There will be 5 groups. The group numbers will be 0-4. The out
 2. Create a list of numbers. Create a program that will iterate through the list and print only the numbers greater than 10.
 3. Create a list of numbers. Create a program that will iterate through the list and save the highest (maximum) value. Print out this value. Assume all numbers in the list are greater than 0.
 4. Ask the user for their name. Create a program that will loop OVER A RANGE and print each character of their name on seperate lines. You will access each character by using the character's index value. E.g., char = name[0]
+
+## Loops 2 Solutions
+```python
+# 1
+for i in range(10):
+    print("hello")
+
+# 2 a
+for num in range(0, 101):
+    if num % 3 == 0:
+        print(num)
+
+# 2 b
+for num in range(3, 101, 3):
+    print(num)
+
+# 3
+total = 0
+for num in range(11):
+    total += num
+print(total)
+
+```
 
 
 ## Functions 1 Solution
