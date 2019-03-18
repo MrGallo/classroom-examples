@@ -64,6 +64,21 @@ the shell.
    Hint: use Modulus
 3. Create a loop that will add the numbers from 1-10. 1+2+3...+10
 
+## Loops 3
+Trace the following programs.
+```python 
+for num in range(5):
+    double = num * 2
+    print(double)
+```
+```python
+for i in range(1, 6):
+    a = i + 2
+    print(i)
+
+print(a)
+```
+
 ## Functions 1
 
 Create a function:
