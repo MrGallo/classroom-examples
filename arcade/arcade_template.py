@@ -11,6 +11,7 @@ def update(delta_time):
 
 def on_draw():
     arcade.start_render()
+    # Draw in here...
     arcade.draw_circle_filled(100, 100, 25, arcade.color.BLUE)
 
 
