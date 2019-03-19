@@ -14,9 +14,13 @@ def on_draw():
     # Draw in here...
 
     # Circle
+    arcade.draw_circle_outline(320, 240, 25, arcade.color.BLUE, 5)
     # Ellipse
+    arcade.draw_ellipse_filled(100, 100, 50, 100, arcade.color.RED)
     # Rectangle
+    arcade.draw_xywh_rectangle_filled(300, 20, 300, 50, arcade.color.ORANGE_PEEL)
     # Triangle
+    arcade.draw_triangle_outline(50, 50, 100, 100, 150, 50, arcade.color.WHITE, 15)
 
 
 def on_key_press(key, modifiers):
