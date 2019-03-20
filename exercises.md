@@ -79,7 +79,12 @@ for i in range(1, 6):
 print(a)
 ```
 
-## Loops 4
+## Loops - Graphics 1
+1. Create a for loop that will draw five circles horizontally at the following x coordinates. 
+   The y values, size and color of the circles could be anything. Use the `range()` function or a list.
+   `[50, 100, 150, 200, 250]`.
+
+## Loops - Graphics 2
 The goal is to use a for loop to draw a row of pine trees on the window.
 
 Follow the steps in order.
@@ -116,6 +121,18 @@ Follow the steps in order.
 4. Create a for loop that will iterate over a range() from your start point,
    to your end point, increasing by the amount of pixels they are apart.
    Place your tree code in the loop and use the loop variable as your tree's x location.
+
+## Lists - Graphics (Under construction)
+0. Create a for loop that will draw `10` vertical squares whose y-values are random and within the window. Look at [Python's `randrange()` or `randint()` functions](https://docs.python.org/3/library/random.html#random.randrange). You will notice an unexpected behaviour. The reason is the squares are being randomly assigned y-values *every* frame, which is 60 different y-values per second. We will deal with this in the next question. To keep the squares in the same position for each frame, you can only generate the random numbers once. Follow the steps to accomplish this:
+    - The `setup()` function runs only once.
+    - Create a **global** variable that holds an empty list. e.g., `y_values = []`.
+    - In the `setup()` function use a loop to add 10 random values to the `y_values` list.
+    - In the `draw()` function, use a loop to iterate through the `y_values` and draw the squares.
+0. Create a program that will be the night sky. Black background and `100` stars. Randomly assign the star's x *and* y values. Be sure to create a global list like the question before.
+
+## User Interface
+0. Create a program that will store, in a two variables, the health points and maximum health points of an RPG character.
+The program will draw a health bar. One rectangle
 
 ## Functions 1
 
