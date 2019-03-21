@@ -38,6 +38,33 @@ print("Your total cost is: {}".format(total_cost))
 
 ```
 
+## Loops and user input
+
+1. Create a program that takes 10 integers from the user as input and adds up all the numbers.
+2. Create a program that takes 10 letters from the user and counts how many vowels were given.
+```python
+# 1
+total = 0
+
+for _ in range(10):
+    num = int(input("Enter a number: "))
+    total += num
+
+print(total)
+
+
+# 2
+count = 0
+
+for _ in range(10):
+    letter = input("Enter a letter: ")
+    if letter in 'aeiou':
+        count += 1
+
+print(count)
+
+```
+
 ## Looping through iterables
 ```python
 """
