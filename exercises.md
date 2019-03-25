@@ -425,6 +425,54 @@ print(total)
 
 ```
 
+## Loops - Convert for to while 1 Solution
+```python
+# 1
+my_str = "hello"
+i = 0  # counter variable
+while i < len(my_str):
+    char = my_str[i]  # access by index
+    print(char)
+    i += 1  # increase counter
+
+
+# 2
+numbers = [7, 7, 2, 7, 11]
+i = 0
+while i < len(numbers):
+    num = numbers[i]
+    print(num)
+    i += 1
+
+# 3
+marks = [84, 89, 90, 45, 67]
+i = 0
+while i < len(marks):
+    mark = marks[i] 
+    print(mark)
+    i += 1
+
+# 4
+counter = 0
+while counter < 10:
+    print(counter)
+    counter += 1
+
+# 5
+counter = 5
+while counter < 100:
+    print(counter)
+    counter += 5
+
+# 6
+counter = 100
+while counter >= 0:
+    print(counter)
+    counter -= 5
+
+
+```
+
 
 ## Functions 1 Solution
 ```python
