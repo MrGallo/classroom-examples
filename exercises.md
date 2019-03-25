@@ -111,7 +111,7 @@ for i in range(5, 100, 5)
     print(i)
 
 # 6
-for i in range(100, -1, 5)
+for i in range(100, -1, -5)
     print(i)
 
 
