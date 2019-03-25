@@ -79,6 +79,44 @@ for i in range(1, 6):
 print(a)
 ```
 
+## Loops - Convert for to while 1
+```python
+
+# 1
+my_str = "hello"
+for char in my_str:
+    """For every character in the string my_str, print the character"""
+    print(char)
+
+
+# 2
+numbers = [7, 7, 2, 7, 11]
+for num in numbers:
+    """For every number in the list of numbers, print the number."""
+    print(num)
+
+# 3
+marks = [84, 89, 90, 45, 67]
+for mark in marks:
+    """For every mark in the list of marks, print the mark"""
+    print(mark)
+
+# 4
+for i in range(10):
+    """For every number in the range, print the number"""
+    print(i)
+
+# 5
+for i in range(5, 100, 5)
+    print(i)
+
+# 6
+for i in range(100, -1, 5)
+    print(i)
+
+
+```
+
 ## Loops - Graphics 1
 1. Create a for loop that will draw five circles horizontally at the following x coordinates. 
    The y values, size and color of the circles could be anything. Use the `range()` function or a list.
