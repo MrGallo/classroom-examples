@@ -449,8 +449,37 @@ print(total)
 
 ## Loops 4 Solution
 ```python
-# 1
+# 1 (The formatting is not important.)
+print("Cost             With tax")
+print("-------------------------------")
 
+for price in range(10, 101, 5):
+    with_tax = price * 1.13
+    print(f"${price:.2f}        ${with_tax:.2f}")
+
+# 2
+subtotal = 0
+
+for n in range(5):
+    cost = float(input(f"Enter the cost of item {n+1}: "))
+    subtotal += cost
+
+tax = subtotal * 0.13
+total_with_tax = subtotal + tax
+print(f"Subtotal: ${subtotal}")
+print(f"Tax: ${tax}")
+print(f"Total: ${total_with_tax}")
+
+# 3
+total = 0
+while True:
+    user_input = input("Enter a number, leave blank to stop: ")
+    if user_input == "":
+        break
+    else:
+        total += int(user_input)
+    
+print(total)
 ```
 
 ## Loops - Convert for to while 1 Solution
