@@ -79,6 +79,28 @@ for i in range(1, 6):
 print(a)
 ```
 
+## Loops 4
+1. create a for loop that will print off a table of data:
+    - the first column will the cost of items from 10 to 50 counting by 5, 
+    - the second column will be the total cost with 15% tax included
+    Example:
+    ```
+        Cost             With tax
+    -------------------------------
+        $10.00           $11.30
+        $15.00           $??.??
+        $20.00           $??.??
+    ```
+
+2. Create a loop that will ask the user for 5 numbers to input, the program will 
+calculate their total and add tax to it and output the final cost of all items with
+tax included. Output the subtotal, tax amount and total with tax.
+
+3. Create a while loop that will take numbers as user input and add them to a total.
+The program will stop asking when the user doesnt enter anything (empty st
+  ring "").
+
+
 ## Loops - Convert for to while 1
 ```python
 
@@ -422,6 +444,12 @@ total = 0
 for num in range(11):
     total += num
 print(total)
+```
+
+
+## Loops 4 Solution
+```python
+# 1
 
 ```
 
