@@ -101,23 +101,26 @@ def filter_starts_with_letter(words: List[str], letter: str) -> List[str]:
 
 ## Exceptions Goals
 ### 11
-- [Keep asking for an if invalid input given.](#exceptions---keep-asking-if-not-int)
-- [Prevent input index error. (IndexError)](#exceptions---choose-valid-list-index)
-- [Catch KeyboardInturrupt.](#exceptions---catch-keyboardinturrupt)
+- [Keep asking until inturrupt](#exceptions---keep-asking-if-not-int)
+- [Ensure valid selection from menu](#exceptions---choose-valid-list-index)
 
 [back to top](#section-goals)
 
 ### Exceptions - Keep asking if not int
 ```python
+total = 0
 while True:
     try:
-        num = int(input("Enter an integer: "))
+        num = int(input("Enter an integer, [ctrl+c] to stop: "))
     except ValueError:
         print(f"Error: not a valid integer. Try again.")
-    else:
+    except KeyboardInterrupt:
+        print("DONE\n")
         break
+    else:
+        total += num
 
-print(f"Your number is {num}.")
+print(f"The sum of your numbers is: {total}")
 ```
 [back to exceptions goals](#exceptions-goals)
 
@@ -143,22 +146,6 @@ while True:
         break
 
 print(f"Your chose: {selected_word}")
-```
-[back to exceptions goals](#exceptions-goals)
-
-### Exceptions - Catch KeyboardInturrupt
-```python
-while True:
-    try:
-        num = int(input("Enter a number, [ctrl+c] to stop: "))
-    except ValueError:
-        pass
-    except KeyboardInterrupt:
-        print()
-        print('all done.')
-        break
-    else:
-        print(f"You chose {num}. Good choice!")
 ```
 [back to exceptions goals](#exceptions-goals)
 
