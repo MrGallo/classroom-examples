@@ -100,6 +100,7 @@ def filter_starts_with_letter(words: List[str], letter: str) -> List[str]:
 [back to list goals](#lists-goals)
 
 ## Exceptions Goals
+### 11
 - [Keep asking for an if invalid input given.](#exceptions---keep-asking-if-not-int)
 - [Prevent input index error. (IndexError)](#exceptions---choose-valid-list-index)
 - [Catch KeyboardInturrupt.](#exceptions---catch-keyboardinturrupt)
