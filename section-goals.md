@@ -1,5 +1,7 @@
 # Section Goals
 - [Lists](#lists-goals)
+- [Exceptions](#exceptions-goals)
+
 ## Lists Goals
 ### 11
 - [Count the number of words that start/end with a specific string.](#lists---count-prefix)
@@ -8,6 +10,7 @@
 - [Replace items that meet a certain criteria.](#lists---replace-with)
 - [Filter a list (create a new list) of words to include only words that begin with a certain letter.](#lists---filter-first-letter)
 
+[back to top](#section-goals)
 
 ### Lists - Count Prefix
 ```python
@@ -19,7 +22,7 @@ def count_prefix(word_list: List[str], prefix: str) -> int:
             count += 1
     return count
 ```
-[back to top](#section-goals)
+[back to list goals](#lists-goals)
 
 ### Lists - Largest Item
 ```python
@@ -48,7 +51,7 @@ def largest_number(number_list: List[float]) -> float:
             largest_number = num
     return largest_number
 ```
-[back to top](#section-goals)
+[back to list goals](#lists-goals)
 
 ## Lists - Count Larger Than
 ```python
@@ -61,7 +64,7 @@ def count_larger_than(numbers: List[int], target_size: int) -> int:
     
     return count
 ```
-[back to top](#section-goals)
+[back to list goals](#lists-goals)
 
 ## Lists - Replace with
 With while loop:
@@ -82,7 +85,7 @@ def replace_with(words: List[str], search_string: str, replacement: str) -> List
             words[i] = replacement
     return words
 ```
-[back to top](#section-goals)
+[back to list goals](#lists-goals)
 
 ## Lists - Filter first letter
 ```python
@@ -94,4 +97,7 @@ def filter_starts_with_letter(words: List[str], letter: str) -> List[str]:
             new_list.append(word)
     return new_list
 ```
-[back to top](#section-goals)
+[back to list goals](#lists-goals)
+
+## Exceptions Goals
+blah
