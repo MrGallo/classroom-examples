@@ -53,7 +53,7 @@ def largest_number(number_list: List[float]) -> float:
 ```
 [back to list goals](#lists-goals)
 
-## Lists - Count Larger Than
+### Lists - Count Larger Than
 ```python
 def count_larger_than(numbers: List[int], target_size: int) -> int:
     """Return the number of elements larger than the target size."""
@@ -66,7 +66,7 @@ def count_larger_than(numbers: List[int], target_size: int) -> int:
 ```
 [back to list goals](#lists-goals)
 
-## Lists - Replace with
+### Lists - Replace with
 With while loop:
 ```python
 def replace_substring_with(words: List[str], substr: str, replacement: str) -> List[str]:
@@ -87,7 +87,7 @@ def replace_with(words: List[str], search_string: str, replacement: str) -> List
 ```
 [back to list goals](#lists-goals)
 
-## Lists - Filter first letter
+### Lists - Filter first letter
 ```python
 def filter_starts_with_letter(words: List[str], letter: str) -> List[str]:
     """Returns a filtered list of only the words that start with the given letter."""
@@ -100,4 +100,64 @@ def filter_starts_with_letter(words: List[str], letter: str) -> List[str]:
 [back to list goals](#lists-goals)
 
 ## Exceptions Goals
-blah
+- [Keep asking for an if invalid input given.](#exceptions---keep-asking-if-not-int)
+- [Prevent input index error. (IndexError)](#exceptions---choose-valid-list-index)
+- [Catch KeyboardInturrupt.](#exceptions---catch-keyboardinturrupt)
+
+[back to top](#section-goals)
+
+### Exceptions - Keep asking if not int
+```python
+while True:
+    try:
+        num = int(input("Enter an integer: "))
+    except ValueError:
+        print(f"Error: not a valid integer. Try again.")
+    else:
+        break
+
+print(f"Your number is {num}.")
+```
+[back to exceptions goals](#exceptions-goals)
+
+### Exceptions - Choose valid list index
+```python
+word_list = [...]  # some list of words
+
+while True:
+    # Print out the menu options
+    print("Select a list item from the menu:")
+    for i, word in enumerate(word_list):
+        print(f"[{i}] {word}")
+
+    try:
+        index = int(input("Your choice: "))
+        selected_word = word_list[index]
+    except ValueError:
+        print(f"Error: not a valid integer. Try again.")
+    except IndexError:
+        print(f"Not a valid menu option. Press [Enter] to try again.")
+        input()
+    else:
+        break
+
+print(f"Your chose: {selected_word}")
+```
+[back to exceptions goals](#exceptions-goals
+
+### Exceptions - Catch KeyboardInturrupt
+```python
+while True:
+    try:
+        num = int(input("Enter a number, [ctrl+c] to stop: "))
+    except ValueError:
+        pass
+    except KeyboardInterrupt:
+        print()
+        print('all done.')
+        break
+    else:
+        print(f"You chose {num}. Good choice!")
+```
+[back to exceptions goals](#exceptions-goals)
+
