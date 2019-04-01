@@ -144,7 +144,7 @@ while True:
 
 print(f"Your chose: {selected_word}")
 ```
-[back to exceptions goals](#exceptions-goals
+[back to exceptions goals](#exceptions-goals)
 
 ### Exceptions - Catch KeyboardInturrupt
 ```python
