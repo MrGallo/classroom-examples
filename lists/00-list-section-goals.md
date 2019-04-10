@@ -1,4 +1,13 @@
-## Lists - Append in loop
+# Lists Section Goals
+- [Append user input to a list using a loop](#append-in-loop)
+- [Count the number of words that start/end with a specific string](#count-startswith)
+- Find the largest item in a list
+- Items whose length is greater than a specific value.
+- Find words that have more than a specific number of vowels.
+- Find words with the largest consonant streak.
+- Filter a list (create a new list) of words to include only words that begin with a vowel.
+
+## Append in loop
 ```python
 # create a loop that will read in 5 integer values into a list.
 
@@ -10,7 +19,7 @@ for pos in range(5):
 print(numbers)
 ```
 
-## Lists - Count Startswith
+## Count Startswith
 ```python
 # create a program that will count the number of words that start with 
 # the letter "h"
