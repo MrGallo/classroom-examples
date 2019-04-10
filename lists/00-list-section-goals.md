@@ -1,7 +1,7 @@
 # Lists Section Goals
 - [Append user input to a list using a loop](#append-in-loop)
 - [Count the number of words that start/end with a specific string](#count-startswith)
-- Check if a value is in a list
+- [Check if a value is in a list](#search-list)
 - Find the largest item in a list
 - Items whose length is greater than a specific value.
 - Find words that have more than a specific number of vowels.
@@ -32,3 +32,21 @@ for word in words:
         count += 1
 
 print(count)
+```
+
+## Search list
+```python
+words = ["one", "two", "three", "four", "five"]
+
+target = input("Enter search-word: ")
+index = -1
+i = 0
+while i < len(words):
+    word = words[i]
+    if word == target:
+        index = i
+        break
+    i += 1
+
+print(index)
+```
