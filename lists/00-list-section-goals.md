@@ -9,7 +9,6 @@
 - Filter a list (create a new list) of words to include only words that begin with a vowel.
 
 ## Append in loop
-<div style="user-select: none;">
 ```python
 # create a loop that will read in 5 integer values into a list.
 
@@ -19,7 +18,7 @@ for _ in range(5):
     numbers.append(num)  # append number to list
 
 print(numbers)
-```</div>
+```
 
 ## Count Startswith
 ```python
