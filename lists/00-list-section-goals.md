@@ -36,6 +36,7 @@ print(count)
 
 ## Search list
 ```python
+# Create a program that will search a list for a particular value and print out its index location.
 words = ["one", "two", "three", "four", "five"]
 
 target = input("Enter search-word: ")
@@ -53,6 +54,7 @@ print(index)
 
 ## Find largest
 ```python
+# Create a program that will scan a list for the largest value and print out the value.
 marks = [65, 87, 34, 98, 33, 75, 12, 76, 99, 76]
 
 highest = marks[0]
