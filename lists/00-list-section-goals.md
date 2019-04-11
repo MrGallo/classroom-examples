@@ -50,3 +50,15 @@ while i < len(words):
 
 print(index)
 ```
+
+## Find largest
+```python
+marks = [65, 87, 34, 98, 33, 75, 12, 76, 99, 76]
+
+highest = marks[0]
+for mark in marks:
+    if mark > highest:
+        highest = mark
+
+print(highest)
+```
