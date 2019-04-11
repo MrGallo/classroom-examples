@@ -13,8 +13,8 @@
 # create a loop that will read in 5 integer values into a list.
 
 numbers = []  # initialize list
-for pos in range(5):
-    num = int(input(f"Enter a number ({pos+1} of 5): "))
+for _ in range(5):
+    num = int(input(f"Enter a number: "))
     numbers.append(num)  # append number to list
 
 print(numbers)
