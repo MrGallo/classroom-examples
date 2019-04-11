@@ -2,7 +2,7 @@
 - [Append user input to a list using a loop](#append-in-loop)
 - [Count the number of words that start/end with a specific string](#count-startswith)
 - [Check if a value is in a list](#search-list)
-- Find the largest item in a list
+- [Find the largest item in a list](#find-largest)
 - Items whose length is greater than a specific value.
 - Find words that have more than a specific number of vowels.
 - Find words with the largest consonant streak.
