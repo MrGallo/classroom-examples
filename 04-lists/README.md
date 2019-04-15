@@ -64,7 +64,7 @@ print(highest)
 
 ## Filter a List
 ```python
-# Create a copy of an integer list whose values are greater than or equal to 50.
+# Create a copy of an integer list, but only the values which are greater than or equal to 50.
 ```
 
 ```python
