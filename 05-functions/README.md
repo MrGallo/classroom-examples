@@ -7,6 +7,7 @@
 - **Return** one or more results from a function
 - **Refactor** existing code into functions.
 - Test a function using **assertions**.
+- Trace with the call-stack
 
 ## Define and call a main function
 ```python
