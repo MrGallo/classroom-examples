@@ -65,5 +65,12 @@ print(highest)
 ## Filter a List
 ```python
 # Filter out all negative numbers from an integer list.
+numbers = [-16, -83, 53, -42, 33, -35, -89, -63, -21, -33]
 
+non_negatives = []
+for num in numbers:
+    if num >= 0:
+        non_negatives.append(num)
+
+print(non_negatives)  # [53, 33]
 ```
