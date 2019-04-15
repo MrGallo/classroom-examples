@@ -1,4 +1,5 @@
 # Functions Section Goals
+- [Define and call a main function](#define-and-call-a-main-function)
 - **Define** a function
 - **Call** a function that you have defined
 - **Global** vs **local** variables
@@ -7,7 +8,7 @@
 - **Refactor** existing code into functions.
 - Test a function using **assertions**.
 
-## Define and call a function
+## Define and call a main function
 ```python
 def main():
     print("Hello, world!")
