@@ -7,3 +7,12 @@
 - **Refactor** existing code into functions.
 - Test a function using **assertions**.
 
+## Define and call a function
+```python
+def main():
+    print("Hello, world!")
+
+
+if __name__ == "__main__":
+    main()
+```
