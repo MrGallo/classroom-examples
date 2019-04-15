@@ -3,10 +3,7 @@
 - [Count the number of words that start/end with a specific string](#count-startswith)
 - [Check if a value is in a list](#search-list)
 - [Find the largest item in a list](#find-largest)
-- Items whose length is greater than a specific value.
-- Find words that have more than a specific number of vowels.
-- Find words with the largest consonant streak.
-- Filter a list (create a new list) of words to include only words that begin with a vowel.
+- [Filter a list](#filter-a-list)
 
 ## Append in loop
 ```python
@@ -63,4 +60,13 @@ for mark in marks:
         highest = mark
 
 print(highest)
+```
+
+## Filter a List
+```python
+# Create a copy of an integer list whose values are greater than or equal to 50.
+```
+
+```python
+# Filter out all strings from a list that start with the letter a.
 ```
