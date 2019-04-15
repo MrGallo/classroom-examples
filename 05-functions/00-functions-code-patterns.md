@@ -18,7 +18,7 @@ Create a `main` function whose only purpose is to print out the phrase `Hello, F
 Output,
 If Statements
 
-*Resources*: [video](), [code](#code-create-main)
+*Resources*: [video](https://youtu.be/hx3W2aiv14c), [code](#code-create-main)
 
 [[top]](#)
 
@@ -50,7 +50,7 @@ print(f"Total: ${round(total, 2)}")
 If Statements,
 [Create Main](#create-main)
 
-*Resources*: [video](), [code](#code-refactor-main)
+*Resources*: [video](https://youtu.be/ISSPKc1YMFw), [code](#code-refactor-main)
 
 [[top]](#)
 
@@ -69,7 +69,7 @@ Create:
 *Prerequisets*:
 [Create Main](#create-main)
 
-*Resources*: [video](), [code](#code-increase-global-x)
+*Resources*: [code](#code-increase-global-x)
 
 [[top]](#)
 
@@ -87,7 +87,7 @@ Create:
 *Prerequisets*:
 [Increase Global x](#increase-global-x)
 
-*Resources*: [video](), [code](#code-increase-global-x-by)
+*Resources*: [code](#code-increase-global-x-by)
 
 [[top]](#)
 
@@ -102,7 +102,7 @@ Create a `main` function that will call the function `get_answer_to_life` and st
 *Prerequisets*:
 [Refactor main](#refactor-main)
 
-*Resources*: [video](), [code](#code-get-answer-to-life)
+*Resources*: [code](#code-get-answer-to-life)
 
 [[top]](#)
 
