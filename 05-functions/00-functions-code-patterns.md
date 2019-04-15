@@ -108,7 +108,7 @@ Create a `main` function that will call the function `get_answer_to_life` and st
 
 
 # Code
-#### Code: Create Main
+### Code: Create Main
 ```python
 def main():
     print("Hello, Functions!")
@@ -120,7 +120,7 @@ if __name__ == "__main__":
 [[back]](#create-main)
 
 
-#### Code: Refactor Main
+### Code: Refactor Main
 ```python
 TAX_RATE = 0.13 
 
@@ -145,7 +145,7 @@ if __name__ == "__main__":
 [[back]](#refactor-main)
 
 
-#### Code: Increase Global x
+### Code: Increase Global x
 ```python
 x = 5
 
@@ -166,7 +166,7 @@ if __name__ == "__main__":
 [[back]](#increase-global-x)
 
 
-#### Code: Increase Global x By
+### Code: Increase Global x By
 ```python
 x = 50
 
@@ -187,7 +187,7 @@ if __name__ == "__main__":
 [[back]](#increase-global-x-by)
 
 
-#### Code: Get Answer to Life
+### Code: Get Answer to Life
 ```python
 def main():
     answer = get_answer_to_life()
