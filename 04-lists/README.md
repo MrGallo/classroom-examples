@@ -64,9 +64,6 @@ print(highest)
 
 ## Filter a List
 ```python
-# Create a copy of an integer list, but only the values which are greater than or equal to 50.
-```
+# Filter out all negative numbers from an integer list.
 
-```python
-# Filter out all strings from a list that start with the letter a.
 ```
