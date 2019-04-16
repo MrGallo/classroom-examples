@@ -1,7 +1,7 @@
 # Functions Section Goals
 - [Define and call a main function](#define-and-call-a-main-function)
-- **Define** a function
-- **Call** a function that you have defined
+- [**Define** a function](#define-and-call-custom-functions)
+- [**Call** a function that you have defined](#define-and-call-custom-functions)
 - **Global** vs **local** variables
 - Pass one or more values to a function (**Arguments** and **Parameters**)
 - **Return** one or more results from a function
