@@ -87,7 +87,7 @@ Create:
 *Prerequisets*:
 [Increase Global x](#increase-global-x)
 
-*Resources*: [code](#code-increase-global-x-by)
+*Resources*: [video](https://youtu.be/BJTKpFjSoNk), [code](#code-increase-global-x-by)
 
 [[top]](#)
 
