@@ -44,3 +44,47 @@ hello
 hello
 goodbye
 ```
+
+# Global vs Local Variables
+```python
+x = 50
+
+def main():
+    x = 10
+    print(x)
+
+print(x)
+
+
+if __name__ == "__main__":
+    main()
+    print(x)
+```
+Outputs:
+```
+50
+10
+50
+```
+
+```python
+x = 50
+
+def main():
+    global x
+    x += 10
+    print(x)
+
+print(x)
+
+
+if __name__ == "__main__":
+    main()
+    print(x)
+```
+Outputs:
+```
+50
+60
+60
+```
