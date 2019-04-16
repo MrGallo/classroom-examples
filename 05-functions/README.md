@@ -18,3 +18,29 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+## Define and call custom functions
+```python
+def main():
+    say_hello()
+    say_hello()
+    say_goodbye()
+
+
+def say_hello():
+    print("hello")
+
+
+def say_goodbye():
+    print("goodbye")
+
+
+if __name__ == "__main__":
+    main()
+```
+**Outputs:**
+```
+hello
+hello
+goodbye
+```
