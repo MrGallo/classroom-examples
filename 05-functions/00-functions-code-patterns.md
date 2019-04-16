@@ -102,7 +102,7 @@ Create a `main` function that will call the function `get_answer_to_life` and st
 *Prerequisets*:
 [Refactor main](#refactor-main)
 
-*Resources*: [code](#code-get-answer-to-life)
+*Resources*: [video](https://youtu.be/oM1AE7s7UvU), [code](#code-get-answer-to-life)
 
 [[top]](#)
 
