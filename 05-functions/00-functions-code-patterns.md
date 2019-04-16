@@ -69,7 +69,7 @@ Create:
 *Prerequisets*:
 [Create Main](#create-main)
 
-*Resources*: [code](#code-increase-global-x)
+*Resources*: [video](https://youtu.be/rHf7JbtLJVk), [code](#code-increase-global-x)
 
 [[top]](#)
 
