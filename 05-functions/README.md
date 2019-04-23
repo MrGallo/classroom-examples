@@ -88,6 +88,20 @@ Outputs:
 60
 60
 ```
+
+## Pass Arguments
+```python
+def main():
+    print("calling add with 3 and 4 as aguments")
+   
+def add(a, b):
+    return a + b
+
+
+if __name__ == "__main__":
+    main()
+```
+
 ## Refactor Existing Code
 Before:
 ```python
