@@ -35,17 +35,6 @@ if __name__ == "__main__":
 # Test function for each function
 ```python
 
-def main():
-    print("Hello, welcome to the awesomeness")
-    print(f"3 + 4 = {add(3, 4)}")
-
-    print("also..")
-    apples = int(input("Enter apples: "))
-    more = int(input("How many more apples? "))
-    total = add(apples, more)
-    print(f"Total apples: {total}.")
-
-
 def add(a, b):
     return a + b
 
@@ -70,6 +59,5 @@ def test_sub():
 
 
 if __name__ == "__main__":
-    # main()
     tests()
 ```
