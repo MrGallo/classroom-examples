@@ -10,7 +10,6 @@ def add(a, b):
     return a + b
 
 
-
 assert add(3, 4) == 7
 assert add(-2, -5) == -7
 print("All tests passed!")
