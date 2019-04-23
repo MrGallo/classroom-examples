@@ -3,7 +3,7 @@
 - [**Define** a function](#define-and-call-custom-functions)
 - [**Call** a function that you have defined](#define-and-call-custom-functions)
 - [**Global** vs **local** variables](#global-vs-local-variables)
-- Pass one or more values to a function (**Arguments** and **Parameters**)
+- [Pass one or more values to a function (**Arguments** and **Parameters**)](#pass-arguments)
 - **Return** one or more results from a function
 - [**Refactor** existing code into functions.](#refactor-existing-code)
 - Test a function using **assertions**.
@@ -93,8 +93,10 @@ Outputs:
 ```python
 def main():
     print("calling add with 3 and 4 as aguments")
+    answer = add(3, 4)  # passing arguments
+    print(answer)
    
-def add(a, b):
+def add(a, b):  # defining parameters
     return a + b
 
 
