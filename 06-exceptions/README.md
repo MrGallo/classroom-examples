@@ -1,23 +1,39 @@
 ## Exceptions Goals
+- [Catch an error from user input](#catch-user-input-error)
 - [Keep asking until inturrupt](#exceptions---keep-asking-if-not-int)
 - [Ensure valid selection from menu](#exceptions---choose-valid-list-index)
 
 
+### Catch User Input Error
+Start with...
+```python
+num = int(input("Enter a number: "))
+result = num * 2
+print(f"{num} * 2 = {result}")
+```
+Solution:
+```python
+try:
+    num = int(input("Enter a number: "))
+except ValueError:
+    print("OOPS. Cant convert that to int.")
+else:
+    result = num * 2
+    print(f"{num} * 2 = {result}")
+```
+
 ### Exceptions - Keep asking if not int
 ```python
-total = 0
 while True:
     try:
-        num = int(input("Enter an integer, [ctrl+c] to stop: "))
+        num = int(input("Enter a number: "))
     except ValueError:
-        print(f"Error: not a valid integer. Try again.")
-    except KeyboardInterrupt:
-        print("DONE\n")
-        break
+        print("OOPS. Cant convert that to int.")
     else:
-        total += num
+        break
 
-print(f"The sum of your numbers is: {total}")
+result = num * 2
+print(f"{num} * 2 = {result}")
 ```
 
 ### Exceptions - Choose valid list index
