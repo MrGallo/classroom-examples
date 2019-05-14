@@ -1,10 +1,11 @@
 """
 Button Click
 
-1. Figure out how you want to represent a button. Create global variable(s) for it.
+1. Figure out how you want to represent a button. Create global variable(s)
+   for it.
 2. Draw the button using the information stored in the button's variable(s).
-3. In the on_mouse_press function, compare the mouse x and mouse y values to the
-   values of the button to determine if there was a click or not.
+3. In the on_mouse_press function, compare the mouse x and mouse y values to
+   the values of the button to determine if there was a click or not.
 """
 
 import arcade
@@ -15,6 +16,21 @@ HEIGHT = 480
 
 # There are better ways to represent buttons
 my_button = [100, 200, 150, 50]  # x, y, width, height
+
+
+def setup():
+    arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
+    arcade.set_background_color(arcade.color.WHITE)
+    arcade.schedule(update, 1/60)
+
+    # Override arcade window methods
+    window = arcade.get_window()
+    window.on_draw = on_draw
+    window.on_key_press = on_key_press
+    window.on_key_release = on_key_release
+    window.on_mouse_press = on_mouse_press
+
+    arcade.run()
 
 
 def update(delta_time):
@@ -49,21 +65,6 @@ def on_mouse_press(x, y, button, modifiers):
         print("Clicked!!!")
     else:
         print("not clicked")
-
-
-def setup():
-    arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
-    arcade.set_background_color(arcade.color.WHITE)
-    arcade.schedule(update, 1/60)
-
-    # Override arcade window methods
-    window = arcade.get_window()
-    window.on_draw = on_draw
-    window.on_key_press = on_key_press
-    window.on_key_release = on_key_release
-    window.on_mouse_press = on_mouse_press
-
-    arcade.run()
 
 
 if __name__ == '__main__':
