@@ -10,6 +10,7 @@ import arcade
 WIDTH = 640
 HEIGHT = 480
 
+# Parallel lists to store x and y values for each rain drop
 rain_x_positions = [100, 200, 300]
 rain_y_positions = [480, 480, 480]
 
@@ -36,6 +37,9 @@ def update(delta_time):
 def on_draw():
     arcade.start_render()
     # Draw in here...
+
+    # zip() pairs up values from multiple lists for we can
+    # iterate through multiple lists at once
     for x, y in zip(rain_x_positions, rain_y_positions):
         arcade.draw_circle_filled(x, y, 25, arcade.color.BLUE)
 

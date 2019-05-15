@@ -10,12 +10,17 @@ HEIGHT = 480
 
 rain = arcade.ShapeElementList()
 
+# first set up empty lists
 rain_x_positions = []
 rain_y_positions = []
 
+# loop 100 times
 for _ in range(100):
+    # generate random x and y values
     x = random.randrange(0, WIDTH)
     y = random.randrange(HEIGHT, HEIGHT*2)
+
+    # append the x and y values to the appropriate list
     rain_x_positions.append(x)
     rain_y_positions.append(y)
 

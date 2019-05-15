@@ -37,7 +37,6 @@ def update(delta_time):
         rain_y_positions[index] -= 1
 
         # read list values with square bracket notation
-        # e.g., my_list[3]
         if rain_y_positions[index] < 0:
             # modify list values using square bracket notation
             rain_y_positions[index] = 480
