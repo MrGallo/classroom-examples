@@ -39,6 +39,9 @@ def update(delta_time):
 def on_draw():
     arcade.start_render()
     draw_face(320, 240)
+    draw_face(100, 50)
+    for x in range(0, WIDTH+1, 80):
+        draw_face(x, 400)
 
 
 def draw_face(x, y):
