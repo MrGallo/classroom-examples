@@ -72,3 +72,24 @@ Choose a simple behaviour or feature of your game and code it. E.g., button clic
 ### 12. Source Assets
 One period to find images/sprites for your game. Use [Keeney.nl](www.keeney.nl).
 Get link to sprite pack.
+
+### 13. GitHub Setup
+Complete the [GitHub Tutorial](https://guides.github.com/activities/hello-world/)
+
+
+**Create your CPT repository**
+- One partner creates a repository called `CPT - <name of program>`.
+- The owner of the repository will add the partner as a **collaborator**.
+    - In the repository go to: `Settings -> Collaborators`
+    - Insert their username, full name or email address.
+    - Press the `Add Collaborator` button.
+    - They will now be able to edit the repository.
+
+**Understand the workflow**
+- Pull changes
+- Commit changes with descriptive message
+- Push changes
+
+**Resources**
+- [GitHub Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
