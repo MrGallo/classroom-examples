@@ -42,20 +42,23 @@ def on_draw():
 
 
 def draw_face():
+    x = 320
+    y = 240
+
     # face back
-    arcade.draw_ellipse_filled(320, 240, 35, 40, arcade.color.YELLOW)
+    arcade.draw_ellipse_filled(x, y, 35, 40, arcade.color.YELLOW)
 
     # left eye
-    arcade.draw_ellipse_filled(310, 250, 10, 13, arcade.color.WHITE)
-    arcade.draw_ellipse_filled(310, 250, 3, 3, arcade.color.BLACK)
+    arcade.draw_ellipse_filled(x-10, y+10, 10, 13, arcade.color.WHITE)
+    arcade.draw_ellipse_filled(x-10, y+10, 3, 3, arcade.color.BLACK)
 
     # right eye
-    arcade.draw_ellipse_filled(330, 250, 10, 13, arcade.color.WHITE)
-    arcade.draw_ellipse_filled(330, 250, 3, 3, arcade.color.BLACK)
+    arcade.draw_ellipse_filled(x+10, y+10, 10, 13, arcade.color.WHITE)
+    arcade.draw_ellipse_filled(x+10, y+10, 3, 3, arcade.color.BLACK)
 
     # mouth
-    arcade.draw_ellipse_filled(323, 225, 10, 7, arcade.color.BLACK)
-    arcade.draw_ellipse_filled(320, 230, 10, 7, arcade.color.YELLOW)
+    arcade.draw_ellipse_filled(x+3, y-15, 10, 7, arcade.color.BLACK)
+    arcade.draw_ellipse_filled(x, y-10, 10, 7, arcade.color.YELLOW)
 
 
 if __name__ == '__main__':
