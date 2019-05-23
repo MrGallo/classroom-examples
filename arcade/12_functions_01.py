@@ -1,6 +1,8 @@
 """
 1. Define a custom function called `draw_face`. Draw a face inside of it.
    Call the `draw_face` function in the `on_draw` function.
+[Starter Code]
+(https://github.com/MrGallo/classroom-examples/blob/bafb60c0f7188822263a5c703359648be127b213/arcade/12_functions_01.py)
 
 Next, make the function re-usable. As it stands, every time you call `draw_face`,
 it will draw the face in the same location. We want to be able to draw a face at
@@ -10,8 +12,14 @@ any location.
    all the draw commands' x and y locations relative to the `x` and `y` variables.
    Change the `x` and `y` values and confirm all the parts of the face are
    properly modified.
+[Step 2 Changes]
+(https://github.com/MrGallo/classroom-examples/commit/2bdf945a7e4562d7d8c4ff43a307fb7a935beb33#diff-7e4e0566072fe6add5a463761407d134)
+
 3. Turn the `x` and `y` (local) variables into parameter variables in the
    function definition.
+[Step 3 Changes]
+(https://github.com/MrGallo/classroom-examples/commit/9949effdc353db6065679c083fef4b7ac577b393#diff-7e4e0566072fe6add5a463761407d134)
+
 4. Call the `draw_face` function multiple times and at different locations
    in the `on_draw` function.
 """
