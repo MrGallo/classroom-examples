@@ -55,4 +55,5 @@ Iterative process
     - Problem: What if there are multiple high-level per group?
 
 **Individual roadblocks**
+
 How does the team deal with an individual holding up the progress?
