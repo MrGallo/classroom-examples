@@ -38,13 +38,10 @@ def update(delta_time):
 @window.event
 def on_draw():
     arcade.start_render()
-    draw_face()
+    draw_face(320, 240)
 
 
-def draw_face():
-    x = 320
-    y = 240
-
+def draw_face(x, y):
     # face back
     arcade.draw_ellipse_filled(x, y, 35, 40, arcade.color.YELLOW)
 
