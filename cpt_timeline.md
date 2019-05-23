@@ -1,4 +1,4 @@
-16 Fridays + 2 Week consolidation
+13 Fridays + 2 Week consolidation
 
 ### 1. Introduction
 - Ideas
