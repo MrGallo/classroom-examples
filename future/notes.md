@@ -27,7 +27,10 @@ Topics:
 # Project Based
 Groups of 5
 - Set up GitHub
-- Create a kanban board
+    - Accept assignment on GitHub classroom.
+    - Team lead creates the group, the others join it.
+- Create a "project" in the repository
+    - Select "Automated Kanban" template
     - Create user stories
     - Create product backlog
     - Create sprint backlog
@@ -42,7 +45,7 @@ Iterative process
 7. Repeat
 
 ## Issues
-**The Eager Beaver**
+### The Eager Beaver
 - How to prevent one eager coder from completing an entire project?
 - How to limit them and still make the project meaningful?
 
@@ -54,6 +57,7 @@ Iterative process
     - coach other members
     - Problem: What if there are multiple high-level per group?
 
-**Individual roadblocks**
+### Individual roadblocks
 
 How does the team deal with an individual holding up the progress?
+- Incentive for experts to help the noobs or the struggling.
