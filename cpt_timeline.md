@@ -78,6 +78,9 @@ Complete the [GitHub Tutorial](https://guides.github.com/activities/hello-world/
 
 
 **Create your CPT repository**
+
+**Manual**
+
 - One partner creates a repository called `CPT - <name of program>`.
 - The owner of the repository will add the partner as a **collaborator**.
     - In the repository go to: `Settings -> Collaborators`
@@ -85,10 +88,37 @@ Complete the [GitHub Tutorial](https://guides.github.com/activities/hello-world/
     - Press the `Add Collaborator` button.
     - They will now be able to edit the repository.
 
+
+**GitHub Classroom**
+- Follow the link on our Google classroom to accept the assignment. 
+- The leader of the group *creates* a group.
+- The other person will *join* that group.
+- GitHub will automatically set up your repository.
+
+
+**Create Project**
+- In your repository, go to projects, and create a new project.
+- Call it `CPT Progress`
+- Select the template `Automated Kanban`
+- Rename the first column to "Backlog"
+- Create a card in the Backlog and move it around.
+
+**Create First Issue**
+Issues assigned to a particular project will automatically be tracked in teh Backlog column.
+
+Go to your repository's issues and create a new issue:
+- Title: Complete README
+- Content: Include title of the program, along with a short description.
+- Select the appropriate project on the right column.
+- Create the issue.
+
+
 **Understand the workflow**
 - Pull changes
 - Commit changes with descriptive message
 - Push changes
+- Branches vs. different folders
+
 
 **Resources**
 - [GitHub Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
