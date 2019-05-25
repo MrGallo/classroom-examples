@@ -61,3 +61,25 @@ Iterative process
 
 How does the team deal with an individual holding up the progress?
 - Incentive for experts to help the noobs or the struggling.
+
+# Schedule
+- Two-week sprints
+    - Lessons
+    - Exercises
+    - Project
+        - Use of tools
+    - [Code review](#code-review)
+    - Evaluation
+
+|Time|Mon|Tues|Wed|Thurs|Fri|
+|---:|---|----|---|-----|---|
+|0|
+|10|
+|20|
+|30|
+|40|
+|50|
+|60|
+|70|
+
+
