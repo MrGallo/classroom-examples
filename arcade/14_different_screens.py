@@ -28,6 +28,10 @@ def on_draw():
         arcade.set_background_color(arcade.color.WHITE_SMOKE)
         arcade.draw_text("Main Menu", WIDTH/2, HEIGHT/2,
                          arcade.color.BLACK, font_size=30, anchor_x="center")
+    elif current_screen == "instructions":
+        arcade.set_background_color(arcade.color.BLUE_GRAY)
+        arcade.draw_text("Instructions", WIDTH/2, HEIGHT/2,
+                         arcade.color.BLACK, font_size=30, anchor_x="center")
 
 
 def on_key_press(key, modifiers):
