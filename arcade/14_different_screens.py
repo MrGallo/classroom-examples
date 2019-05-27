@@ -14,6 +14,8 @@ import arcade
 WIDTH = 640
 HEIGHT = 480
 
+current_screen = "menu"
+
 
 def update(delta_time):
     pass
@@ -22,7 +24,10 @@ def update(delta_time):
 def on_draw():
     arcade.start_render()
     # Draw in here...
-    arcade.draw_circle_filled(100, 100, 25, arcade.color.BLUE)
+    if current_screen == "menu":
+        arcade.set_background_color(arcade.color.WHITE_SMOKE)
+        arcade.draw_text("Main Menu", WIDTH/2, HEIGHT/2,
+                         arcade.color.BLACK, font_size=30, anchor_x="center")
 
 
 def on_key_press(key, modifiers):
