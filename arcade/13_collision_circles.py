@@ -16,15 +16,27 @@ import arcade
 WIDTH = 640
 HEIGHT = 480
 
+# Make the circles exist. What info we we need to store about them?
+# position
+# radius
+#         x,  y,  r
+ball_1 = [50, 50, 30]
+ball_2 = [100, 50, 60]
+
 
 def update(delta_time):
     pass
+    # check if collision
+        # print message
 
 
 def on_draw():
     arcade.start_render()
-    # Draw in here...
-    arcade.draw_circle_filled(100, 100, 25, arcade.color.BLUE)
+    # Draw ball 1
+    arcade.draw_circle_filled(ball_1[0], ball_1[1], ball_1[2], arcade.color.RED)
+
+    # Draw ball 2
+    arcade.draw_circle_filled(ball_2[0], ball_2[1], ball_2[2], arcade.color.BLUE)
 
 
 def on_key_press(key, modifiers):
