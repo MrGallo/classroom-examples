@@ -46,12 +46,18 @@ def on_draw():
 
 def on_key_press(key, modifiers):
     global current_screen
-    if key == arcade.key.I:
-        current_screen = "instructions"
-    elif key == arcade.key.ESCAPE:
-        current_screen = "menu"
-    elif key == arcade.key.P:
-        current_screen = "play"
+
+    if current_screen == "menu":
+        if key == arcade.key.I:
+            current_screen = "instructions"
+        elif key == arcade.key.P:
+            current_screen = "play"
+    elif current_screen == "instructions":
+        if key == arcade.key.ESCAPE:
+            current_screen = "menu"
+    elif current_screen == "play":
+        if key == arcade.key.ESCAPE:
+            current_screen = "menu"
 
 
 def on_key_release(key, modifiers):
