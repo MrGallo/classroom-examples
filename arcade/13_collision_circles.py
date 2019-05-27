@@ -9,7 +9,7 @@ Basically:
   'touching'.
 """
 
-
+import math
 import arcade
 
 
@@ -25,9 +25,14 @@ ball_2 = [100, 50, 60]
 
 
 def update(delta_time):
-    pass
-    # check if collision
-        # print message
+    # find distance between two points
+    a = ball_2[0] - ball_1[0]
+    b = ball_2[1] - ball_1[1]
+    dist = math.sqrt(a**2 + b**2)
+
+    # compare distance to r1 and r2
+    if dist < ball_1[2] + ball_2[2]:
+        print("they are touching")
 
 
 def on_draw():
