@@ -36,6 +36,10 @@ def on_draw():
                          arcade.color.BLACK, font_size=30, anchor_x="center")
         arcade.draw_text("ESC to go back", WIDTH/2, HEIGHT/2-60,
                          arcade.color.BLACK, font_size=20, anchor_x="center")
+    elif current_screen == "play":
+        arcade.set_background_color(arcade.color.ORANGE_RED)
+        arcade.draw_text("Play", WIDTH/2, HEIGHT/2,
+                         arcade.color.BLACK, font_size=30, anchor_x="center")
 
 
 def on_key_press(key, modifiers):
