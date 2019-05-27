@@ -16,9 +16,14 @@ HEIGHT = 480
 
 current_screen = "menu"
 
+ball_x = 0
+
 
 def update(delta_time):
-    pass
+    global ball_x
+
+    if current_screen == "play":
+        ball_x += 1
 
 
 def on_draw():
@@ -42,6 +47,8 @@ def on_draw():
         arcade.set_background_color(arcade.color.ORANGE_RED)
         arcade.draw_text("Play", WIDTH/2, HEIGHT/2,
                          arcade.color.BLACK, font_size=30, anchor_x="center")
+
+        arcade.draw_circle_filled(ball_x, 100, 30, arcade.color.WHITE)
 
 
 def on_key_press(key, modifiers):
