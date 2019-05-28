@@ -96,4 +96,5 @@ How does the team deal with an individual holding up the progress?
     - Project: Individual Lesson progress
     - Project: Individual problem progress
 - Use of **pull requests** (to main repo) to submit textbook/notes.
-- Use of **pull requests** (to fork) to do code review.
+- Use of **pull requests** (to fork) to do code intra-group review.
+    - Pull request to main repo to do inter-group code review.
