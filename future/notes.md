@@ -3,7 +3,7 @@
 - Able to write clean, organized code
 - Able to follow established coding style guidelines
 - Linux skills
-- JIRA/Confluence/Trello (project management/bug tracking software)
+- JIRA/Confluence/Trello/**GitHub Project Boards** (project management/bug tracking software)
 - Code reviews
 
 
@@ -83,3 +83,17 @@ How does the team deal with an individual holding up the progress?
 |70|
 
 
+# Class Repo
+- Groups of 5 will fork the main repo
+- Students responsible for collaboration on:
+    - Content text-book/notes
+    - Coding problems
+- Use of **issues** for:
+    - Help on problems
+    - Incorrect notes/code
+- Use of **project board**:
+    - Project: Textbook/notes
+    - Project: Individual Lesson progress
+    - Project: Individual problem progress
+- Use of **pull requests** (to main repo) to submit textbook/notes.
+- Use of **pull requests** (to fork) to do code review.
