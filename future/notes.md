@@ -20,7 +20,7 @@ Need formal and informal process
 
 Topics:
 - Readability
-- Conventions
+- Conventions/Style guidelines
 - Alternative approaches
 - Optimizations
 
