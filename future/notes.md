@@ -87,7 +87,10 @@ How does the team deal with an individual holding up the progress?
 - Groups of 5 will fork the main repo
 - Students responsible for collaboration on:
     - Content text-book/notes
-    - Coding problems
+    - [Coding for Life](#coding-for-life)
+    - [Coding problems](#coding-problems)
+        - Tests for coding problems
+    - [Software Products](#software-products)
 - Use of **issues** for:
     - Help on problems
     - Incorrect notes/code
@@ -98,3 +101,17 @@ How does the team deal with an individual holding up the progress?
 - Use of **pull requests** (to main repo) to submit textbook/notes.
 - Use of **pull requests** (to fork) to do code intra-group review.
     - Pull request to main repo to do inter-group code review.
+
+# Coding for Life
+Figure out how you can use what you know about programming to automate things or help with daily tasks.
+
+- Homework in various subjects
+- Step-by-step instructions
+- Tracking items/inventory
+
+# Software Products
+- Functional clones of existing apps/software 
+
+# Coding Problems
+- Functional
+- Pytest to validate programs
