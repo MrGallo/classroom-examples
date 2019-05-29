@@ -85,6 +85,7 @@ How does the team deal with an individual holding up the progress?
 
 # Class Repo
 - Groups of 5 will fork the main repo
+    - Students will move around groups over the semester according to need.
 - Students responsible for collaboration on:
     - Content text-book/notes
     - [Coding for Life](#coding-for-life)
