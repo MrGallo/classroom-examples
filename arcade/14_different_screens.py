@@ -45,6 +45,8 @@ def on_key_press(key, modifiers):
             current_screen = "instructions"
         elif key == arcade.key.P:
             current_screen = "play"
+        elif key == arcade.key.ESCAPE:
+            exit()
     elif current_screen == "instructions":
         if key == arcade.key.ESCAPE:
             current_screen = "menu"
