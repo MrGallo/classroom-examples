@@ -41,18 +41,33 @@ def on_key_press(key, modifiers):
     global current_screen
 
     if current_screen == "menu":
-        if key == arcade.key.I:
-            current_screen = "instructions"
-        elif key == arcade.key.P:
-            current_screen = "play"
-        elif key == arcade.key.ESCAPE:
-            exit()
+        menu_keybinds(key, modifiers)
     elif current_screen == "instructions":
-        if key == arcade.key.ESCAPE:
-            current_screen = "menu"
+        instructions_keybinds(key, modifiers)
     elif current_screen == "play":
-        if key == arcade.key.ESCAPE:
-            current_screen = "menu"
+        play_keybinds(key, modifiers)
+
+
+def menu_keybinds(key, modifiers):
+    global current_screen
+    if key == arcade.key.I:
+        current_screen = "instructions"
+    elif key == arcade.key.P:
+        current_screen = "play"
+    elif key == arcade.key.ESCAPE:
+        exit()
+
+
+def instructions_keybinds(key, modifiers):
+    global current_screen
+    if key == arcade.key.ESCAPE:
+        current_screen = "menu"
+
+
+def play_keybinds(key, modifiers):
+    global current_screen
+    if key == arcade.key.ESCAPE:
+        current_screen = "menu"
 
 
 def on_key_release(key, modifiers):
