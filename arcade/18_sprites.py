@@ -20,6 +20,9 @@ HEIGHT = 480
 
 player = arcade.Sprite('images/playerShip1_blue.png', center_x=WIDTH/2, center_y=HEIGHT/2, scale=0.5)
 
+# Add a horizontal speed to the player sprite
+player.change_x = 1
+
 
 def setup():
     arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
@@ -36,7 +39,9 @@ def setup():
 
 
 def update(delta_time):
-    pass
+    # By default, adds the sprite's speed to its location
+    # creating movement.
+    player.update()
 
 
 def on_draw():
