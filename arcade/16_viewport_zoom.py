@@ -86,10 +86,11 @@ def on_key_release(key, modifiers):
 
 
 def on_mouse_scroll(x, y, scroll_x, scroll_y):
-    # When scrolling up and down, the only number that changes
-    # is the scroll_y parameter. +1 for up and -1 for down.
-    print(x, y, scroll_x, scroll_y)
-
+    global zoom_level
+    if scroll_y == 1:  # scroll up, zoom in
+        zoom_level += 1
+    elif scroll_y == -1:  # scroll down, zoom out
+        zoom_level -= 1
 
 if __name__ == '__main__':
     setup()
