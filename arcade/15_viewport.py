@@ -46,12 +46,29 @@ def update(delta_time):
     elif keys_pressed[arcade.key.DOWN]:
         player_loc[1] -= MOVEMENT_SPEED
 
+    # Move the viewport according to where the player is.
+    arcade.set_viewport(-WIDTH/2 + player_loc[0],
+                        WIDTH/2 + player_loc[0],
+                        -HEIGHT/2 + player_loc[1],
+                        HEIGHT/2 + player_loc[1])
+
 
 def on_draw():
     arcade.start_render()
 
     # Draw player
     arcade.draw_circle_filled(player_loc[0], player_loc[1], 25, arcade.color.BLUE)
+
+    # Display specific locations. To prove the player is actually moving.
+    # Notice how this text 'moves' on the screen. This might be confusing.
+    # It's actually the player and the viewport (camera) that is moving.
+    # The text is actually drawing at the same location every time.
+
+    arcade.draw_text("(100, 100)", 100, 100, arcade.color.BLACK)
+    arcade.draw_text("(100, -100)", 100, -100, arcade.color.BLACK)
+    arcade.draw_text("(-100, -100)", -100, -100, arcade.color.BLACK)
+    arcade.draw_text("(-100, 100)", -100, 100, arcade.color.BLACK)
+    arcade.draw_text("(0, 0)", 0, 0, arcade.color.BLACK)
 
 
 def on_key_press(key, modifiers):
