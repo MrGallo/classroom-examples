@@ -18,6 +18,8 @@ os.chdir(file_path)
 WIDTH = 640
 HEIGHT = 480
 
+player = arcade.Sprite('images/playerShip1_blue.png', center_x=WIDTH/2, center_y=HEIGHT/2, scale=0.5)
+
 
 def setup():
     arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
@@ -40,7 +42,7 @@ def update(delta_time):
 def on_draw():
     arcade.start_render()
     # Draw in here...
-    arcade.draw_circle_filled(100, 100, 25, arcade.color.BLUE)
+    player.draw()
 
 
 def on_key_press(key, modifiers):
