@@ -53,8 +53,8 @@ def update(delta_time):
     # Move the viewport according to where the player is.
     arcade.set_viewport((-WIDTH/2 + player_loc[0]) + zoom_level,
                         (WIDTH/2 + player_loc[0]) - zoom_level,
-                        (-HEIGHT/2 + player_loc[1]) + zoom_level,
-                        (HEIGHT/2 + player_loc[1]) - zoom_level)
+                        (-HEIGHT/2 + player_loc[1]) + HEIGHT/WIDTH*zoom_level,
+                        (HEIGHT/2 + player_loc[1]) - HEIGHT/WIDTH*zoom_level)
 
 
 def on_draw():
