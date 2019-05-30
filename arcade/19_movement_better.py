@@ -3,6 +3,7 @@ Using built-in key-press tracking.
 Continuing from 07_player_movement.py
 """
 
+from pyglet.window.key import KeyStateHandler
 import arcade
 
 
@@ -13,11 +14,8 @@ HEIGHT = 480
 player_x = WIDTH/2
 player_y = HEIGHT/2
 
-# Variables to record if certain keys are being pressed.
-up_pressed = False
-down_pressed = False
-left_pressed = False
-right_pressed = False
+# A defaultdict that holds the key presses
+keys_pressed = KeyStateHandler()
 
 
 def setup():
@@ -28,15 +26,14 @@ def setup():
     # Override arcade window methods
     window = arcade.get_window()
     window.on_draw = on_draw
-    window.on_key_press = on_key_press
-    window.on_key_release = on_key_release
+    window.push_handlers(keys_pressed)
 
     arcade.run()
 
 
 def update(delta_time):
-    global up_pressed, player_y
-    if up_pressed:
+    global player_y
+    if keys_pressed[arcade.key.UP]:
         player_y += 5
 
 
@@ -45,18 +42,6 @@ def on_draw():
     arcade.start_render()
     # Draw in here...
     arcade.draw_circle_filled(player_x, player_y, 25, arcade.color.BLUE)
-
-
-def on_key_press(key, modifiers):
-    global up_pressed
-    if key == arcade.key.W:
-        up_pressed = True
-
-
-def on_key_release(key, modifiers):
-    global up_pressed
-    if key == arcade.key.W:
-        up_pressed = False
 
 
 def on_mouse_press(x, y, button, modifiers):
