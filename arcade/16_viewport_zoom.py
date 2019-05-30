@@ -34,6 +34,7 @@ def setup():
     window.on_draw = on_draw
     window.on_key_press = on_key_press
     window.on_key_release = on_key_release
+    window.on_mouse_scroll = on_mouse_scroll
 
     arcade.run()
 
@@ -82,6 +83,12 @@ def on_key_press(key, modifiers):
 def on_key_release(key, modifiers):
     global keys_pressed
     keys_pressed[key] = False
+
+
+def on_mouse_scroll(x, y, scroll_x, scroll_y):
+    # When scrolling up and down, the only number that changes
+    # is the scroll_y parameter. +1 for up and -1 for down.
+    print(x, y, scroll_x, scroll_y)
 
 
 if __name__ == '__main__':
