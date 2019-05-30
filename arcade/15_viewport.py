@@ -24,6 +24,7 @@ def setup():
     arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
     arcade.set_background_color(arcade.color.WHITE)
     arcade.schedule(update, 1/60)
+    arcade.set_viewport(-WIDTH/2, WIDTH/2, -HEIGHT/2, HEIGHT/2)
 
     # Override arcade window methods
     window = arcade.get_window()
