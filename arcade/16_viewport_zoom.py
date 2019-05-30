@@ -20,6 +20,8 @@ keys_pressed = {
     arcade.key.RIGHT: False
 }
 
+zoom_level = 150
+
 
 def setup():
     arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
@@ -48,10 +50,10 @@ def update(delta_time):
         player_loc[1] -= MOVEMENT_SPEED
 
     # Move the viewport according to where the player is.
-    arcade.set_viewport(-WIDTH/2 + player_loc[0],
-                        WIDTH/2 + player_loc[0],
-                        -HEIGHT/2 + player_loc[1],
-                        HEIGHT/2 + player_loc[1])
+    arcade.set_viewport((-WIDTH/2 + player_loc[0]) + zoom_level,
+                        (WIDTH/2 + player_loc[0]) - zoom_level,
+                        (-HEIGHT/2 + player_loc[1]) + zoom_level,
+                        (HEIGHT/2 + player_loc[1]) - zoom_level)
 
 
 def on_draw():
