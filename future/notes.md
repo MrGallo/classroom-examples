@@ -39,6 +39,17 @@ Groups of 5
 - Broadcast Issues to assignment repos as assignment requirements
     - Reference issue # in commits.
 
+## Assessment
+Columns for:
+- periodic checkins
+- student use of GitHub
+    - Tally student interactions on various features:
+        - issues
+            - use of proper vocabulary
+            - ability to explain code and when to use various programming constructs
+        - pull requests
+        - commits and good commit messages
+
 Iterative process
 1. Analysis
 2. Plan
