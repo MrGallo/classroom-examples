@@ -35,6 +35,10 @@ Groups of 5
     - Create product backlog
     - Create sprint backlog
 
+## Teacher interaction
+- Broadcast Issues to assignment repos as assignment requirements
+    - Reference issue # in commits.
+
 Iterative process
 1. Analysis
 2. Plan
