@@ -131,3 +131,18 @@ Figure out how you can use what you know about programming to automate things or
 # Coding Problems
 - Functional
 - Pytest to validate programs
+
+
+# Git in Terminal
+Commits on the school image post the author as `robuntu`. Students have to change the local git
+name and email on a per-repository basis.
+
+```sh
+git config user.email "you@example.com"
+git config user.name "Your Name"
+```
+
+# Essential Developer Skills
+- [Learn Enough Command Line](https://www.learnenough.com/command-line-tutorial)
+- [Learn Enough Text Editor](https://www.learnenough.com/text-editor-tutorial)
+- [Learn Enough Git](https://www.learnenough.com/git-tutorial)
