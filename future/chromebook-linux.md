@@ -32,6 +32,22 @@
 code --install-extension ms-python.python
 ```
 
+## Set up classwork folder
+Use the Terminal to go through [Learn Enough Terminal to be Dangerous](https://www.learnenough.com/command-line-tutorial/basics#sec-our_first_command). Go through `1.3` - `2.4`, `4.1` - `4.4`.
+
+In the Terminal, do the following:
+
+1. Navigate to your home directory
+    ```sh
+    $ cd ~
+    ```
+2. Make a directory for your class work.
+    ```sh
+    $ mkdir classwork
+    ```
+
+
 ## Continue...
 - Click the launcher and search for `Visual Studio Code`.
 - Right-click and select `Pin to shelf`.
+
