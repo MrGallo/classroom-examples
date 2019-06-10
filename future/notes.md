@@ -146,3 +146,12 @@ git config user.name "Your Name"
 - [Learn Enough Command Line](https://www.learnenough.com/command-line-tutorial)
 - [Learn Enough Text Editor](https://www.learnenough.com/text-editor-tutorial)
 - [Learn Enough Git](https://www.learnenough.com/git-tutorial)
+
+
+# CPT
+## Progress insentive
+- Consider final test exemption for students who have proven their skills via CPT progress.
+- Consider increasing the weighting of the final test for students who lack progress on the CPT.
+
+## Accountability
+- Students present their progress to class on a regular interval.

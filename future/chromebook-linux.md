@@ -32,6 +32,12 @@
 code --install-extension ms-python.python
 ```
 
+## Install Python3.7
+No easy way to install 3.6 or 3.7.
+```sh
+
+```
+
 ## Set up classwork folder
 Use the Terminal to go through [Learn Enough Terminal to be Dangerous](https://www.learnenough.com/command-line-tutorial/basics#sec-our_first_command). Go through `1.3` - `2.4`, `4.1` - `4.4`.
 
@@ -41,9 +47,10 @@ In the Terminal, do the following:
     ```sh
     $ cd ~
     ```
-2. Make a directory for your class work.
+2. Make a directory for your class work. Enter into the directory.
     ```sh
     $ mkdir classwork
+    $ cd classwork
     ```
 
 
