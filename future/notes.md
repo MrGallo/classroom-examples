@@ -7,10 +7,6 @@
 - Code reviews
 
 
-# Coding Club
-- Can someone show where Waterloo or another university recommends you take the **senior** CCC?
-
-
 # Code Review
 Can be done:
 - in groups, on tv/projectors
