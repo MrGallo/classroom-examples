@@ -1,2 +1,4 @@
 .idea/*
 .vscode/settings.json
+__pycache__
+.pytest_cache
