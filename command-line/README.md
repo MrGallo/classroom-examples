@@ -3,18 +3,20 @@ A good resource for learning the command line is *[Learn Enough Commandline to b
 
 ## Commands you *must* know.
 For each of the commands below, explain what it does and provide a concrete example. Use [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to style the text appropriately.
-- `cd`
 - `ls`
-- `cat`
 - `mkdir`
+- `cd`
 - `touch`
 - `rm`
 - `cp`
 - `mv`
+- `cat`
 
 ## Topics/techniques you *must* know.
 For each topic, explain what it is and provide concrete examples. Use [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to style the text appropriately.
-- user home directory (`~`)
+- user home directory `~`
+- Current directory `.`
+- Parent directory `..`
 - File-trees
   - use the `tree` command
 - Relative file reference
