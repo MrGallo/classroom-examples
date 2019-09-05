@@ -8,3 +8,10 @@
   - Don't create a `README` file.
   - Add a `.gitignore` for `Python` (optional)
 - Click the `Clone or download` button 
+- Copy the URL.
+- In the Terminal, type:
+    ```sh
+    $ git clone <THE URL>
+    ```
+    You can paste in the terminal with `ctrl+shift+v`.
+- 
