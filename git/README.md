@@ -14,4 +14,16 @@
     $ git clone <THE URL>
     ```
     You can paste in the terminal with `ctrl+shift+v`.
-- 
+
+## Workflow
+
+...
+
+- Make changes
+- Stage the changes
+  - `git add -A`
+- Commit the changes
+  - `git commit -m "Descriptive message"`
+- Push the changes
+  - `git push`
+  - Enter GitHub username/password
