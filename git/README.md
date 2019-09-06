@@ -17,8 +17,8 @@
 
 ## Workflow
 
-...
-
+- Pull in changes from the cloud
+  - `git pull`
 - Make changes
 - Stage the changes
   - `git add -A`
