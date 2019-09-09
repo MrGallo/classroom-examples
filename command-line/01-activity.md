@@ -1,0 +1,17 @@
+# Command-Line Activity 1
+Do the whole activity in a linux terminal (with the exception of `#5`).
+
+1. Create a directory called `terminal-practice` with the following file structure:
+    ```
+
+    ```
+
+2. Use the `tree` command on the `terminal-practice` directory to compare your directory structure with the one shown above.
+
+3. Move `blue.txt` to the `pract1` folder.
+
+4. Rename the `pract2` folder to whatever.
+
+5. Open VS Code and put some text in the files. Save the files.
+
+6. Delete the `pract1` folder.
