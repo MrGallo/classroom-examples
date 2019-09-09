@@ -22,3 +22,12 @@ Do the whole activity in a linux terminal (with the exception of `#5`).
 5. Open VS Code and put some text in the files. Save the files.
 
 6. Delete the `pract1` folder.
+
+Your final file structure should be:
+```
+terminal-practice/
+├── README.md
+└── whatever
+    ├── goodbye.py
+    └── hello.txt
+```
