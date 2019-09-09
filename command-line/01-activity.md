@@ -1,4 +1,6 @@
 # Command-Line Activity 1
+[Video Solution](https://youtu.be/55T5FUtDzVE)
+
 Do the whole activity in a linux terminal (with the exception of `#5`).
 
 1. Create a directory called `terminal-practice` with the following file structure:
