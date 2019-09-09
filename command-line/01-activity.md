@@ -3,6 +3,13 @@ Do the whole activity in a linux terminal (with the exception of `#5`).
 
 1. Create a directory called `terminal-practice` with the following file structure:
     ```
+    terminal-practice/
+    ├── blue.txt
+    ├── pract1
+    ├── pract2
+    │   ├── goodbye.py
+    │   └── hello.txt
+    └── README.md
 
     ```
 
