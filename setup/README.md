@@ -3,6 +3,7 @@
 ## Required software
 - Python 3.7+
 - [Arcade library](http://arcade.academy)
+- Pytest
 - Git (with git bash for Windows)
 - VS Code
 
