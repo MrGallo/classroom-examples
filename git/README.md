@@ -9,6 +9,7 @@
 - The `git` workflow.
   - [Sitting down and getting to work](#get-to-work)
   - [Stage changes and commit](#stage-and-commit)
+  - [Push changes to GitHub](#push-changes)
 
 ## Create and Clone
 - Go to [GitHub.com](github.com) and creace a repo.
@@ -47,7 +48,12 @@ On classroom chromebooks:
   - If you `$ git status` again, the staged changes will be in green.
 - Commit the changes
   - `$ git commit -m "Descriptive message"`
+ ### Push changes
 - Push the changes
   - `$ git push`
   - On our class computers, you may have an error message telling you to set the `user.name` and `user.email`. **Be sure to *omit* the `--global` flag on our class chromebooks**.
+      ```sh
+    $ git config user.name "YourGithubUserName"
+    $ git config user.email "your@email.com"
+    ```
   - Enter GitHub username/password
