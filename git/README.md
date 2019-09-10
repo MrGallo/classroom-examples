@@ -37,8 +37,8 @@ On classroom chromebooks:
 
 ## Workflow
 ## Pull changes from original repository
-**To be done by **one** person per team:** 
 [GitHub Article](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork)
+**To be done by **one** person per team:** 
 ```sh
 $ git checkout master
 $ git pull <original repo url> <branch>
