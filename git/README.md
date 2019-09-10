@@ -40,6 +40,8 @@ On classroom chromebooks:
 [GitHub Article](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork)
 ```sh
 $ git checkout master
+$ git pull <original repo url> <branch>
+For example:
 $ git pull https://github.com/ICS4U-Gallo/markbook-assignment.git master
 ```
 Then resolve any [conflicts](https://help.github.com/en/articles/addressing-merge-conflicts).
