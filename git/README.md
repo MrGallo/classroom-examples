@@ -37,6 +37,7 @@ On classroom chromebooks:
 
 ## Workflow
 ## Pull changes from original repository
+**To be done by **one** person per team:** 
 [GitHub Article](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork)
 ```sh
 $ git checkout master
@@ -48,6 +49,11 @@ Then resolve any [conflicts](https://help.github.com/en/articles/addressing-merg
 Then push:
 ```sh
 $ git push
+```
+
+**Rest of team**:
+```sh
+$ git pull
 ```
 
 ### Get to work
