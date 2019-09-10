@@ -1,6 +1,6 @@
 # Introduction Section Goals
 Every program will involve some *input, processing, and output*.
-- Store data in variables (#storing-data-in-variables)
+- [Store data in variables](#storing-data-in-variables)
 - Get input from user
 - Convert input to number
 - Format output text
