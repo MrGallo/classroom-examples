@@ -6,6 +6,7 @@
 
 ## What you need to know
 - [Create a repo on GitHub and clone the repo on your computer](#create-and-clone)
+- [Pull changes from original repo](#pull-changes-from-original-repository)
 - The `git` workflow.
   - [Sitting down and getting to work](#get-to-work)
   - [Stage changes and commit](#stage-and-commit)
