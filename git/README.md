@@ -36,7 +36,7 @@ On classroom chromebooks:
 
 ## Workflow
 ## Pull changes from original repository
-(GitHub Article](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork)
+[GitHub Article](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork)
 ```sh
 $ git checkout master
 $ git pull https://github.com/ICS4U-Gallo/markbook-assignment.git master
