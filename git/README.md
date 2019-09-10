@@ -35,6 +35,18 @@ On classroom chromebooks:
     ```
 
 ## Workflow
+## Pull changes from original repository
+(GitHub Article](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork)
+```sh
+$ git checkout master
+$ git pull https://github.com/ICS4U-Gallo/markbook-assignment.git master
+```
+Then resolve any [conflicts](https://help.github.com/en/articles/addressing-merge-conflicts).
+Then push:
+```sh
+$ git push
+```
+
 ### Get to work
 - Pull in changes from the cloud
   - `git pull`
