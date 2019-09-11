@@ -2,7 +2,7 @@
 A good resource for learning the command line is *[Learn Enough Commandline to be Dangerous](https://www.learnenough.com/command-line-tutorial/basics)*.
 
 ## Section Goals
-- Create a folder with your name and a classwork folder inside of it.
+- [Create a folder with your name and a classwork folder inside of it.](https://youtu.be/ye8UvyMRxcs)
 
 ## Commands you *must* know.
 For each of the commands below, explain what it does and provide a concrete example. Use [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to style the text appropriately.
@@ -27,5 +27,3 @@ For each topic, explain what it is and provide concrete examples. Use [markdown]
 - tabbing (autocompletion)
 - Up arrow (recall)
 
-### Create Classwork Folder
-[Video](https://youtu.be/ye8UvyMRxcs)
