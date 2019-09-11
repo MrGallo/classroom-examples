@@ -1,6 +1,6 @@
 # Introduction Section Goals
 Every program will involve some *input, processing, and output*.
-- Create a python file and output a message
+- [Create a python file and output a message](#create-and-run-a-python-file)
 - Create a main function and output a message
 - [Store data in variables](#storing-data-in-variables)
 - Get input from user
