@@ -6,6 +6,7 @@
 
 ## What you need to know
 - [Create a repo on GitHub and clone the repo on your computer](#create-and-clone)
+- [Pull changes from original repo](#pull-changes-from-original-repository)
 - The `git` workflow.
   - [Sitting down and getting to work](#get-to-work)
   - [Stage changes and commit](#stage-and-commit)
@@ -35,16 +36,25 @@ On classroom chromebooks:
     ```
 
 ## Workflow
-## Pull changes from original repository
+### Pull changes from original repository
 [GitHub Article](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork)
+
+**To be done by **one** person per team:** 
 ```sh
 $ git checkout master
+$ git pull <original repo url> <branch>
+For example:
 $ git pull https://github.com/ICS4U-Gallo/markbook-assignment.git master
 ```
 Then resolve any [conflicts](https://help.github.com/en/articles/addressing-merge-conflicts).
 Then push:
 ```sh
 $ git push
+```
+
+**Rest of team**:
+```sh
+$ git pull
 ```
 
 ### Get to work
