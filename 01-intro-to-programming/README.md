@@ -30,6 +30,9 @@ Every program will involve some *input, processing, and output*.
 - Arcade
     - artwork with variables
     - simple animation
+    
+## Create and Run a Python File
+[video](https://youtu.be/9TnvlIEgGVI)
    
 ## Storing Data in Variables
 ```python
