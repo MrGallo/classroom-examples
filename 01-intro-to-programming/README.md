@@ -33,6 +33,23 @@ Every program will involve some *input, processing, and output*.
     
 ## Create and Run a Python File
 [video](https://youtu.be/9TnvlIEgGVI)
+
+## Create a `main` function
+[Video](https://youtu.be/mEL944nYaEQ)
+
+```python
+def main():
+    print("Hello!")
+    print("Blah")
+    print(5 + 6)
+    print(400 / 6 * 2)
+    print(5 + 7 * 8)
+
+
+if __name__ == "__main__":
+    main()
+
+```
    
 ## Storing Data in Variables
 ```python
