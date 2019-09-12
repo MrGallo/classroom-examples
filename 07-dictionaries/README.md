@@ -77,5 +77,17 @@ print(student)
 
 ## Clear only certain values
 ```python
+student = {
+    "first_name": "Frank",
+    "last_name": "Smith",
+    "grade": 11,
+    "homeroom": "11G"
+}
+
+for key in student.keys():
+    if "name" in key:
+        student[key] = None
+
+print(student)
 
 ``
