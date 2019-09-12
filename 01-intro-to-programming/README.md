@@ -1,12 +1,12 @@
 # Introduction Section Goals
 Every program will involve some *input, processing, and output*.
 - [Create a python file and output a message](#create-and-run-a-python-file)
+- [Storing data in variables](#storing-data-in-variables)
+- [Get input from user](#get-input-from-user)
+- [Convert input to number](#convert-input-to-number)
+- [Format output text](#format-output-text)
 - [Create a main function and output a message](#create-a-main-function)
 - [Calling Functions Within Functions](#calling-functions-within-functions)
-- [Store data in variables](#storing-data-in-variables)
-- Get input from user
-- Convert input to number
-- Format output text
 
 ## Topics
 - Variables
@@ -34,6 +34,26 @@ Every program will involve some *input, processing, and output*.
     
 ## Create and Run a Python File
 [video](https://youtu.be/9TnvlIEgGVI)
+
+## Storing Data in Variables
+```python
+
+```
+
+## Get input from user
+```python
+
+```
+
+## Convert input to number
+```python
+
+```
+
+## Format output text
+```python
+
+```
 
 ## Create a `main` function
 [Video](https://youtu.be/mEL944nYaEQ)
@@ -83,10 +103,4 @@ Hello
 Goodbye.
 Hello
 Goodbye.
-```
-
-   
-## Storing Data in Variables
-```python
-
 ```
