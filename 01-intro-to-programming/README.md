@@ -2,6 +2,7 @@
 Every program will involve some *input, processing, and output*.
 - [Create a python file and output a message](#create-and-run-a-python-file)
 - [Create a main function and output a message](#create-a-main-function)
+- [Calling Functions Within Functions](#calling-functions-within-functions)
 - [Store data in variables](#storing-data-in-variables)
 - Get input from user
 - Convert input to number
@@ -50,6 +51,14 @@ if __name__ == "__main__":
     main()
 
 ```
+
+## Calling Functions Within Functions 
+Always create a `main` function. Create two other functions that output different 
+messages and call them from within the main function.
+```python
+
+```
+
    
 ## Storing Data in Variables
 ```python
