@@ -53,7 +53,7 @@ if __name__ == "__main__":
 ```
 
 ## Calling Functions Within Functions 
-Always create a `main` function. Create two other functions that output different 
+Create a `main` function. Create two other functions that output different 
 messages and call them from within the main function.
 ```python
 
