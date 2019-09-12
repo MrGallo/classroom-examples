@@ -62,5 +62,20 @@ for key, value in student.items():
 
 # Clear all values in a dictionary
 ```python
+student = {
+    "first_name": "Frank",
+    "last_name": "Smith",
+    "grade": 11,
+    "homeroom": "11G"
+}
 
+for key in student.keys():
+    student[key] = None
+
+print(student)
 ```
+
+## Clear only certain values
+```python
+
+``
