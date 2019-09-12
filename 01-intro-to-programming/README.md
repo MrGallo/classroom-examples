@@ -54,9 +54,34 @@ if __name__ == "__main__":
 
 ## Calling Functions Within Functions 
 Create a `main` function. Create two other functions that output different 
-messages and call them from within the main function.
+messages and call them from within the `main` function.
 ```python
+def main():
+    say_hello()
+    say_goodbye()
 
+    say_hello()
+    say_goodbye()
+
+
+def say_hello():
+    print("Hello")
+
+
+def say_goodbye():
+    print("Goodbye.")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+*Output:*
+```
+Hello
+Goodbye.
+Hello
+Goodbye.
 ```
 
    
