@@ -42,3 +42,23 @@
 >>> d
 {'first_name': 'John', 'last_name': 'Smith', 'grade': 13}
 ```
+
+# Looping through dictionaries
+```python
+student = {
+    "first_name": "Frank",
+    "last_name": "Smith",
+    "grade": 11
+}
+
+for key in student.keys():
+    print(key)
+
+print()
+for val in student.values():
+    print(val)
+
+print()
+for key, value in student.items():
+    print(key, value)
+```
