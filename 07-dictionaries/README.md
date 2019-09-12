@@ -5,8 +5,9 @@
 - [Loop over dictionary values](#looping-through-dictionaries)
 - [Loop over dictionary values and keys](#looping-through-dictionaries)
 - [Clear all values in a dictionary](#clear-all-values-in-a-dictionary)
+- [Clear only certain values](#clear-only-certain-values)
 
-# Create, access, modify, insert, remove
+## Create, access, modify, insert, remove
 ```
 >>> d = {}
 >>> d
@@ -40,7 +41,7 @@
 {'first_name': 'John', 'last_name': 'Smith', 'grade': 13}
 ```
 
-# Looping through dictionaries
+## Looping through dictionaries
 ```python
 student = {
     "first_name": "Frank",
@@ -60,7 +61,7 @@ for key, value in student.items():
     print(key, value)
 ```
 
-# Clear all values in a dictionary
+## Clear all values in a dictionary
 ```python
 student = {
     "first_name": "Frank",
