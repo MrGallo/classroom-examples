@@ -6,6 +6,7 @@
 - [Loop over dictionary values and keys](#looping-through-dictionaries)
 - [Clear all values in a dictionary](#clear-all-values-in-a-dictionary)
 - [Clear only certain values](#clear-only-certain-values)
+- [Get list of keys with a certain value](#get-a-list-of-keys-with-a-certain-value)
 
 ## Create, access, modify, insert, remove
 ```
@@ -90,5 +91,23 @@ for key in student.keys():
         student[key] = None
 
 print(student)
+
+```
+
+## get-a-list-of-keys-with-a-certain-value
+```python
+fruit = {
+    "apples": 5,
+    "pears": 2,
+    "plums": 11,
+    "peaches": 7
+}
+
+shopping_list = []
+for fruit, qty in fruit.items():
+    if qty <= 5:
+        shopping_list.append(fruit)
+
+print(shopping_list)
 
 ```
