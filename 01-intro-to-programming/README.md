@@ -48,7 +48,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
    
 ## Storing Data in Variables
