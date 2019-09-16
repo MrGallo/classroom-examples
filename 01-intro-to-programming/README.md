@@ -36,13 +36,22 @@ Every program will involve some *input, processing, and output*.
 [video](https://youtu.be/9TnvlIEgGVI)
 
 ## Storing Data in Variables
+[Video](https://youtu.be/WUH_Yyr1YV8)
 ```python
+length = 5
+width = 10
 
+area = length * width
+
+print(area)  # 50
 ```
 
 ## Get input from user
+[Video](https://youtu.be/zWbOxihFwJs)
 ```python
+name = input("Please enter a name: ")
 
+print("Hello", name)
 ```
 
 ## Convert input to number
