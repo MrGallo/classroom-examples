@@ -3,8 +3,8 @@
 - [Read from a file](#read-from-a-file)
 - [Append to a file](#append-to-file)
 - [Read multiple lines from a file](#read-multiple-lines-from-a-file)
-- Store dictionary data as JSON
-- Read in JSON data
+- [Store dictionary data as JSON](#store-dict-data-as-json)
+- [Read in JSON data](#read-json-data)
 
 ## Write to a file
 ```python
@@ -35,4 +35,29 @@ lines = []
 with open("some_file.txt", "r") as f:
     for line in f:
         lines.append(line.strip())
+```
+
+# Store Dict data as JSON
+```python
+import json
+
+some_dict = {
+    "name": "Example",
+    "color": "Blue",
+    "height": 50,
+    "is_happy": False
+}
+
+with open("data.json", "w") as f:
+    json.dump(some_dict, f)
+```
+
+## Read JSON data
+```python
+import json
+
+
+with open("data.json", "r") as f:
+    # convert JSON to Python Dictionary
+    data = json.load(f)
 ```
