@@ -29,5 +29,18 @@ def test_simple_example():
 Run the test with `pytest`. It should now be "green" and pass.
 
 ## Test internal function
+Note: this is *not* how things are done in the real world, production code and test code must be in different files.
+```python
+# test_example.py
+
+
+def add(a, b):
+    return a + b
+
+
+def test_add():
+    assert add(1, 1) == 2
+    assert add(3, 4) == 7
+```
 
 ## Text external function
