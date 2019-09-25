@@ -59,11 +59,15 @@ def subtract(a, b):
 ```python
 # test_math_functions.py
 
-
-def add(a, b):
-    return a + b
+import math_functions
 
 
-def subtract(a, b):
-    return a - b
+def test_add():
+    assert math_functions.add(1, 1) == 2
+    assert math_functions.add(3, 5) == 8
+
+
+def test_subtract():
+    assert math_functions.subtract(5, 2) == 3
+
 ```
