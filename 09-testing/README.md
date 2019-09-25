@@ -1,6 +1,8 @@
 # Tests Section Goals
 
 - [Create a simple test file](#create-simple-test-file)
+- [Test an internal function](#test-internal-function)
+- [Test an external function](#test-external-function)
 
 
 ## Create simple test file
@@ -25,3 +27,7 @@ def test_simple_example():
 ```
 
 Run the test with `pytest`. It should now be "green" and pass.
+
+## Test internal function
+
+## Text external function
