@@ -7,6 +7,7 @@
 
 ## Create simple test file
 [Video](https://youtu.be/1fgMuOl408M)
+
 Create a file with a name that starts with `test_`. For example, if you are testing a code in a file called `markbook.py`, call the test file `test_markbook.py`.
 
 First, you should start with a test that fails. All tests need to be in a function that starts with `test_`.
@@ -31,6 +32,7 @@ Run the test with `pytest`. It should now be "green" and pass.
 
 ## Test internal function
 [Video](https://youtu.be/8-7NCSGWkpY)
+
 Note: this is *not* how things are done in the real world, production code and test code must be in different files. This is to ease you into testing external files.
 ```python
 # test_example.py
