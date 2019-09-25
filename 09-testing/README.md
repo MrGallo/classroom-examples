@@ -44,3 +44,27 @@ def test_add():
 ```
 
 ## Text external function
+```python
+# math_functions.py
+
+
+
+def add(a, b):
+    return a + b
+
+
+def subtract(a, b):
+    return a - b
+```
+
+```python
+# test_math_functions.py
+
+
+def add(a, b):
+    return a + b
+
+
+def subtract(a, b):
+    return a - b
+```
