@@ -4,6 +4,8 @@
 - [Check if a value is in a list](#search-list)
 - [Find the largest item in a list](#find-largest)
 - [Filter a list](#filter-a-list)
+- Insert a value in a sorted list
+- Remove a value from a list
 
 ## Append in loop
 ```python
