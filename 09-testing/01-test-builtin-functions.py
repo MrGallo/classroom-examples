@@ -1,7 +1,6 @@
 import math
 
 
-
 # test sum(numbers: List[float]) -> float
 def test_sum():
     assert sum([]) == 0
