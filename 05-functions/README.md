@@ -7,6 +7,7 @@
 - **Return** one or more results from a function
 - [**Refactor** existing code into functions.](#refactor-existing-code)
 - Trace with the call-stack
+- [Annotating a Function](#annotating-a-function)
 
 # Assertions
 - [Test a custom function using assertions](#test-using-assertions)
@@ -165,8 +166,7 @@ if __name__ == "__main__":
 ```
 
 
-
-# Test Using Assertions
+## Test Using Assertions
 ```python
 def add(a, b):
     return a + b
@@ -177,7 +177,7 @@ assert add(-2, -5) == -7
 print("All tests passed!")
 ```
 
-# Tests function for assertions
+## Tests function for assertions
 ```python
 def add(a, b):
     return a + b
@@ -193,7 +193,7 @@ if __name__ == "__main__":
     tests()
 ```
 
-# Test function for each function
+## Test function for each function
 ```python
 
 def add(a, b):
@@ -222,4 +222,16 @@ def test_sub():
 if __name__ == "__main__":
     tests()
 ```
+## Annotating a Function
+```python
+def function_name(param1: type, param2: type) -> return_type:
+    """Sort description of the function
 
+    Args:
+        param1: Explain the first parameter.
+        param2: Explain the second parameter.
+    Returns:
+        Explain what the function returns
+    """
+    pass
+```
