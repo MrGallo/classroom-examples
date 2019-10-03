@@ -8,8 +8,8 @@
 - [Use `if/elif/else`](#ifelifelse)
 - [Use multiple `elif`](#multiple-elif)
 - Store the result of a Boolean expression in a variable
-- Know Boolean operators and their truth tables
-- Use Boolean operators in if statements
+- [Know Boolean operators and their truth tables](#boolean-operators)
+- [Use Boolean operators in if statements](#boolean-operators-in-if-statements)
 - Refactor `if` structures
 
 ## Comparison operators
