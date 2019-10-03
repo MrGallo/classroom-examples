@@ -17,6 +17,20 @@ def test_math_ceil():
 
 
 # test math.floor(float) -> int
-# test f strings
-# test .format()
+def test_math_floor():
+    assert math.floor(6.999999) == 6
+    assert math.floor(4.5) == 4
+    assert math.floor(1.0) == 1
 
+# test f strings
+def test_f_strings():
+    assert f"hello {3 + 5}" == "hello 8"
+
+    a, b = 3, 4
+    assert f"result: {a + b}" == "result: 7"
+
+
+# test .format()
+def test_dot_format():
+    assert "{} {} {}".format(1, 2, 3) == "1 2 3"
+    assert "blah {} blah".format("Happy") == "blah Happy blah"
