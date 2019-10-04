@@ -1,7 +1,7 @@
 # Classes Section Goals
 
 - [Store data in an object](#store-data-in-an-object)
-- `__init__` method
+- [`__init__` method](#__init__-method)
 - [Loop through a list of objects](#loop-through-a-list-of-objects)
 - [Understand object pointers](#understand-object-pointers)
 - [Know difference between a *class* and an *object*](#class-vs-object)
