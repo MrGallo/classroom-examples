@@ -9,7 +9,7 @@ For the following, assume `x = 5`, `y = 7`, `z = 10`.
 5. `x + 5 == z`
 
 ## Truth Tables
-Complete the truth tables for the following *Boolean operators*. For each operator, give a real-life example, in english and in pseudo code of the the operator in an if statement. See below `AND` for an example.
+Complete the truth tables for the following *Boolean operators*. For each operator, give **three** real-life example, in english and in pseudo code of the the operator in an if statement. See below `AND` for an example.
 
 ### AND
 For `and`, both conitions need to evaluate to `True`.
