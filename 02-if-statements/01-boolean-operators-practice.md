@@ -72,3 +72,39 @@ Evaluate the following to `True` or `False`. Examples from [Learn Python the Har
 18. `1 == 1 and not ("testing" == 1 or 1 == 0)`
 19. `"chunky" == "bacon" and not (3 == 4 or 3 == 3)`
 20. `3 == 3 and not ("testing" == "testing" or "Python" == "Fun")`
+
+# Solutions
+## Simple Boolean expressions
+For the following, assume `x = 5`, `y = 7`, `z = 10`.
+1. `True`
+2. `False`
+3. `True`
+4. `False`
+5. `True`
+
+## Truth Tables
+For the truth tables, see [If Statements Section Goals](https://github.com/MrGallo/classroom-examples/tree/master/02-if-statements/README.md)
+
+For the examples, please submit your own and I'll place them here.
+
+## Boolean Operator Practice
+1. `True`
+2. `False`
+3. `False`
+4. `True`
+5. `True`
+6. `True`
+7. `False`
+8. `True`
+9. `False`
+10. `False`
+11. `True`
+12. `False`
+13. `True`
+14. `False`
+15. `False`
+16. `False`
+17. `True`
+18. `True`
+19. `False`
+20. `False`
