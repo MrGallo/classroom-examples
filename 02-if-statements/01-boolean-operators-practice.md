@@ -85,7 +85,7 @@ For the following, assume `x = 5`, `y = 7`, `z = 10`.
 ## Truth Tables
 For the truth tables, see [If Statements Section Goals](https://github.com/MrGallo/classroom-examples/tree/master/02-if-statements/README.md)
 
-For the examples, please submit your own and I'll place them here.
+For the examples, please submit your own by directly editing this file, opening a pull request and I'll place them here.
 
 ## Boolean Operator Practice
 1. `True`
