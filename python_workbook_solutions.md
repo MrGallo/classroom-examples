@@ -97,17 +97,22 @@ else:
 
 ### Exercise 35: Dog Years
 ```python
-years = int(input("Number of years: "))
+# get age of dog (in years)
+age = float(input("How old is your dog? "))
 
-if years <= 2:
-    dog_years = years * 10.5
+# if the age is negative, display an error message
+if age < 0:
+    print("Invalid number!")
 else:
-    first_two = 2 * 10.5
-    years_left = years - 2
-    remaining_years = years_left * 4
-    dog_years = first_two + remaining_years
+    if age <= 2:
+        dog_years = age * 10.5
+    else:
+        first_two = 2 * 10.5
+        remaining_years = age - 2
 
-print(dog_years)
+        dog_years = first_two + remaining_years * 4
+    
+    print(f"Your dog is {dog_years} years old in dog-years.")
 ```
 
 ### Exercise 36: Vowel or Consonant
