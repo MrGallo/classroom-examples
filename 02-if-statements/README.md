@@ -8,8 +8,8 @@
 - [Use `if/elif/else`](#ifelifelse)
 - [Use multiple `elif`](#multiple-elif)
 - Store the result of a Boolean expression in a variable
-- Know Boolean operators and their truth tables
-- Use Boolean operators in if statements
+- [Know Boolean operators and their truth tables](#boolean-operators)
+- [Use Boolean operators in if statements](#boolean-operators-in-if-statements)
 - Refactor `if` structures
 
 ## Comparison operators
@@ -61,3 +61,63 @@ elif mark >= 50:
 else:
     print("You FAIL!!!!")
 ```
+
+## Boolean values in variables
+[Video](https://youtu.be/mb-BSeRHQZw)
+```python
+a = 5
+
+is_sunny = a > 5
+
+if is_sunny is False:
+    print("Grab your umbrella")
+```
+
+## Boolean operators
+[Video](https://youtu.be/inxWNWy1nMA)
+
+We need to be able to reproduce these truth tables.
+
+### AND
+For `and`, both conitions need to evaluate to `True`.
+
+| A | B | A and B |
+|:-:|:-:|:-------:|
+| T | T | T       |
+| T | F | F       |
+| F | T | F       |
+| F | F | F       |
+
+### OR
+For `or`, only one condition needs to evaluate to `True`.
+
+| A | B | A or B |
+|:-:|:-:|:------:|
+| T | T | T      |
+| T | F | T      |
+| F | T | T      |
+| F | F | F      |
+
+### NOT
+`Not` will invert the Boolean value.
+
+| A | not A |
+|:-:|:-----:|
+| T | F     |
+| F | T     |
+
+## Boolean operators in if statements
+```python
+a = 5
+b = 7
+
+if a >= 5 and b > 10:  # False
+    print("hello")
+
+if a == 5 or b > 100:  # True
+    print("goodbye")
+
+if not (a >= 5 and b > 10):  # True
+    print("hello")
+```
+
