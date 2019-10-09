@@ -30,7 +30,7 @@ print(f"This is {p.name}, they are {p.age} years old!")
 ## `__init__` method
 ```python
 class Person:
-    def __init__(name: str, age: int):
+    def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
 
@@ -42,7 +42,7 @@ print(f"This is {jeff.name}, they are {jeff.age} years old!")
 ## Loop through a list of objects
 ```python
 class Person:
-    def __init__(name: str, age: int):
+    def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
 
