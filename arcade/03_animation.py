@@ -5,6 +5,9 @@ Need a variable to facilitate change, or motion
 - Where do you use it?
 
 Make a variable called `x` and try to implement this.
+1. In setup, initialize x
+2. In update, update x
+3. In on_draw, use x to draw the circle
 """
 
 import arcade
