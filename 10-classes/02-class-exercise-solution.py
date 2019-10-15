@@ -14,6 +14,9 @@ class Person:
     
     def __str__(self):
         return f"{self.name}, hp: {self.health_points}"
+    
+    def introduce(self):
+        print(f"Hello, my name is {self.name}.")
 
 
 jeff = Person("Jeff Blah", 170, 1)
@@ -21,3 +24,6 @@ david = Person("David Greenchair", 200, 1)
 
 print(jeff)
 print(david)
+
+jeff.introduce()
+david.introduce()
