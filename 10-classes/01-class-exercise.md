@@ -1,3 +1,4 @@
+### 1
 Create the class with the `__init__` method for the following.
 
 ```
@@ -26,15 +27,20 @@ class Person:
         pass
 ```
 
+### 2
 - Create two `Person` objects.
 
 - Add a `__str__` (magic) method that displays the name and hp of the person.
 
 - Print out each `Person` object.
 
+### 3
+
 - add an `introduce` method that will say "Hello, my name is {name}"
 
 - Make both people objects introduce themselves.
+
+### 4
 
 - Add a `punch` method that will take another person as an argument, and subtract 10 from that person's hp.
 
@@ -42,3 +48,5 @@ class Person:
 
 - Make one `Person` object punch themself.
 
+### 5
+- Add an `eat` method that, when used, will restor the health points back to 100.
