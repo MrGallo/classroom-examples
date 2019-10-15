@@ -21,6 +21,9 @@ class Person:
     def punch(self, person):
         print(f"{self.name} punches {person.name}")
         person.health_points -= 10
+    
+    def eat(self):
+        self.health_points = 100
 
 
 jeff = Person("Jeff Blah", 170, 1)
@@ -38,3 +41,5 @@ print(jeff)
 print(david)
 
 jeff.punch(jeff)
+
+jeff.eat()
