@@ -7,3 +7,31 @@ Create a loop that will:
 6. add up all the multiples of 5 from 0-100
 7. add up all multiples of 3 and 5 from 100-200
 8. add up all multiples of 7 and 11 from 0-1000 except the numbers divisible by both.
+
+## Solutions
+### 1
+```python
+count = 0
+
+while count <= 99:
+    print(count)
+    count += 1
+```
+
+### 2
+```python
+count = 50
+
+while count <= 100:
+    print(count)
+    count += 5
+```
+
+### 5
+```python 
+count = 50
+total = 0
+while count <= 75:
+    total += count
+    count += 1
+```
