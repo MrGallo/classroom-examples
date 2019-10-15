@@ -17,6 +17,10 @@ class Person:
     
     def introduce(self):
         print(f"Hello, my name is {self.name}.")
+    
+    def punch(self, person):
+        print(f"{self.name} punches {person.name}")
+        person.health_points -= 10
 
 
 jeff = Person("Jeff Blah", 170, 1)
@@ -27,3 +31,8 @@ print(david)
 
 jeff.introduce()
 david.introduce()
+
+david.punch(jeff)
+
+print(jeff)
+print(david)
