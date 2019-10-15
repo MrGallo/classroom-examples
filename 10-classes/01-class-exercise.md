@@ -1,4 +1,18 @@
 Create the class with the `__init__` method for the following.
+
+```
+Person
+======
+name: str
+height: int
+strength: int
+health_points: int = 100
+---------
+__str__(self) -> str
+introduce(self) -> void
+punch(Person) -> void
+```
+
 ```python
 class Person:
     """
