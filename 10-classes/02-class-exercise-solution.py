@@ -36,3 +36,5 @@ david.punch(jeff)
 
 print(jeff)
 print(david)
+
+jeff.punch(jeff)
