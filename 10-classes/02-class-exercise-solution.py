@@ -11,6 +11,13 @@ class Person:
         self.height = height
         self.strength = strength
         self.health_points = 100
+    
+    def __str__(self):
+        return f"{self.name}, hp: {self.health_points}"
 
 
 jeff = Person("Jeff Blah", 170, 1)
+david = Person("David Greenchair", 200, 1)
+
+print(jeff)
+print(david)
