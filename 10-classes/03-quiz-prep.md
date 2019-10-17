@@ -32,7 +32,7 @@ Topics:
     bark() -> void
     ```
     - The `eat` method will increase a Dog's happiness by `10%` of the food's nutrition.
-    - The `bark` method will simply print "bark".
+    - The `bark` method will simply print `"RUFF RUFF!"`.
     - The `__str__` method will print out the dog's namd and happiness, formatted nicely.
 
 3. Create a `main()` function to use and test out the two classes, be sure to showcase all the functionality.
