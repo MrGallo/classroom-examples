@@ -2,7 +2,7 @@
 - [Print out something 5 times (**counter variable**)](#counter-variable)
 - [Create a loop to count from 0 to 10](#count-from-0-to-10)
 - [Count from 0 to 100 by 5](#)
-- Calculate the sum of the numbers from 1-10 (**accumulator variable**)
+- [Calculate the sum of the numbers from 1-10 (**accumulator variable**)](#accumulator-variable)
 - [`break` out of a loop](#break)
 - Skip loop code (`continue`)
 - Add up user input in a loop
@@ -31,6 +31,15 @@ i = 0
 while i <= 10:
     print(i)
     i += 1
+```
+
+## Accumulator Variable
+```python
+total = 0  # accumulator
+i = 1  # counter
+while i <= 10:
+    total += i  # add to the accumulator
+    i += 1  # increase the counter
 ```
 
 ## Break

@@ -5,13 +5,14 @@
 - [Loop through a list of objects](#loop-through-a-list-of-objects)
 - [Understand object pointers](#understand-object-pointers)
 - [Know difference between a *class* and an *object*](#class-vs-object)
-- Access instance variables
-- Instance method
+- [Instance method](#methods)
+- Encapsulation
+- Aggregate class
+- Class field (variable)
 - Class method
 - Inheritance
+- Polymorphism
 - Refactor multiple classes
-- Aggregate class
-- Class variable
 
 
 ## Store data in an object
@@ -104,3 +105,27 @@ Both variables `a` and `b` **point** to the same object.
 - *Object*: A specific instance of a thing. e.g., "Jeff"
 - *Class*: the general thing. e.g., "a person"
 
+## Methods
+An example of methods. One without arguments, one with.
+```python
+class Person:
+    def __init__(self, name, height, strength):
+        self.name = name
+    
+    def introduce(self):
+        print(f"Hello, my name is {self.name}.")
+       
+    def compliment(self, person):
+        print(f"{person.name}, I love your hair!")
+
+# Usage
+p1 = Person("Jeff")
+p2 = Person("Sally")
+
+p1.introduce()
+p2.compliment(p1)
+
+# output:
+# "Hello, my name is Jeff."
+# "Jeff, I love your hair!"
+```
