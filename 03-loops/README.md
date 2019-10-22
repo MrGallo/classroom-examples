@@ -3,7 +3,7 @@
 - [Create a loop to count from 0 to 10](#count-from-0-to-10)
 - [Count from 0 to 100 by 5](#)
 - Calculate the sum of the numbers from 1-10 (**accumulator variable**)
-- `break` out of a loop
+- [`break` out of a loop](#break)
 - Skip loop code (`continue`)
 - Add up user input in a loop
 - **Iterate** over a collection (lists, strings)
@@ -31,4 +31,16 @@ i = 0
 while i <= 10:
     print(i)
     i += 1
+```
+
+## Break
+```python
+i = 0
+
+while i <= 10:
+    print(i)
+    if i == 5:
+        break
+    i += 1
+
 ```
