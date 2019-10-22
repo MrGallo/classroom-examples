@@ -5,7 +5,8 @@
 - [Calculate the sum of the numbers from 1-10 (**accumulator variable**)](#accumulator-variable)
 - [`break` out of a loop](#break)
 - [Skip loop code (`continue`)](#continue)
-- Add up user input in a loop
+- [Add up user input in a loop](#add-input-in-a-loop)
+- [Stop gathering input with a sentinel value](#sentinal-value)
 - **Iterate** over a collection (lists, strings)
 - Convert a while loop to a for loop
 - Convert a for loop to a while loop
@@ -64,4 +65,34 @@ while i <= 10:
         continue
     print(i)
     i += 1
+```
+
+## Add Input in a Loop
+This is broken down in three patterns:
+1. Can I create a loop that iterates five times?
+2. Can I take user input in the loop?
+3. Can I use an accumulator variable to store the input?
+```python
+i = 0
+total = 0
+
+while i < 5:
+    num = int(input("Enter number: "))
+    total += num
+    i += 1
+
+print(total)
+```
+
+## Sentinel Value
+```python
+total = 0
+
+while True:
+    num = int(input("Enter number, -1 to stop: "))
+    if num == -1:
+        break
+    total += num
+    
+print(total)
 ```
