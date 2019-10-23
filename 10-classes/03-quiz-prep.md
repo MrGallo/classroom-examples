@@ -10,7 +10,7 @@ Topics:
 - Know difference between a class and an object
 - Instance method
 
-1. Create an `Item` class with the following details:
+1. Create an `Food` class with the following details:
     ```
     Food
     ====
