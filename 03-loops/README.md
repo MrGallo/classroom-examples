@@ -8,7 +8,8 @@
 - [Add up user input in a loop](#add-input-in-a-loop)
 - [Stop gathering input with a sentinel value](#sentinal-value)
 - [**Iterate** over a collection (lists, strings)](#loop-through-a-string)
-- Convert a while loop to a for loop
+- [Convert a while loop to a for loop](#convert-while-to-for)
+- [Use a for loop with `range()`](#for-loop-with-range)
 - Convert a for loop to a while loop
 
 ## Advanced
@@ -146,4 +147,9 @@ while i < len(friends):
 # print the friend
 for friend in friends:
     print(friend)
+```
+
+## `for` loop with `range`
+```python
+
 ```
