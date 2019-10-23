@@ -96,3 +96,54 @@ while True:
     
 print(total)
 ```
+
+## Loop through a string
+```python
+name = "Mr. Gallo"
+
+i = 0
+while i < len(name):
+    print(name[i])
+    i += 1
+```
+
+## Loop through a list
+```python
+friends = ["Frank", "Sally", "Jimbo"]
+
+i = 0
+while i < len(friends):
+    print(friends[i])
+    i += 1
+```
+
+## COnvert `while` to `for`
+```python 
+name = "Mr. Gallo"
+
+i = 0
+while i < len(name):
+    character = name[i]
+    print(character)
+    i += 1
+
+# Converted...
+for character in name:
+    print(character)
+```
+
+```python
+friends = ["Frank", "Sally", "Jimbo"]
+
+i = 0
+while i < len(friends):
+    friend = friends[i]
+    print(friend)
+    i += 1
+
+# Converted...
+# For every friend in my list of friends
+# print the friend
+for friend in friends:
+    print(friend)
+```
