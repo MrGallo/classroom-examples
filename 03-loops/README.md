@@ -7,7 +7,7 @@
 - [Skip loop code (`continue`)](#continue)
 - [Add up user input in a loop](#add-input-in-a-loop)
 - [Stop gathering input with a sentinel value](#sentinal-value)
-- **Iterate** over a collection (lists, strings)
+- [**Iterate** over a collection (lists, strings)](#loop-through-a-string)
 - Convert a while loop to a for loop
 - Convert a for loop to a while loop
 
@@ -117,7 +117,7 @@ while i < len(friends):
     i += 1
 ```
 
-## COnvert `while` to `for`
+## Convert `while` to `for`
 ```python 
 name = "Mr. Gallo"
 
