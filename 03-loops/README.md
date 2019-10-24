@@ -7,8 +7,9 @@
 - [Skip loop code (`continue`)](#continue)
 - [Add up user input in a loop](#add-input-in-a-loop)
 - [Stop gathering input with a sentinel value](#sentinal-value)
-- **Iterate** over a collection (lists, strings)
-- Convert a while loop to a for loop
+- [**Iterate** over a collection (lists, strings)](#loop-through-a-string)
+- [Convert a while loop to a for loop](#convert-while-to-for)
+- [Use a for loop with `range()`](#for-loop-with-range)
 - Convert a for loop to a while loop
 
 ## Advanced
@@ -95,4 +96,60 @@ while True:
     total += num
     
 print(total)
+```
+
+## Loop through a string
+```python
+name = "Mr. Gallo"
+
+i = 0
+while i < len(name):
+    print(name[i])
+    i += 1
+```
+
+## Loop through a list
+```python
+friends = ["Frank", "Sally", "Jimbo"]
+
+i = 0
+while i < len(friends):
+    print(friends[i])
+    i += 1
+```
+
+## Convert `while` to `for`
+```python 
+name = "Mr. Gallo"
+
+i = 0
+while i < len(name):
+    character = name[i]
+    print(character)
+    i += 1
+
+# Converted...
+for character in name:
+    print(character)
+```
+
+```python
+friends = ["Frank", "Sally", "Jimbo"]
+
+i = 0
+while i < len(friends):
+    friend = friends[i]
+    print(friend)
+    i += 1
+
+# Converted...
+# For every friend in my list of friends
+# print the friend
+for friend in friends:
+    print(friend)
+```
+
+## `for` loop with `range`
+```python
+
 ```
