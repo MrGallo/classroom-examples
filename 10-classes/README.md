@@ -6,7 +6,7 @@
 - [Understand object pointers](#understand-object-pointers)
 - [Know difference between a *class* and an *object*](#class-vs-object)
 - [Instance method](#methods)
-- [Encapsulation}(#encapsulation)
+- [Encapsulation](#encapsulation)
 - Aggregate class
 - Class field (variable)
 - Class method
@@ -133,7 +133,7 @@ p2.compliment(p1)
 ## Encapsulation
 When writing a library or an API, your Classes attributes **must** be encapsulated. In short, provide *getters* and *setters* for each attribute. *Encapsulation* allows library authors to make fairly major changes to the inner-working of their classes without breaking the code of the programmers who use the labrary.
 
-**UNencapsulated**
+**NOT encapsulated**:
 ```python
 class Person:
     def __init__(self, name, age):
@@ -142,7 +142,9 @@ class Person:
 ```
 
 Object attributes are accessed throught the *getter* methods and attributes are chaged throught the *setter* methods. This allows us to verify the data that gets passed to the attributes.
-**Encapsulated**
+
+
+**Encapsulated**:
 ```python
 class Person:
     def __init__(self, name: str, age: int):
