@@ -19,6 +19,9 @@ def update(delta_time):
     global x, x_speed
     x += x_speed
 
+    if x > WIDTH:
+        x_speed = -1
+
 
 @window.event
 def on_draw():
