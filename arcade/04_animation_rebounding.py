@@ -5,6 +5,7 @@ WIDTH = 640
 HEIGHT = 480
 
 window = arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
+x = 50
 
 
 def setup():
@@ -14,14 +15,16 @@ def setup():
 
 
 def update(delta_time):
-    pass
+    global x
+    x += 1
 
 
 @window.event
 def on_draw():
+    global x
     arcade.start_render()
     # Draw in here...
-    arcade.draw_circle_filled(100, 100, 25, arcade.color.BLUE)
+    arcade.draw_circle_filled(x, 100, 25, arcade.color.BLUE)
 
 
 @window.event
