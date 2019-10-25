@@ -6,7 +6,7 @@ HEIGHT = 480
 
 window = arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
 x = 50
-x_speed = 1
+x_speed = 7
 
 
 def setup():
@@ -20,7 +20,9 @@ def update(delta_time):
     x += x_speed
 
     if x > WIDTH:
-        x_speed = -1
+        x_speed = -5
+    elif x < 0:
+        x_speed = 5
 
 
 @window.event
