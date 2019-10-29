@@ -152,6 +152,26 @@ for friend in friends:
 
 ## `for` loop with `range`
 ```python
+# while loop print 50-100
+i = 50
+while i <= 100:
+    print(i)
+    i += 1
+
+# range(start, end)... Goes up to, but, doesn't include the end
+for num in range(50, 101):
+    print(num)
+
+
+# while loop print 1-25 by 5
+i = 0
+while i <= 25:
+    print(i)
+    i += 5
+
+# range(start, end, step)
+for num in range(0, 26, 5):
+    print(num)
 
 ```
 
