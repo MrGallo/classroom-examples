@@ -177,5 +177,15 @@ for num in range(0, 26, 5):
 
 ## String building
 ```python
+# create a new string without any of the vowels.
 
+# While loop version
+some_string = "Hello, World!"
+new_str = ""
+
+for char in some_string:
+    if char.lower() in "aeiou":
+        new_str += char
+
+print(new_str)
 ```
