@@ -10,7 +10,7 @@
 - Aggregate class
 - [Class field (variable)](#class-field)
 - [Class method](#class-method)
-- Inheritance
+- [Inheritance](#inheritance)
 - Polymorphism
 - Refactor multiple classes
 
