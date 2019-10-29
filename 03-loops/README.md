@@ -179,13 +179,28 @@ for num in range(0, 26, 5):
 ```python
 # create a new string without any of the vowels.
 
-# While loop version
+# For loop version
 some_string = "Hello, World!"
 new_str = ""
 
 for char in some_string:
-    if char.lower() in "aeiou":
+    if char.lower() not in "aeiou":
         new_str += char
+
+print(new_str)
+```
+```python
+# While loop version 
+
+some_string = "Hello, World!"
+new_str = ""
+
+i = 0
+while i < len(some_string):
+    char = some_string[i]
+    if char.lower() not in "aeiou":
+        new_str += char
+    i += 1
 
 print(new_str)
 ```
