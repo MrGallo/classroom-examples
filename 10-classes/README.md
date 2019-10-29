@@ -8,8 +8,8 @@
 - [Instance method](#methods)
 - [Encapsulation](#encapsulation)
 - Aggregate class
-- Class field (variable)
-- Class method
+- [Class field (variable)](#class-field)
+- [Class method](#class-method)
 - Inheritance
 - Polymorphism
 - Refactor multiple classes
@@ -162,4 +162,74 @@ class Person:
     
     def set_name(self, value: str):
         self._name = value
+```
+
+## Class field
+```python
+from typing import List
+
+
+class Pizza:
+    num_pizzas = 0  # class field (variable)
+
+    def __init__(self, name: str, toppings: List[str]):
+        self.name = name
+        self.toppings = toppings
+        self.id = Pizza.num_pizzas
+        Pizza.num_pizzas += 1  # update the class field
+    
+    def __str__(self) -> str:
+        return f"{self.name}, toppings: {self.toppings}, id: {self.id}"
+    
+
+def main():
+    pepperoni = Pizza.("Pepperoni", ["cheese", "pepperoni"])
+    print(pepperoni)
+
+
+if __name__ == "__main__":
+    main()
+```
+
+## Class method
+```python
+from typing import List
+
+
+class Pizza:
+    num_pizzas = 0
+
+    def __init__(self, name: str, toppings: List[str]):
+        self.name = name
+        self.toppings = toppings
+        self.id = Pizza.num_pizzas
+        Pizza.num_pizzas += 1
+    
+    def __str__(self) -> str:
+        return f"{self.name}, toppings: {self.toppings}, id: {self.id}"
+    
+    @classmethod
+    def pepperoni(cls):
+        return cls("Pepperoni", ["cheese", "pepperoni"])
+    
+    @classmethod
+    def cheese(cls):
+        return cls("Cheese", ["cheese"])
+    
+
+def main():
+    pepperoni = Pizza.pepperoni()
+    print(pepperoni)
+
+    cheese = Pizza.cheese()
+    print(cheese)
+
+    cheese_another = Pizza.cheese()
+    print(cheese_another)
+
+    print(Pizza.num_pizzas)
+
+
+if __name__ == "__main__":
+    main()
 ```
