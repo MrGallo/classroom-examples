@@ -11,6 +11,7 @@
 - [Convert a while loop to a for loop](#convert-while-to-for)
 - [Use a for loop with `range()`](#for-loop-with-range)
 - Convert a for loop to a while loop
+- [String building in a loop (**accumulator variable**)](#string-building)
 
 ## Advanced
 - For loop with `enumerate()`
@@ -150,6 +151,11 @@ for friend in friends:
 ```
 
 ## `for` loop with `range`
+```python
+
+```
+
+## String building
 ```python
 
 ```
