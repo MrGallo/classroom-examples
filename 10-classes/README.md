@@ -265,6 +265,23 @@ class Squirrel(Animal):
 
 
 class Cat(Animal):
-    def make_sound(self):
-        print("Meow")
+    pass
+
+
+def main():
+    d = Dog("Rover", "Dalmatian")
+    s = Squirrel("Sammy")
+    c = Cat("Bella")
+
+    print(d)  # Rover the Dalmatian
+    print(s)  # Sammy
+    print(c)  # Bella
+
+    d.make_sound()  # Woof!
+    s.make_sound()  # Squeek
+    c.make_sound()  # <generic animal sound>
+
+
+if __name__ == "__main__":
+    main()
 ```
