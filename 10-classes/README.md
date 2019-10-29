@@ -233,3 +233,38 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+## Inheritance
+```python
+class Animal:
+    def __init__(self, name: str):
+        self.name = name
+    
+    def __str__(self):
+        return self.name
+    
+    def make_sound(self):
+        print("<generic animal sound>")
+
+
+class Dog(Animal):
+    def __init__(self, name: str, breed: str):
+        super().__init__(name)
+        self.breed = breed
+    
+    def __str__(self):
+        return f"{self.name} the {self.breed}"
+    
+    def make_sound(self):
+        print("Woof!")
+
+
+class Squirrel(Animal):
+    def make_sound(self):
+        print("Squeek")
+
+
+class Cat(Animal):
+    def make_sound(self):
+        print("Meow")
+```
