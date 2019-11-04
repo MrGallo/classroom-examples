@@ -115,7 +115,7 @@ class Person:
     def introduce(self):
         print(f"Hello, my name is {self.name}.")
        
-    def compliment(self, person):
+    def complement(self, person):
         print(f"{person.name}, I love your hair!")
 
 # Usage
@@ -123,7 +123,7 @@ p1 = Person("Jeff")
 p2 = Person("Sally")
 
 p1.introduce()
-p2.compliment(p1)
+p2.complement(p1)
 
 # output:
 # "Hello, my name is Jeff."
