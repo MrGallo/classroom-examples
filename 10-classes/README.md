@@ -13,6 +13,7 @@
 - [Inheritance](#inheritance)
 - Polymorphism
 - Refactor multiple classes
+- [Function/Method Overloading](#method-overloading)
 
 
 ## Store data in an object
@@ -284,4 +285,28 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
+
+## Method Overloading
+```python
+
+# Method overloading (Python version)
+
+# optional/default parameters
+# Key-word arguments
+
+# Allows us to create one function or method with a variety of
+# ways to call it.
+
+
+def draw_rectangle(x, y, w=100, h=100, color=arcade.color.BLUE):
+    pass
+
+
+draw_rectangle(10, 50)  # draws rectangle at 50, 50 of width 100, height 100
+draw_rectangle(100, 200, 5)
+draw_rectangle(500, 200, 50, 50)
+draw_rectangle(10, 10, 5, 5, arcade.color.WHITE)
+draw_rectangle(75, 10, color=arcade.color.WHITE)
+
 ```
