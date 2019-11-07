@@ -22,16 +22,12 @@ count_evens([1, 3, 5]) → 0
 ```
 Solution:
 ```python
-def big_diff(nums):
-    largest = nums[0]
-    smallest = nums[0]
+def count_evens(nums):
+    count = 0
     for num in nums:
-        if num > largest:
-            largest = num
-        elif num < smallest:
-            smallest = num
-    
-    return largest - smallest
+        if num % 2 == 0:
+            count += 1
+    return count
 ```
 
 ### Big Diff
