@@ -66,6 +66,7 @@ sum67([1, 1, 6, 7, 2]) → 4
 ```
 Solution:
 ```python
+def sum67(nums):
     total = 0
     in_zone = False
     
