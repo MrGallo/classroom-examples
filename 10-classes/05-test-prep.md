@@ -20,6 +20,7 @@ Extend the program
 - Create a School class, make modifications to Teacher and Student.
 - Create a all_teachers field for the Teachers class. Make @classmethod to search for a teacher by their OCT_PIN. Make another @classmethod to search for a teacher by their last name.
 
-[Test File]()
-[Solution]()
+- [Test File](https://github.com/MrGallo/classroom-examples/blob/master/10-classes/05b-test-prep-tests.py)
+- [Solution](https://github.com/MrGallo/classroom-examples/blob/master/10-classes/05b-test-prep-solution.py)
+
 ![UML](https://github.com/MrGallo/classroom-examples/blob/master/10-classes/images/test-prep-uml.jpg)
