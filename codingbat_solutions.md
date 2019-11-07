@@ -1,6 +1,15 @@
 # Codingbat Python Solutions
 [codingbat.com](codingbat.com/python)
 
+**Table of Contents:**
+- [List 2](#list-2)
+  * [Count Evens](#count-evens)
+  * [Big Diff](#big-diff)
+  * [Sum 67](#sum-67)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## List 2
 ### Count Evens
 ```
