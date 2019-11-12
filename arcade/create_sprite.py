@@ -21,6 +21,12 @@ class Sprite:
         self.x += self.x_speed
         self.y += self.y_speed
 
+        if self.x > WIDTH or self.x < 0:
+            self.x_speed = -self.x_speed
+        
+        if self.y > HEIGHT or self.y < 0:
+            self.y_speed = -self.y_speed
+
 
 window = arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
 
