@@ -9,6 +9,9 @@ class Sprite:
     def __init__(self, x: int, y: int):
         self.x = x
         self.y = y
+    
+    def draw(self):
+        arcade.draw_circle_filled(self.x, self.y, 25, arcade.color.BLUE)
 
 
 window = arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
@@ -29,7 +32,7 @@ def update(delta_time):
 def on_draw():
     arcade.start_render()
     # Draw in here...
-    arcade.draw_circle_filled(player.x, player.y, 25, arcade.color.BLUE)
+    player.draw()
 
 
 @window.event
