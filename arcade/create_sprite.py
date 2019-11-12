@@ -25,7 +25,8 @@ def setup():
 
 
 def update(delta_time):
-    pass
+    player.x += 1
+    player.y += 1
 
 
 @window.event
