@@ -14,6 +14,10 @@ class Sprite:
     
     def draw(self):
         arcade.draw_circle_filled(self.x, self.y, 25, arcade.color.BLUE)
+    
+    def update(self):
+        self.x += self.x_speed
+        self.y += self.y_speed
 
 
 window = arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
@@ -27,8 +31,7 @@ def setup():
 
 
 def update(delta_time):
-    player.x += player.x_speed
-    player.y += player.y_speed
+    player.update()
 
 
 @window.event
