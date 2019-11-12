@@ -1,3 +1,5 @@
+import random
+
 import arcade
 
 
@@ -22,7 +24,17 @@ class Sprite:
 
 window = arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
 
-player = Sprite(200, 200, 1, 1)
+sprites = []
+
+for _ in range(10):
+    x = random.randrange(WIDTH)
+    y = random.randrange(HEIGHT)
+    dx = random.randrange(-5, 5)
+    dy = random.randrange(-5, 5)
+
+    s = Sprite(x, y, dx, dy)
+    sprites.append(s)
+
 
 def setup():
     arcade.set_background_color(arcade.color.WHITE)
@@ -31,14 +43,16 @@ def setup():
 
 
 def update(delta_time):
-    player.update()
+    for s in sprites:
+        s.update()
 
 
 @window.event
 def on_draw():
     arcade.start_render()
     # Draw in here...
-    player.draw()
+    for s in sprites:
+        s.draw()
 
 
 @window.event
