@@ -35,19 +35,10 @@ class MyGame(arcade.Window):
         pass
 
     def on_key_press(self, key, key_modifiers):
-        """
-        Called whenever a key on the keyboard is pressed.
-
-        For a full list of keys, see:
-        http://arcade.academy/arcade.key.html
-        """
-        pass
+        self.keys_pressed[key] = True
 
     def on_key_release(self, key, key_modifiers):
-        """
-        Called whenever the user lets off a previously pressed key.
-        """
-        pass
+        self.keys_pressed[key] = False
 
     def on_mouse_motion(self, x, y, delta_x, delta_y):
         """
