@@ -45,7 +45,7 @@ def on_key_release(key, modifiers):
 
 @window.event
 def on_mouse_press(x, y, button, modifiers):
-    pass
+    print(x, y, button, modifiers)
 
 
 if __name__ == '__main__':
