@@ -1,4 +1,5 @@
 """Need to create a default dict to store pressed/released values"""
+from collections import defaultdict
 import arcade
 
 WIDTH = 800
@@ -16,13 +17,14 @@ class MyGame(arcade.Window):
 
     def setup(self):
         # Create your sprites and sprite lists here
-        pass
+        self.keys_pressed = defaultdict(bool)
 
     def on_draw(self):
         arcade.start_render()  # keep as first line
 
         # Draw everything below here.
         arcade.draw_circle_filled(100, 100, 25, arcade.color.BLUE)
+        print(self.keys_pressed)
 
     def update(self, delta_time):
         """
