@@ -5,7 +5,7 @@ WIDTH = 640
 HEIGHT = 480
 
 window = arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
-x = 50
+ball_x = 50
 x_speed = 7
 
 
@@ -16,21 +16,21 @@ def setup():
 
 
 def update(delta_time):
-    global x, x_speed
-    x += x_speed
+    global ball_x, x_speed
+    ball_x += x_speed
 
-    if x > WIDTH:
+    if ball_x > WIDTH:
         x_speed = -5
-    elif x < 0:
+    elif ball_x < 0:
         x_speed = 5
 
 
 @window.event
 def on_draw():
-    global x
+    global ball_x
     arcade.start_render()
     # Draw in here...
-    arcade.draw_circle_filled(x, 100, 25, arcade.color.BLUE)
+    arcade.draw_circle_filled(ball_x, 100, 25, arcade.color.BLUE)
 
 
 @window.event
