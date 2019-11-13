@@ -18,7 +18,6 @@ class MyGame(arcade.Window):
                                     center_x=200,
                                     center_y=200,
                                     scale=0.5)
-        self.player.change_x = 1
 
     def on_draw(self):
         arcade.start_render()  # keep as first line
@@ -35,13 +34,9 @@ class MyGame(arcade.Window):
         self.player.update()
 
     def on_key_press(self, key, key_modifiers):
-        """
-        Called whenever a key on the keyboard is pressed.
-
-        For a full list of keys, see:
-        http://arcade.academy/arcade.key.html
-        """
-        pass
+        print(key, key_modifiers)
+        if key == arcade.key.D:
+            self.player.change_x = 1
 
     def on_key_release(self, key, key_modifiers):
         """
