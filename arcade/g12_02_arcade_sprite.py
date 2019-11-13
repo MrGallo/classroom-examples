@@ -14,14 +14,16 @@ class MyGame(arcade.Window):
         # and set them to None
 
     def setup(self):
-        # Create your sprites and sprite lists here
-        pass
+        self.player = arcade.Sprite(filename="arcade/images/playerShip1_blue.png",
+                                    center_x=200,
+                                    center_y=200,
+                                    scale=0.5)
 
     def on_draw(self):
         arcade.start_render()  # keep as first line
 
         # Draw everything below here.
-        arcade.draw_circle_filled(100, 100, 25, arcade.color.BLUE)
+        self.player.draw()
 
     def update(self, delta_time):
         """
