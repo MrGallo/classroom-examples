@@ -1,3 +1,4 @@
+import math
 import arcade
 
 
@@ -46,6 +47,12 @@ def on_key_release(key, modifiers):
 @window.event
 def on_mouse_press(x, y, button, modifiers):
     print(x, y, button, modifiers)
+    a = x - ball_x
+    b = y - 100
+    dist = math.sqrt(a**2 + b**2)
+
+    # next: complete the if statement. Print "CLICKED" if clicked.
+    # if ...
 
 
 if __name__ == '__main__':
