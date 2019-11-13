@@ -1,4 +1,6 @@
 """Need to create a default dict to store pressed/released values"""
+
+# First, import defaultdict
 from collections import defaultdict
 import arcade
 
@@ -17,6 +19,7 @@ class MyGame(arcade.Window):
 
     def setup(self):
         # Create your sprites and sprite lists here
+        # Next, create a dict to store key presses.
         self.keys_pressed = defaultdict(bool)
 
     def on_draw(self):
@@ -24,14 +27,9 @@ class MyGame(arcade.Window):
 
         # Draw everything below here.
         arcade.draw_circle_filled(100, 100, 25, arcade.color.BLUE)
-        print(self.keys_pressed)
+        print(self.keys_pressed)  # print out the state of your key dict
 
     def update(self, delta_time):
-        """
-        All the logic to move, and the game logic goes here.
-        Normally, you'll call update() on the sprite lists that
-        need it.
-        """
         pass
 
     def on_key_press(self, key, key_modifiers):
@@ -39,24 +37,6 @@ class MyGame(arcade.Window):
 
     def on_key_release(self, key, key_modifiers):
         self.keys_pressed[key] = False
-
-    def on_mouse_motion(self, x, y, delta_x, delta_y):
-        """
-        Called whenever the mouse moves.
-        """
-        pass
-
-    def on_mouse_press(self, x, y, button, key_modifiers):
-        """
-        Called when the user presses a mouse button.
-        """
-        pass
-
-    def on_mouse_release(self, x, y, button, key_modifiers):
-        """
-        Called when a user releases a mouse button.
-        """
-        pass
 
 
 def main():
