@@ -1,4 +1,39 @@
 # Recursion-1
+From [codingbat.com/java/recursion](http://codingbat.com/java/recursion)
+
+- [factorial](#factorial)
+- [bunnyEars](#bunnyears)
+- [fibonacci](#fibonacci)
+- [bunnyEars2](#bunnyears2)
+- [triangle](#triangle)
+- [sumDigits](#sumdigits)
+- [count7](#count7)
+- [count8](#count8)
+- [powerN](#powern)
+- [countX](#countx)
+- [countHi](#counthi)
+- [changeXY](#changexy)
+- [changePi](#changepi)
+- [noX](#nox)
+- [array6](#array6)
+- [array11](#array11)
+- [array220](#array220)
+- [allStar](#allstar)
+- [pairStar](#pairstar)
+- [endX](#endx)
+- [countPairs](#countpairs)
+- [countAbc](#countabc)
+- [count11](#count11)
+- [stringClean](#stringclean)
+- [countHi2](#counthi2)
+- [parenBit](#parenbit)
+- [nestParen](#nestparen)
+- [strCount](#strcount)
+- [strCopies](#strcopies)
+- [strDist](#strdist)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## factorial
 ```
