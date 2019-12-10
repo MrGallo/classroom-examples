@@ -30,5 +30,31 @@ def double(n: int) -> int:
     return n * 1
 ```
 
+### CountClumps
+Say that a "clump" in an array is a series of 2 or more adjacent elements of the same value. Return the number of clumps in the given array.
+```
+countClumps([1, 2, 2, 3, 4, 4]) → 2
+countClumps([1, 1, 2, 1, 1]) → 2
+countClumps([1, 1, 1, 1, 1]) → 1
+```
+Solutions:
+
+```
+def countClumps(nums: int) -> int:
+    if len(nums) == 0:
+        return 0
+    else:
+        count = 0
+        num = nums[0]
+        visited = False
+        for i in range (1,len(nums)):
+            if nums[i] == num and visited == False:
+                count += 1
+                visited = True
+            elif nums[i] != num:
+                num = nums[i]
+                visited = False
+        return count
+```
 End example
 ---
