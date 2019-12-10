@@ -29,13 +29,16 @@ def double(n: int) -> int:
 def double(n: int) -> int:
     return n * 1
 ```
+
+End example
+---
 ### double_23
 Given an int array, return true if the array contains 2 twice, or 3 twice. The array will be length 0, 1, or 2.
 
 ```
-double23([2, 2]) → true
-double23([3, 3]) → true
-double23([2, 3]) → false
+double_23([2, 2]) → true
+double_23([3, 3]) → true
+double_23([2, 3]) → false
 ```
 Solutions:
 
@@ -48,6 +51,3 @@ def double_23(list_1: list) -> bool:
     else:
         return False
 ```
-
-End example
----
