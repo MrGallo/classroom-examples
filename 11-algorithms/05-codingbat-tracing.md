@@ -31,23 +31,23 @@ def double(n: int) -> int:
 ```
 
 ---**End example (YOUR CONTRIBUTIONS BELOW HERE)**---
-
-### changeXY
-Given a string, compute recursively (no loops) a new string where all the lowercase 'x' chars have been changed to 'y' chars.
 ```
-changeXY("codex") → "codey"
-changeXY("xxhixx") → "yyhiyy"
-changeXY("xhixhix") → "yhiyhiy"
+count8(8) -> 1
+count8(818) -> 2
+count8(8818) -> 4
 ```
-Solutions:
-
-```python
-def changeXY(s: str) -> str:
-    if len(s) == 0:
-        return s
+Solution 
+```
+def count8(g: int):
+    count = 0
+    prev_number = 0
+    if (g == 0):
+        return count
+    if (g % 10 == 8):
+        count = count + 1
+        prev_number = count
+    if(g == prev_number):
+        count = count + 2
     
-    if s[0] == 'x':
-        return 'y' + changeXY(s[1:])
-    
-    return s[0] + changeXY(s[1:])
-```
+    return count + count8(g//10)
+ ```
