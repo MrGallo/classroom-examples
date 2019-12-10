@@ -32,22 +32,28 @@ def double(n: int) -> int:
 
 End example
 ---
-### double_23
-Given an int array, return true if the array contains 2 twice, or 3 twice. The array will be length 0, 1, or 2.
+### lone_sum
+Given 3 int values, a b c, return their sum. However, if one of the values is the same as another of the values, it does not count towards the sum.
 
 ```
-double_23([2, 2]) → true
-double_23([3, 3]) → true
-double_23([2, 3]) → false
+lone_sum(1, 2, 3) → 6
+lone_sum(3, 2, 3) → 2
+lone_sum(3, 3, 3) → 0
 ```
 Solutions:
 
 ```python
-def double_23(list_1: list) -> bool:
-    if list_1[0] == 2 and list_1[1] == 2:
-        return True
-    elif list_1[0] == 3 and list_1[1] == 3:
-        return True
-    else:
-        return False
+def lone_sum(a, b, c):
+  if a != b and a != c and b != c:
+    return a + b + c 
+  elif a != c and a == b:
+    return c
+  elif a != b and a == c:
+    return b
+  elif b != c and b == a:
+    return c
+  elif c != a and c == b:
+    return a
+  else:
+    return 0
 ```
