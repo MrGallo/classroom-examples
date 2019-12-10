@@ -32,3 +32,26 @@ def double(n: int) -> int:
 
 End example
 ---
+
+### big_diff
+Given an array length 1 or more of ints, return the difference between the largest and smallest values in the array.
+```
+big_diff([10, 3, 5, 6]) → 7
+big_diff([7, 2, 10, 9]) → 8
+big_diff([2, 10, 7, 2]) → 8
+
+```
+Solutions:
+
+```python
+def big_diff(nums: list[int]) -> int:
+    biggest = nums[0]
+    smallest = nums[0]
+    for num in nums:
+        if num>biggest:
+        biggest = num
+        elif num<smallest:
+        smallest=num
+    return (biggest - smallest)
+
+```
