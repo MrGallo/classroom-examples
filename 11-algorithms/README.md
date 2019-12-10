@@ -9,7 +9,9 @@
 - [Recursion](#recursion)
 - Merge Sort (recursion)
 - Infinite recursion
+- Binary Insert
 - Memoization
+- Tree traversal
 
 
 ### Linear Search
