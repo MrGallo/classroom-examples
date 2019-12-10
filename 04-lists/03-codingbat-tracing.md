@@ -8,6 +8,7 @@ Simply edit this document and add your code as shown below with the following ru
 2. Add [type annotations](https://docs.python.org/3/library/typing.html) for the function header so we know what type of data the function recieves and returns.
 3. Ensure that the name of the function is under an appropriate `###` header.
 4. Ensure that the problem's explanation text is above all the "solutions". 
+5. Keep the problems in alpha order.
 
 ## Example:
 ### double
