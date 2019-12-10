@@ -29,6 +29,21 @@ def double(n: int) -> int:
 def double(n: int) -> int:
     return n * 1
 ```
+### no 23
+Given an int array length 2, return true if it does not contain a 2 or 3
+```
+no_23([6,7]) -> True
+no_23([2,5]) -> False
+no_23([3,6]) -> False
+```
+Solutions:
 
+```python
+def no_23(list_1:list) -> bool:
+    if list_1[0] != 2 and list_1[0] != 3 and list_1[1] != 2 and list_1[1] != 3:
+        return True
+    else:
+        return False
+```
 End example
 ---
