@@ -51,3 +51,24 @@ def changeXY(s: str) -> str:
     
     return s[0] + changeXY(s[1:])
 ```
+
+```
+count8(8) → 1
+count8(818) → 2
+count8(8818) → 4
+```
+
+Solutions:
+```python
+def count8(g: int):
+    count = 0
+    prev_number = 0
+    if (g == 0):
+        return count
+    if (g % 10 == 8):
+        count = count + 1
+        prev_number = count
+    if(g == prev_number):
+        count = count + 2
+    
+    return count + count8(g//10)
