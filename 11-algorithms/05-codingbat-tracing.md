@@ -79,3 +79,22 @@ def changePi(word: str) -> str:
     else:
         return changePi(word[1:])
 ```
+
+```python
+def changePi(word: str) -> str:
+    """Given a string, compute recursively (no loops) a new string where all appearances of "pi" have been replaced by "3.14".
+    Args:
+        word (str): The word to search in
+    Returns:
+        word (str) the new word with each instance of 'pi' replaced with '3.14'
+    """
+
+    if len(word) == 0 or len(word) == 1:
+        return word
+    
+    if word[:2] == "pi":
+        return "3.14" + changePi(word[2:])
+    else:
+        return word[0] + changePi(word[1:])
+```
+
