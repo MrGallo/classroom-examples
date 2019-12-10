@@ -29,25 +29,43 @@ def double(n: int) -> int:
 def double(n: int) -> int:
     return n * 1
 ```
-
 End example
 ---
-### double_23
-Given an int array, return true if the array contains 2 twice, or 3 twice. The array will be length 0, 1, or 2.
 
+### makeEnds
+Given an array of ints, return a new array length 2 containing the first and last elements from the original array. The original array will be length 1 or more.
 ```
-double_23([2, 2]) → true
-double_23([3, 3]) → true
-double_23([2, 3]) → false
+make_ends([1, 2, 3]) → [1, 3]
+make_ends([1, 2, 3, 4]) → [1, 4]
+make_ends([7, 4, 6, 2]) → [7, 2]
 ```
 Solutions:
 
 ```python
-def double_23(list_1: list) -> bool:
-    if list_1[0] == 2 and list_1[1] == 2:
-        return True
-    elif list_1[0] == 3 and list_1[1] == 3:
-        return True
-    else:
-        return False
+def make_ends(nums: int) -> int:
+  new_list = []
+  new_list.append(nums[0]) 
+  new_list.append(nums[-1]) 
+  return new_list
 ```
+End Example 
+---
+
+### middleWay 
+Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements.
+```
+middle_way([1, 2, 3], [4, 5, 6]) → [2, 5]
+middle_way([7, 7, 7], [3, 8, 0]) → [7, 8]
+middle_way([5, 2, 9], [1, 4, 5]) → [2, 4]
+```
+Solutions:
+
+```python 
+def middle_way(a: int, b: int) -> int:
+  new_list = []
+  new_list.append(a[1]) 
+  new_list.append(b[1])
+  return new_list
+```
+End Example 
+---
