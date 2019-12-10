@@ -49,9 +49,9 @@ def big_diff(nums: list[int]) -> int:
     smallest = nums[0]
     for num in nums:
         if num>biggest:
-        biggest = num
+            biggest = num
         elif num<smallest:
-        smallest=num
+            smallest=num
     return (biggest - smallest)
 
 ```
