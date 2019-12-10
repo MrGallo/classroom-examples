@@ -32,3 +32,25 @@ def double(n: int) -> int:
 
 End example
 ---
+
+###List-2 > has22
+Given an array of ints, return True if the array contains a 2 next to a 2 somewhere.
+```
+has22([1, 2, 2]) → True
+has22([1, 2, 1, 2]) → False
+has22([2, 1, 2]) → False
+```
+Solution:
+```python
+def has22(nums):
+  a=0
+  for i in range(len(nums)):
+    if nums[i]==2:
+      a+=1
+      if a==2:
+        return True
+    else:
+      a=0
+  if a<2:
+    return False
+```
