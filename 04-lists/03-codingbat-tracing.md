@@ -32,22 +32,24 @@ def double(n: int) -> int:
 
 End example
 ---
-### double_23
-Given an int array, return true if the array contains 2 twice, or 3 twice. The array will be length 0, 1, or 2.
-
+### first_last6
+Create a function that will return True when the first or last element is 6.
 ```
-double_23([2, 2]) → true
-double_23([3, 3]) → true
-double_23([2, 3]) → false
+first_last6([1, 2, 6]) -> True
+first_last6([6, 1, 2, 3]) -> True
+first_last6([13, 6, 1, 2, 3]) -> False
 ```
 Solutions:
 
 ```python
-def double_23(list_1: list) -> bool:
-    if list_1[0] == 2 and list_1[1] == 2:
-        return True
-    elif list_1[0] == 3 and list_1[1] == 3:
-        return True
-    else:
-        return False
+def first_last6(nums: List[int]) -> bool:
+  if nums[len(nums) - 1] == 6:
+    return True
+  elif nums[0] == 6:
+    return True
+  else:
+    return False
 ```
+
+
+
