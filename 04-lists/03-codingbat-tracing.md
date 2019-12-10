@@ -44,7 +44,9 @@ Solutions:
 
 ```python
 def double_23(list_1: list) -> bool:
-    if list_1[0] == 2 and list_1[1] == 2:
+    if len(list_1) == 0 or len(list_1) == 1:
+        return False
+    elif list_1[0] == 2 and list_1[1] == 2:
         return True
     elif list_1[0] == 3 and list_1[1] == 3:
         return True
