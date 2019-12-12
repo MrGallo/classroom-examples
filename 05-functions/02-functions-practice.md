@@ -5,11 +5,11 @@ def some_function(n: int, string: str) -> str:
     """Does something.
     
     Args:
-        n: Some number.
-        string: Some string
+        n (int): Some number.
+        string (str): Some string
        
     Returns:
-        A vague string.
+        str: A vague string.
     """
 ```
 
