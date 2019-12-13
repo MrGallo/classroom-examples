@@ -54,6 +54,34 @@ def double_23(list_1: list) -> bool:
         return False
 ```
 
+### either24
+Given an array of ints, return true if the array contains a 2 next to a 2 or a 4 next to a 4, but not both.
+```
+either24([1, 2, 2]) → true
+either24([4, 4, 1]) → true
+either24([4, 4, 1, 2, 2]) → false
+```
+Solutions:
+
+```python
+from typing import List
+def either24(nums: List[int]) -> bool:
+    is2 = False
+    is4 = False
+    for index in range(len(nums) - 1):
+        if nums[index] == 2 and nums[index + 1] == 2:
+            is2 = True
+        if nums[index] == 4 and nums[index + 1] == 4:
+            is4 = True
+
+    if is2 == True and is4 == False:
+        return True
+    elif is2 == False and is4 == True:
+        return True
+    else:
+        return False
+```
+
 ### isEverywhere
 We'll say that a value is "everywhere" in an array if for every pair of adjacent elements in the array, at least one of the pair is that value. Return true if the given value is everywhere in the array.
 ```
