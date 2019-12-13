@@ -54,6 +54,41 @@ def double_23(list_1: list) -> bool:
         return False
 ```
 
+### canBalance
+Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side.
+```
+canBalance([1, 1, 1, 2, 1]) → true
+canBalance([2, 1, 1, 2, 1]) → false
+canBalance([10, 10]) → true
+```
+Solutions:
+
+```python
+from typing import List
+def canBalance(nums: List[int]) -> bool:
+    length = len(nums)
+    end = 1
+    can_balance = False
+    while end < length:
+        sum_section1 = 0
+        sum_section2 = 0
+        section1 = nums[:end]
+        section2 = nums[end:]
+
+        for num_1 in section1:
+            sum_section1 += num_1
+        for num_2 in section2:
+            sum_section2 += num_2
+
+        if sum_section1 == sum_section2:
+            can_balance = True
+            break
+        
+        end += 1
+        
+    return can_balance
+```
+
 ### either24
 Given an array of ints, return true if the array contains a 2 next to a 2 or a 4 next to a 4, but not both.
 ```
