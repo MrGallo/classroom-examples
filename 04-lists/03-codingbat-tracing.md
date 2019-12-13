@@ -44,27 +44,23 @@ Solutions:
 ```python
 from typing import List
 def canBalance(nums: List[int]) -> bool:
-    length = len(nums)
-    end = 1
-    can_balance = False
-    while end < length:
+    idx = 1
+    while idx < len(nums):
         sum_section1 = 0
         sum_section2 = 0
-        section1 = nums[:end]
-        section2 = nums[end:]
 
-        for num_1 in section1:
-            sum_section1 += num_1
-        for num_2 in section2:
-            sum_section2 += num_2
+        for i in range(len(nums)):
+            if i < idx:
+                sum_section1 += nums[i]
+            else:
+                sum_section2 += nums[i]
 
         if sum_section1 == sum_section2:
-            can_balance = True
-            break
+            return True
         
-        end += 1
+        idx += 1
         
-    return can_balance
+    return False
 ```
 
 ### double_23
