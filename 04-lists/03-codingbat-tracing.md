@@ -35,9 +35,9 @@ End example
 ### canBalance
 Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side.
 ```
-canBalance([1, 1, 1, 2, 1]) → true
-canBalance([2, 1, 1, 2, 1]) → false
-canBalance([10, 10]) → true
+canBalance([1, 1, 1, 2, 1]) → True
+canBalance([2, 1, 1, 2, 1]) → False
+canBalance([10, 10]) → True
 ```
 Solutions:
 
@@ -71,9 +71,9 @@ def canBalance(nums: List[int]) -> bool:
 Given an int array, return true if the array contains 2 twice, or 3 twice. The array will be length 0, 1, or 2.
 
 ```
-double_23([2, 2]) → true
-double_23([3, 3]) → true
-double_23([2, 3]) → false
+double_23([2, 2]) → True
+double_23([3, 3]) → True
+double_23([2, 3]) → False
 ```
 Solutions:
 
@@ -92,9 +92,9 @@ def double_23(list_1: list) -> bool:
 ### either24
 Given an array of ints, return true if the array contains a 2 next to a 2 or a 4 next to a 4, but not both.
 ```
-either24([1, 2, 2]) → true
-either24([4, 4, 1]) → true
-either24([4, 4, 1, 2, 2]) → false
+either24([1, 2, 2]) → True
+either24([4, 4, 1]) → True
+either24([4, 4, 1, 2, 2]) → False
 ```
 Solutions:
 
@@ -120,9 +120,9 @@ def either24(nums: List[int]) -> bool:
 ### isEverywhere
 We'll say that a value is "everywhere" in an array if for every pair of adjacent elements in the array, at least one of the pair is that value. Return true if the given value is everywhere in the array.
 ```
-isEverywhere([1, 2, 1, 3], 1) → true
-isEverywhere([1, 2, 1, 3], 2) → false
-isEverywhere([1, 2, 1, 3, 4], 1) → false
+isEverywhere([1, 2, 1, 3], 1) → True
+isEverywhere([1, 2, 1, 3], 2) → False
+isEverywhere([1, 2, 1, 3, 4], 1) → False
 ```
 Solutions:
 
@@ -167,9 +167,9 @@ def max_end3(nums):
 ### no14
 Given an array of ints, return true if it contains no 1's or it contains no 4's.
 ```
-no14([1, 2, 3]) → true
-no14([1, 2, 3, 4]) → false
-no14([2, 3, 4]) → true
+no14([1, 2, 3]) → True
+no14([1, 2, 3, 4]) → False
+no14([2, 3, 4]) → True
 ```
 Solutions:
 
