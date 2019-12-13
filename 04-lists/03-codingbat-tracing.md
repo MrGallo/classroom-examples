@@ -54,6 +54,28 @@ def double_23(list_1: list) -> bool:
         return False
 ```
 
+### isEverywhere
+We'll say that a value is "everywhere" in an array if for every pair of adjacent elements in the array, at least one of the pair is that value. Return true if the given value is everywhere in the array.
+```
+isEverywhere([1, 2, 1, 3], 1) → true
+isEverywhere([1, 2, 1, 3], 2) → false
+isEverywhere([1, 2, 1, 3, 4], 1) → false
+```
+Solutions:
+
+```python
+from typing import List
+def isEverywhere(nums: List[int], number: int) -> bool:
+    everywhere = False
+    for index in range(len(nums) - 1):
+        if number == nums[index] or number == nums[index + 1]:
+            everywhere = True
+        else:
+            return False
+    
+    return everywhere
+```
+
 ### maxEnd3
 
 Given an array of ints length 3, figure out which is larger, 
