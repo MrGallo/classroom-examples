@@ -16,17 +16,17 @@ class Sprite:
         self.y_speed = y_speed
         self.radius = 25
         self.color = arcade.color.BLUE
-    
+
     def draw(self):
         arcade.draw_circle_filled(self.x, self.y, self.radius, self.color)
-    
+
     def update(self):
         self.x += self.x_speed
         self.y += self.y_speed
 
         if self.x > WIDTH or self.x < 0:
             self.x_speed = -self.x_speed
-        
+
         if self.y > HEIGHT or self.y < 0:
             self.y_speed = -self.y_speed
 
@@ -35,7 +35,7 @@ class MyGame(arcade.Window):
     def __init__(self, width, height, title):
         super().__init__(width, height, title)
         arcade.set_background_color(arcade.color.WHITE)
-            
+
         self.sprites = []
 
         for _ in range(10):
@@ -51,7 +51,6 @@ class MyGame(arcade.Window):
             s = Sprite(x, y, dx, dy)
             s.color = color
             self.sprites.append(s)
-
 
     def update(self, delta_time):
         for s in self.sprites:
@@ -79,7 +78,7 @@ class MyGame(arcade.Window):
                 s.radius += 5
                 if s.radius > 50:
                     self.sprites.remove(s)
-                
+
 
 if __name__ == '__main__':
     window = MyGame(WIDTH, HEIGHT, "My Arcade Game")
