@@ -154,12 +154,6 @@ def hypotenuse(a, b):
     return sqrt(a*a + b*b)
 
 
-def test_hypotenuse():
-    assert hypotenuse(3, 4) == 5
-    assert hypotenuse(6, 8) == 10
-    print("Passed all tests", end="\n\n")
-
-
 def main():
     print("Welcome to the Hypotenuse calculator")
     a = float(input("Enter side A:"))
@@ -168,8 +162,8 @@ def main():
     print("The hypotenuse is: {}".format(hypot))
 
 
-# test_hypotenuse()
-main()
+if __name__ == "__main__":
+    main()
 ```
 
 ### Exercise 82: Taxi Fare

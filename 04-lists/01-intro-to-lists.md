@@ -23,19 +23,19 @@
 >>> marks[::-1]                      # Slice from beginning to the end backwards
 [1, 4, 0, 5, 8, 2, 6]
 
->>> friends = ['Jim', 'Sally', 'Frank']
+>>> friends = ['Jim', 'Sally', 'Lucy']
 >>> friends.append("ABC")                   # .append() adds to a list
 >>> friends
-['Jim', 'Sally', 'Frank', 'ABC']
+['Jim', 'Sally', 'Lucy', 'ABC']
 >>> friends.append("Bob")
 >>> friends
-['Jim', 'Sally', 'Frank', 'ABC', 'Bob']
+['Jim', 'Sally', 'Lucy', 'ABC', 'Bob']
 
->>> friends[2] = "Frankie"                  # Reassign a specific list element at index
+>>> friends[2] = "Abigail"                  # Reassign a specific list element at index
 >>> friends
-['Jim', 'Sally', 'Frankie', 'ABC', 'Bob']
+['Jim', 'Sally', 'Abigail', 'ABC', 'Bob']
 
->>> friends.remove("Frankie")               # Search list for a specific value and remove it
+>>> friends.remove("Abigail")               # Search list for a specific value and remove it
 >>> friends
 ['Jim', 'Sally', 'ABC', 'Bob']
 
