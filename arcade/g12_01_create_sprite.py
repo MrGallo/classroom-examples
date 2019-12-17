@@ -31,71 +31,56 @@ class Sprite:
             self.y_speed = -self.y_speed
 
 
-window = arcade.open_window(WIDTH, HEIGHT, "My Arcade Game")
+class MyGame(arcade.Window):
+    def __init__(self, width, height, title):
+        super().__init__(width, height, title)
+        arcade.set_background_color(arcade.color.WHITE)
+            
+        self.sprites = []
 
-sprites = []
+        for _ in range(10):
+            x = random.randrange(WIDTH)
+            y = random.randrange(HEIGHT)
+            dx = random.randrange(-5, 5)
+            dy = random.randrange(-5, 5)
 
-for _ in range(10):
-    x = random.randrange(WIDTH)
-    y = random.randrange(HEIGHT)
-    dx = random.randrange(-5, 5)
-    dy = random.randrange(-5, 5)
-
-    color = []
-    for _ in range(3):
-        color.append(random.randrange(255))
-
-    s = Sprite(x, y, dx, dy)
-    s.color = color
-    sprites.append(s)
-
-
-def setup():
-    arcade.set_background_color(arcade.color.WHITE)
-    arcade.schedule(update, 1/60)
-    arcade.run()
-
-
-def update(delta_time):
-    for s in sprites:
-        s.update()
-
-
-@window.event
-def on_draw():
-    arcade.start_render()
-    # Draw in here...
-    for s in sprites:
-        s.draw()
-
-
-@window.event
-def on_key_press(key, modifiers):
-    pass
-
-
-@window.event
-def on_key_release(key, modifiers):
-    pass
-
-
-@window.event
-def on_mouse_press(x, y, button, modifiers):
-    for s in sprites:
-        a = s.x - x
-        b = s.y - y
-        dist = math.sqrt(a**2 + b**2)
-
-        if dist < s.radius:
             color = []
             for _ in range(3):
                 color.append(random.randrange(255))
-            s.color = color
-            s.radius += 5
-            if s.radius > 50:
-                sprites.remove(s)
-            
 
+            s = Sprite(x, y, dx, dy)
+            s.color = color
+            self.sprites.append(s)
+
+
+    def update(self, delta_time):
+        for s in self.sprites:
+            s.update()
+
+    def on_draw(self):
+        arcade.start_render()
+        # Draw in here...
+        for s in self.sprites:
+            s.draw()
+
+    def on_key_press(self, key, modifiers):
+        pass
+
+    def on_key_release(self, key, modifiers):
+        pass
+
+    def on_mouse_press(self, x, y, button, modifiers):
+        for s in self.sprites:
+            a = s.x - x
+            b = s.y - y
+            dist = math.sqrt(a**2 + b**2)
+
+            if dist < s.radius:
+                s.radius += 5
+                if s.radius > 50:
+                    self.sprites.remove(s)
+                
 
 if __name__ == '__main__':
-    setup()
+    window = MyGame(WIDTH, HEIGHT, "My Arcade Game")
+    arcade.run()
