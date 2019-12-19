@@ -32,6 +32,9 @@ class MyGame(arcade.Window):
         self.sprite1.update()
         self.sprite2.update()
 
+        if self.sprite1.collides_with_sprite(self.sprite2):
+            print("COLLIDING")
+
 
 def main():
     game = MyGame(WIDTH, HEIGHT, "My Game")
