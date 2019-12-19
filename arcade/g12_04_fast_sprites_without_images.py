@@ -27,6 +27,7 @@ class MyGame(arcade.Window):
         for _ in range(1000):
             x, y = random.randrange(WIDTH), random.randrange(HEIGHT)
             sprite = arcade.Sprite(center_x=x, center_y=y)
+            sprite.collides_with_list
             dx = random.randrange(-3, 3)
             dy = random.randrange(-3, 3)
             sprite.change_x = dx
