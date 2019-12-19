@@ -11,6 +11,7 @@ class MyGame(arcade.Window):
         arcade.set_background_color(arcade.color.WHITE)
 
         self.sprite1 = arcade.Sprite(center_x=100, center_y=200)
+        self.sprite1.change_x = 1
         self.sprite1.texture = arcade.make_soft_square_texture(50,
                                                                arcade.color.BLACK,
                                                                outer_alpha=255)
@@ -22,7 +23,7 @@ class MyGame(arcade.Window):
         self.sprite1.draw()
 
     def update(self, delta_time):
-        pass
+        self.sprite1.update()
 
 
 def main():
