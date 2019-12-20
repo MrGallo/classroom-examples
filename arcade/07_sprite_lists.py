@@ -38,16 +38,21 @@ class MyGame(arcade.Window):
         self.lasers.draw()
 
     def update(self, delta_time):
-        pass
+        self.lasers.update()
 
     def on_mouse_motion(self, x, y, delta_x, delta_y):
         self.player.center_x = x
         self.player.center_y = y
 
     def on_mouse_press(self, x, y, button, key_modifiers):
+        laser = arcade.Sprite()
+        laser.center_x = self.player.center_x
+        laser.center_y = self.player.center_y
+        laser.change_y = 3
+        laser.texture = self.laser_texture
+        laser.width = 5
 
-        pass
-
+        self.lasers.append(laser)
 
 def main():
     game = MyGame(WIDTH, HEIGHT, "My Game")
