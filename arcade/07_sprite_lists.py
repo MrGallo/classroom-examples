@@ -13,11 +13,22 @@ class MyGame(arcade.Window):
         self.player = arcade.Sprite(center_x=100, center_y=100)
         self.player.texture = arcade.make_soft_square_texture(50, arcade.color.BLUE, outer_alpha=255)
 
+        self.enemy_texture = arcade.make_soft_square_texture(50, arcade.color.RED, outer_alpha=255)
+        self.enemies = arcade.SpriteList()
+
+        # create an enemy
+        enemy = arcade.Sprite()
+        enemy.center_x = 200
+        enemy.center_y = 500
+        enemy.texture = self.enemy_texture
+        self.enemies.append(enemy)
+
     def on_draw(self):
         arcade.start_render()  # keep as first line
 
         # Draw everything below here.
         self.player.draw()
+        self.enemies.draw()
 
     def update(self, delta_time):
         pass
