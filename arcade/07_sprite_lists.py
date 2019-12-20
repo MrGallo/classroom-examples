@@ -26,12 +26,16 @@ class MyGame(arcade.Window):
             enemy.texture = self.enemy_texture
             self.enemies.append(enemy)
 
+        self.laser_texture = arcade.make_soft_square_texture(30, arcade.color.ORANGE, outer_alpha=255)
+        self.lasers = arcade.SpriteList()
+
     def on_draw(self):
         arcade.start_render()  # keep as first line
 
         # Draw everything below here.
         self.player.draw()
         self.enemies.draw()
+        self.lasers.draw()
 
     def update(self, delta_time):
         pass
