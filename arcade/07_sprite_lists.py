@@ -1,3 +1,5 @@
+import random
+
 import arcade
 
 WIDTH = 800
@@ -17,11 +19,12 @@ class MyGame(arcade.Window):
         self.enemies = arcade.SpriteList()
 
         # create an enemy
-        enemy = arcade.Sprite()
-        enemy.center_x = 200
-        enemy.center_y = 500
-        enemy.texture = self.enemy_texture
-        self.enemies.append(enemy)
+        for _ in range(3):
+            enemy = arcade.Sprite()
+            enemy.center_x = random.randrange(0, WIDTH)
+            enemy.center_y = random.randrange(HEIGHT//2, HEIGHT)
+            enemy.texture = self.enemy_texture
+            self.enemies.append(enemy)
 
     def on_draw(self):
         arcade.start_render()  # keep as first line
