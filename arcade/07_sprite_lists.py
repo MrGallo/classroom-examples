@@ -23,8 +23,8 @@ class MyGame(arcade.Window):
         pass
 
     def on_mouse_motion(self, x, y, delta_x, delta_y):
-
-        pass
+        self.player.center_x = x
+        self.player.center_y = y
 
     def on_mouse_press(self, x, y, button, key_modifiers):
 
