@@ -10,11 +10,14 @@ class MyGame(arcade.Window):
 
         arcade.set_background_color(arcade.color.WHITE)
 
+        self.player = arcade.Sprite(center_x=100, center_y=100)
+        self.player.texture = arcade.make_soft_square_texture(50, arcade.color.BLUE, outer_alpha=255)
+
     def on_draw(self):
         arcade.start_render()  # keep as first line
 
         # Draw everything below here.
-        arcade.draw_circle_filled(100, 100, 25, arcade.color.BLUE)
+        self.player.draw()
 
     def update(self, delta_time):
         pass
