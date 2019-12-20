@@ -40,6 +40,13 @@ class MyGame(arcade.Window):
     def update(self, delta_time):
         self.lasers.update()
 
+        for enemy in self.enemies:
+            lasers_in_contact = enemy.collides_with_list(self.lasers)
+            if lasers_in_contact:
+                enemy.kill()
+                for laser in lasers_in_contact:
+                    laser.kill()
+
     def on_mouse_motion(self, x, y, delta_x, delta_y):
         self.player.center_x = x
         self.player.center_y = y
@@ -53,6 +60,7 @@ class MyGame(arcade.Window):
         laser.width = 5
 
         self.lasers.append(laser)
+
 
 def main():
     game = MyGame(WIDTH, HEIGHT, "My Game")
