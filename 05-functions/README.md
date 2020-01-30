@@ -54,7 +54,7 @@ goodbye
 
 # Parameters and Return Type
 ```python
-#   Funciton Name
+#   Function Name
 #   |   Parameter
 #   |   |   | Parameter type
 #   |   |   |              Return Type

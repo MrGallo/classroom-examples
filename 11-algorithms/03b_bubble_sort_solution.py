@@ -24,7 +24,7 @@ def bubble_sort(numbers: List[int]) -> List[int]:
 
     # return the sorted list
     return numbers
-            
+
 
 
 print(bubble_sort([1, 2, 3, 4, 5]))

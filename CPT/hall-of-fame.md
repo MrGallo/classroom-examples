@@ -10,7 +10,6 @@ Game Story: You are Indiana Jones, the best adventurer of the century. Your task
 ## [Legend of Remake](https://github.com/ICS3U-Gallo/cpt-ryan-and-aidan)
 *by Ryan and Aidan* - ICS3U
 
-
 Trying to remake legend of zelda with python and arcade.
 
 

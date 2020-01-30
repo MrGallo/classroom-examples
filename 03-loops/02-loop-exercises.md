@@ -11,9 +11,3 @@ total to exceed `100 000`?
 10. Create a program that will find the `n`th fibbonacci number. Start the sequence with `1`.
 11. Create a loop that will add user integer input until they enter a negative number.
 
-
-## Solutions
-### 1
-```python
-
-```

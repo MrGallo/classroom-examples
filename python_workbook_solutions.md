@@ -1,6 +1,24 @@
 # The Python Workbook
 Missing solutions and Mr. Gallo solutions
 
+- [Introduction to Programming](#introduction-to-programming)
+  * [Exercise 1: Mailing Address](#exercise-1--mailing-address)
+  * [Exercise 2: Hello](#exercise-2--hello)
+  * [Exercise 4: Area of a Field](#exercise-4--area-of-a-field)
+  * [Exercise 5: Bottle Deposits](#exercise-5--bottle-deposits)
+- [If Statements](#if-statements)
+  * [Exercise 34: Even or odd?](#exercise-34--even-or-odd-)
+  * [Exercise 35: Dog Years](#exercise-35--dog-years)
+  * [Exercise 36: Vowel or Consonant](#exercise-36--vowel-or-consonant)
+- [Functions](#functions)
+  * [Exercise 81: Compute the Hypotenuse](#exercise-81--compute-the-hypotenuse)
+  * [Exercise 82: Taxi Fare](#exercise-82--taxi-fare)
+- [Lists](#lists)
+  * [Exercise 105: Reverse Order](#exercise-105--reverse-order)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## Introduction to Programming
 ### Exercise 1: Mailing Address
 I suggest first printing the information of the school (not your personal information). Then, refactoring those strings into variables. Do not store formatting characters (spaces and commas) in your variables!
