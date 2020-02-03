@@ -9,6 +9,7 @@ arcade.set_background_color(arcade.color.AMAZON)
 # Initialize your variables here
 x = 50
 
+
 @window.event("on_draw")
 def game_loop():
     global x
