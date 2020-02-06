@@ -1,6 +1,6 @@
 # Documentation Practice
 
-For each function below, add **type annotations* and a *doc string*.
+For each function below, add **type annotations** and a **doc string**.
 
 - [double_char](#double-char)
 - [count_hi](#count-hi)
