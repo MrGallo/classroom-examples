@@ -1,6 +1,14 @@
 # Command-Line Activity 1
 [Video Solution](https://youtu.be/55T5FUtDzVE)
 
+## Knowldge requirements
+- How to open the terminal
+- How to create a directory
+- How to use the `tree` program
+- Moving a file from one folder to another
+- Renaming a file or folder
+- Deleting a file and folder.
+
 Do the whole activity in a linux terminal (with the exception of `#5`).
 
 1. Create a directory called `terminal-practice` with the following file structure:
