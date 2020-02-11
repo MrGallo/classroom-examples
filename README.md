@@ -15,6 +15,19 @@ Once you have Python installed, you should have pip installed too. Install the p
 pip install arcade pycodestyle mypy pytest
 ```
 
+## Command line
+### Linux
+### Mac
+Install HomeBrew
+```sh
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+Install tree
+```sh
+$ brew install tree
+```
+### Windows
+You need to download [GitBash](https://gitforwindows.org/) to have a linux-style command-line.
 
 ## Python
 ### Linux
