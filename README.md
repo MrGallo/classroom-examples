@@ -15,6 +15,31 @@ Once you have Python installed, you should have pip installed too. Install the p
 pip install arcade pycodestyle mypy pytest
 ```
 
+
+- [Command line](#command-line)
+  * [Linux](#linux)
+  * [Mac](#mac)
+  * [Windows](#windows)
+- [Python](#python)
+  * [Linux](#linux-1)
+  * [Mac](#mac-1)
+  * [Windows](#windows-1)
+- [Arcade](#arcade)
+  * [Linux](#linux-2)
+  * [Mac](#mac-2)
+  * [Windows](#windows-2)
+- [Git](#git)
+  * [Linux](#linux-3)
+  * [Mac](#mac-3)
+  * [Windows](#windows-3)
+- [VS Code](#vs-code)
+  * [Linux](#linux-4)
+  * [Mac](#mac-4)
+  * [Windows](#windows-4)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## Command line
 ### Linux
 ### Mac
