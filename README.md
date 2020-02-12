@@ -65,12 +65,13 @@ Follow directions from [Corey's tutorial video](http://www.youtube.com/watch?v=Y
 ### Linux
 ### Mac
 ### Windows
-With Python already installed, 
+With [Python already installed](#windows-1), open up `cmd` or [Git Bash](#windows-3), and enter the command `$ pip install arcade`.
 
 ## Git
 ### Linux
 ### Mac
 ### Windows
+You need to download [GitBash](https://gitforwindows.org/) to have a linux-style command-line.
 
 ## VS Code
 ### Linux
