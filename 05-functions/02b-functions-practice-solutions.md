@@ -26,9 +26,6 @@ add(1, 2, 3) -> 5
 from typing import List
 
 
-from typing import List
-
-
 def add(a: float, b: float) -> float:
     """Adds two numbers.
     
