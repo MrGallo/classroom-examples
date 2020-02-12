@@ -58,11 +58,14 @@ You need to download [GitBash](https://gitforwindows.org/) to have a linux-style
 ### Linux
 ### Mac
 ### Windows
+Get the `Windows x86-64 executable installer` from the [Python downloads](https://www.python.org/downloads/release/python-381) page.
+Follow directions from [Corey's tutorial video](http://www.youtube.com/watch?v=YYXdXT2l-Gg&t=5m44s).
 
 ## Arcade
 ### Linux
 ### Mac
 ### Windows
+With Python already installed, 
 
 ## Git
 ### Linux
