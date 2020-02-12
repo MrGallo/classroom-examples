@@ -7,19 +7,16 @@ window = arcade.Window(WIDTH, HEIGHT, "My Arcade Game")
 arcade.set_background_color(arcade.color.AMAZON)
 
 # Initialize your variables here
-x = 50
-
 
 @window.event("on_draw")
 def game_loop():
-    global x
-
+    # import global variables here.
+    
     # update your variables here.
-    x += 1
-
+    
     # Draw things here.
     arcade.start_render()
-    arcade.draw_circle_filled(x, 100, 25, arcade.color.CREAM)
+    arcade.draw_circle_filled(100, 100, 25, arcade.color.CREAM)
 
 
 arcade.run()
