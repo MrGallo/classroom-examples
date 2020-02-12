@@ -26,7 +26,10 @@ add(1, 2, 3) -> 5
 from typing import List
 
 
-def add():
+from typing import List
+
+
+def add(a: float, b: float) -> float:
     """Adds two numbers.
     
     Args:
@@ -36,10 +39,15 @@ def add():
     Returns:
         float: The sum of the two numbers.
     """
-    pass  # pass is a place holder. remove this.
+    return a + b
 
 
-def format_name():
+assert add(1, 1) == 2
+assert add(1, 2) == 3
+assert add(5, 4) == 9
+
+
+def format_name(first: str, last: str) -> str:
     """Formats a name in 'Last, First' format.
 
     For example: "Smith, John"
@@ -51,7 +59,12 @@ def format_name():
     Returns:
         str: The formatted name.
     """
-    pass
+    return f"{last}, {first}"
+
+
+assert format_name("John", "Smith") == "Smith, John"
+assert format_name("a", "b") == "b, a"
+assert format_name("123", "456") == "456, 123"
 
 
 def strip_phone_number(phone_number: str) -> str:
