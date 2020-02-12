@@ -27,7 +27,8 @@ def double_char(text: str) -> str:
     for char in text:
         new_str += char * 2
     
-    return new_str```
+    return new_str
+```
 
 ## count_hi
 ```python
