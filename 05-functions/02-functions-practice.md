@@ -11,7 +11,7 @@ def some_function(n: int, string: str) -> str:
     Returns:
         str: A vague string.
     """
-```
+```return str(n)
 
 **Also**, for each function. Think of three test cases. For now, just call the function and expect a result, like we see in codingbat. 
 For example if your function is called add and it adds three numbers the tests would look like:
@@ -36,7 +36,7 @@ def add():
     Returns:
         float: The sum of the two numbers.
     """
-    pass  # pass is a place holder. remove this.
+   return a + b
 
 
 def format_name():
@@ -51,7 +51,7 @@ def format_name():
     Returns:
         str: The formatted name.
     """
-    pass
+   return last", " + first
 
 
 def strip_phone_number():
@@ -70,7 +70,12 @@ def strip_phone_number():
     Returns:
         str: The phone number stripped to just it's digits.
     """
-    pass
+   integer = []
+   for i in phone_number:
+      if i % 1 != 0:
+         integer.append()
+   
+   return integer
 
 
 def format_phone_number():
@@ -83,7 +88,19 @@ def format_phone_number():
     Returns:
         str: The formatted phone number.
     """
-    pass
+    first = []
+    second = []
+    third = []
+    
+    for i in range(len(phone_number)):
+       if i < 3:
+          first.append()
+       if i < 6 and i > 2:
+          second.append()
+       if i > 5:
+          third.append()
+          
+    return "("first")" + second"-" + third
 
 
 def add_from_list():
@@ -97,6 +114,10 @@ def add_from_list():
     Returns:
         int: The two values at index a and b added together.
     """
-    pass  
+    adding = 0
+    for i in numbers:
+       adding = adding + i
+       
+    return adding
 
 ```
