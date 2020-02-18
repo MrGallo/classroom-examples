@@ -5,8 +5,6 @@ Every program will involve some *input, processing, and output*.
 - [Get input from user](#get-input-from-user)
 - [Convert input to number](#convert-input-to-number)
 - [Format output text](#format-output-text)
-- [Create a main function and output a message](#create-a-main-function)
-- [Calling Functions Within Functions](#calling-functions-within-functions)
 
 ## Topics
 - Variables
@@ -90,53 +88,4 @@ message_concat = "Hello, " + name + ". You are " + str(age) + " years old."
 print(message_fstring)
 print(message_dot_format)
 print(message_concat)
-```
-
-## Create a `main` function
-[Video](https://youtu.be/mEL944nYaEQ)
-
-```python
-def main():
-    print("Hello!")
-    print("Blah")
-    print(5 + 6)
-    print(400 / 6 * 2)
-    print(5 + 7 * 8)
-
-
-if __name__ == "__main__":
-    main()
-```
-
-## Calling Functions Within Functions 
-[Video](https://youtu.be/vGnLqC-9YBY)
-Create a `main` function. Create two other functions that output different 
-messages and call them from within the `main` function.
-```python
-def main():
-    say_hello()
-    say_goodbye()
-
-    say_hello()
-    say_goodbye()
-
-
-def say_hello():
-    print("Hello")
-
-
-def say_goodbye():
-    print("Goodbye.")
-
-
-if __name__ == "__main__":
-    main()
-```
-
-*Output:*
-```
-Hello
-Goodbye.
-Hello
-Goodbye.
 ```
