@@ -3,6 +3,7 @@ Check for a mouse click on a circle.
 
 - Draw a circle somewhere, using circle_x and circle_y, circle_radius variables.
 - Use mouse_pressed event handler to register a click.
+- Print out the mouse_x and mouse_y values in the on_mouse_press function.
 
 """
 
@@ -33,7 +34,7 @@ def game_loop():
 
 @window.event
 def on_mouse_press(mouse_x, mouse_y, button, modifiers):
-    print("CLICK!")
+    print(f"CLICK! x: {mouse_x}, y: {mouse_y}")
 
 
 arcade.run()
