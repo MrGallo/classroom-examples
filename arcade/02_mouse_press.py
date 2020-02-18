@@ -1,3 +1,10 @@
+"""
+Check for a mouse click on a circle.
+
+- Draw a circle somewhere, using circle_x and circle_y, circle_radius variables.
+
+"""
+
 import arcade
 
 WIDTH = 800
@@ -7,6 +14,9 @@ window = arcade.Window(WIDTH, HEIGHT, "My Arcade Game")
 arcade.set_background_color(arcade.color.AMAZON)
 
 # Initialize your variables here
+circle_x = WIDTH//2
+circle_y = HEIGHT//2
+circle_radius = 100
 
 @window.event("on_draw")
 def game_loop():
@@ -16,7 +26,7 @@ def game_loop():
 
     # Draw things here.
     arcade.start_render()
-    arcade.draw_circle_filled(100, 100, 25, arcade.color.CREAM)
+    arcade.draw_circle_filled(circle_x, circle_y, circle_radius, arcade.color.WHITE)
 
 
 arcade.run()
