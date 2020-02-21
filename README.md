@@ -27,27 +27,39 @@ $ brew install tree
 You need to download [GitBash](https://gitforwindows.org/) to have a linux-style command-line.
 
 ## Python
-## Required software
+**Required software**:
 - Python 3.8+
-    - [Arcade library](http://arcade.academy)
+    - [arcade](http://arcade.academy)
     - pytest
     - pycodestyle
     - mypy
 
-## Install Python Packages
+### Install Python Packages
 Once you have Python installed, you should have pip installed too. Install the python packages required for the course:
 ```sh
 pip install arcade pycodestyle mypy pytest
 ```
 
 ### Linux
+In the terminal enter the following commands.
+```sh
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.8
+curl https://bootstrap.pypa.io/3.2/get-pip.py | python3.8
+```
 ### Mac
+Try the instructions above for Linux. Please let me know if it doesn't work.
 ### Windows
 Get the `Windows x86-64 executable installer` from the [Python downloads](https://www.python.org/downloads/release/python-381) page.
 Follow directions from [Corey's tutorial video](http://www.youtube.com/watch?v=YYXdXT2l-Gg&t=5m44s).
 
 ## Git
 ### Linux
+```sh
+sudo apt-get install git
+```
 ### Mac
 ### Windows
 You need to download [GitBash](https://gitforwindows.org/) to have a linux-style command-line.
