@@ -15,6 +15,7 @@ The following software will be required for the course.
 ## Command line
 ### Linux
 ### Mac
+For those of you wanting to install the `tree` program at home try the following.
 Install HomeBrew
 ```sh
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
