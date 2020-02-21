@@ -3,11 +3,11 @@
 - [Home Installation Instructions](#home-installation-instructions)
 
 ## Home Installation Instructions
+The following software will be required for the course.
 - [Command line](#command-line) ([Linux](#linux), [Mac](#mac), [Windows](#windows))
 - [Python](#python) ([Linux](#linux-1), [Mac](#mac-1), [Windows](#windows-1))
-- [Arcade](#arcade) ([Linux](#linux-2), [Mac](#mac-2), [Windows](#windows-2))
-- [Git](#git) ([Linux](#linux-3), [Mac](#mac-3), [Windows](#windows-3))
-- [VS Code](#vs-code) ([Linux](#linux-4), [Mac](#mac-4), [Windows](#windows-4))
+- [Git](#git) ([Linux](#linux-2), [Mac](#mac-2), [Windows](#windows-2))
+- [VS Code](#vs-code) ([Linux](#linux-3), [Mac](#mac-3), [Windows](#windows-3))
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -45,12 +45,6 @@ pip install arcade pycodestyle mypy pytest
 ### Windows
 Get the `Windows x86-64 executable installer` from the [Python downloads](https://www.python.org/downloads/release/python-381) page.
 Follow directions from [Corey's tutorial video](http://www.youtube.com/watch?v=YYXdXT2l-Gg&t=5m44s).
-
-## Arcade
-### Linux
-### Mac
-### Windows
-With [Python already installed](#windows-1), open up `cmd` or [Git Bash](#windows-3), and enter the command `$ pip install arcade`.
 
 ## Git
 ### Linux
