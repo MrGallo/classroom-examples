@@ -1,8 +1,11 @@
 
-- [blah]()
+- [Programming Topics](#programming-topics)
 - [Home Installation Instructions](#home-installation-instructions)
 
-## Home Installation Instructions
+# Programming Topics
+- [Introduction](01-intro-to-programming)
+
+# Home Installation Instructions
 The following software will be required for the course.
 - [Command line](#command-line) ([Linux](#linux), [Mac](#mac), [Windows](#windows))
 - [Python](#python) ([Linux](#linux-1), [Mac](#mac-1), [Windows](#windows-1))
