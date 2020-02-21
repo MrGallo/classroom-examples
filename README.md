@@ -1,21 +1,8 @@
-# Recommended Home Setup
 
-## Required software
-- Python 3.8+
-    - [Arcade library](http://arcade.academy)
-    - pytest
-    - pycodestyle
-    - mypy
-- Git (with git bash for Windows)
-- VS Code
+- [blah]()
+- [Home Installation Instructions](#home-installation-instructions)
 
-## Install Python Packages
-Once you have Python installed, you should have pip installed too. Install the python packages required for the course:
-```sh
-pip install arcade pycodestyle mypy pytest
-```
-
-
+## Home Installation Instructions
 - [Command line](#command-line) ([Linux](#linux), [Mac](#mac), [Windows](#windows))
 - [Python](#python) ([Linux](#linux-1), [Mac](#mac-1), [Windows](#windows-1))
 - [Arcade](#arcade) ([Linux](#linux-2), [Mac](#mac-2), [Windows](#windows-2))
@@ -40,6 +27,19 @@ $ brew install tree
 You need to download [GitBash](https://gitforwindows.org/) to have a linux-style command-line.
 
 ## Python
+## Required software
+- Python 3.8+
+    - [Arcade library](http://arcade.academy)
+    - pytest
+    - pycodestyle
+    - mypy
+
+## Install Python Packages
+Once you have Python installed, you should have pip installed too. Install the python packages required for the course:
+```sh
+pip install arcade pycodestyle mypy pytest
+```
+
 ### Linux
 ### Mac
 ### Windows
