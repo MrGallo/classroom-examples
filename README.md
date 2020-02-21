@@ -65,6 +65,7 @@ sudo apt-get install git
 You need to download [GitBash](https://gitforwindows.org/) to have a linux-style command-line.
 
 ## VS Code
+Visit the [VS Code Download](https://code.visualstudio.com/download) page.
 ### Linux
 ### Mac
 ### Windows
