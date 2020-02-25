@@ -1,6 +1,6 @@
 # Classes Section Goals
 
-- [Store data in an object](#store-data-in-an-object)
+- [Unified Modeling Language (UML)](#uml)
 - [`__init__` method](#__init__-method)
 - [Loop through a list of objects](#loop-through-a-list-of-objects)
 - [Understand object pointers](#understand-object-pointers)
@@ -16,17 +16,9 @@
 - [Function/Method Overloading](#method-overloading)
 
 
-## Store data in an object
-```python
-class Person:
-    pass
+## UML
+```
 
-
-p = Person()
-p.name = "Jeff"
-p.age = 45
-
-print(f"This is {p.name}, they are {p.age} years old!")
 ```
 
 ## `__init__` method
