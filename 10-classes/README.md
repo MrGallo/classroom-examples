@@ -17,8 +17,13 @@
 
 
 ## UML
+Simply a universal way to represent a class. 
 ```
-
+User
+----
+name
+password
+email
 ```
 
 ## `__init__` method
@@ -31,6 +36,39 @@ class Person:
 
 jeff = Person("Jeff", 35)
 print(f"This is {jeff.name}, they are {jeff.age} years old!")
+```
+
+Another example:
+```python
+class User:
+    def __init__(self, username, password, email):
+        self.username = username
+        self.password = password
+        self.email = email
+
+
+user1 = User("EraserMan", "password123", "blah@gmail.com")
+print(user1.username)
+print(user1.password)
+print(user1.email)
+
+user1.username = "MrBlah"
+
+print()
+print(user1.username)
+print(user1.password)
+print(user1.email)
+```
+
+Output:
+```
+EraserMan
+password123
+blah@gmail.com
+
+MrBlah
+password123
+blah@gmail.com
 ```
 
 ## Loop through a list of objects
