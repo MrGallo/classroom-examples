@@ -2,9 +2,9 @@
 
 - [Unified Modeling Language (UML)](#uml)
 - [`__init__` method](#__init__-method)
+- [Know difference between a *class* and an *object*](#class-vs-object)
 - [Loop through a list of objects](#loop-through-a-list-of-objects)
 - [Understand object pointers](#understand-object-pointers)
-- [Know difference between a *class* and an *object*](#class-vs-object)
 - [Instance method](#methods)
 - [Encapsulation](#encapsulation)
 - Aggregate class
@@ -74,6 +74,13 @@ jeff = Person("Jeff", 35)
 print(f"This is {jeff.name}, they are {jeff.age} years old!")
 ```
 
+## Class vs Object
+- *Class*: the general thing. e.g., "Human"
+    - In our programs, we get to define what a Human is. We get to say, "every human, in general has attributes like eye colour, height, weight, and a name". In other words, *in general*, we want to store that information about a Human.
+- *Object*: A specific instance of a thing. e.g., "Jeff"
+    - In our program we get to create Humans and modify (set) their attributes according to their *specific* eye colour, height, weith and name.
+
+
 
 ## Loop through a list of objects
 ```python
@@ -135,10 +142,6 @@ print(a.name)  # "Sally"
 print(b.name)  # "Sally"
 ```
 Both variables `a` and `b` **point** to the same object.
-
-## Class vs Object
-- *Object*: A specific instance of a thing. e.g., "Jeff"
-- *Class*: the general thing. e.g., "a person"
 
 ## Methods
 An example of methods. One without arguments, one with.
