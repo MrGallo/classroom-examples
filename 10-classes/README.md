@@ -19,11 +19,13 @@
 ## UML
 Simply a universal way to represent a class. 
 ```
-User
+User            # Name of the class
 ----
-name
+name            # list the attributes first
 password
 email
+----
+                # behaviours (methods) come below attributes
 ```
 
 ## `__init__` method
