@@ -30,18 +30,6 @@ email
 
 ## `__init__` method
 ```python
-class Person:
-    def __init__(self, name: str, age: int):
-        self.name = name
-        self.age = age
-
-
-jeff = Person("Jeff", 35)
-print(f"This is {jeff.name}, they are {jeff.age} years old!")
-```
-
-Another example:
-```python
 class User:
     def __init__(self, username, password, email):
         self.username = username
@@ -72,6 +60,20 @@ MrBlah
 password123
 blah@gmail.com
 ```
+
+
+Another example:
+```python
+class Person:
+    def __init__(self, name: str, age: int):
+        self.name = name
+        self.age = age
+
+
+jeff = Person("Jeff", 35)
+print(f"This is {jeff.name}, they are {jeff.age} years old!")
+```
+
 
 ## Loop through a list of objects
 ```python
